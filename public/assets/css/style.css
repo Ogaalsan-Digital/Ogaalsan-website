@@ -374,6 +374,11 @@ label {
     color: var(--tg-white);
 }
 
+/* Banner main button arrow hover color */
+.banner-content-two .btn:hover::after {
+    color: #22428F;
+}
+
 .btn.btn-two::after {
     display: none;
 }
@@ -1597,17 +1602,24 @@ label {
 .banner-bg-two {
     background-size: cover;
     background-position: center;
-    min-height: 770px;
+    min-height: 680px;
     display: flex;
-    align-items: flex-end;
-    padding: 170px 0 0;
+    align-items: center;
+    padding: 140px 0 140px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
 .banner-content-two {
-    width: 85%;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-logo img {
+    max-width: 160px;
+    height: auto;
 }
 
 .banner-content-two .sub-title {
@@ -1689,8 +1701,10 @@ label {
 
 .banner-shape-wrap img:nth-child(3) {
     right: 26%;
-    bottom: 0;
+    bottom: -140px;
     z-index: -2;
+    opacity: 0.35;
+    transform: scale(0.85);
 }
 
 @keyframes float-bob-x {
