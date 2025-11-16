@@ -44,7 +44,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isSear
                                 <div className="menu-wrap">
                                     <nav className="menu-nav">
                                         <div className="logo">
-                                            <Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
+                                            <Link href="/"><img src="/assets/img/logo/logo-ogalsan.png" alt="OgaalSan Consultancy Logo" /></Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
@@ -113,7 +113,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isSear
                                     <nav className="menu-box">
                                         <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times" /></div>
                                         <div className="nav-logo">
-                                            <Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
+                                            <Link href="/"><img src="/assets/img/logo/logo-ogalsan.png" alt="OgaalSan Consultancy Logo" /></Link>
                                         </div>
                                         <div className="mobile-search">
                                             <form action="#">
