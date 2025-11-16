@@ -8,11 +8,11 @@ export default function Features() {
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="features-item-two">
                                     <div className="features-icon-two">
-                                        <i className="flaticon-development" />
+                                        <i className="flaticon-layers" />
                                     </div>
                                     <div className="features-content-two">
-                                        <h4 className="title">ICT Strategy &amp; Roadmap</h4>
-                                        <p>We align your technology, infrastructure, and applications with clear business goals and a practical digital roadmap.</p>
+                                        <h4 className="title">ICT Solutions</h4>
+                                        <p>End‑to‑end ICT consulting, infrastructure, and digital systems tailored to how your organization works.</p>
                                     </div>
                                 </div>
                             </div>
@@ -30,11 +30,11 @@ export default function Features() {
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="features-item-two">
                                     <div className="features-icon-two">
-                                        <i className="flaticon-rocket" />
+                                        <i className="flaticon-business-presentation" />
                                     </div>
                                     <div className="features-content-two">
-                                        <h4 className="title">Digital Marketing &amp; Growth</h4>
-                                        <p>We design and run data-driven campaigns that grow your online visibility and help you reach the right audience.</p>
+                                        <h4 className="title">Business Development &amp; Digital Marketing</h4>
+                                        <p>We support business development and run digital marketing campaigns that attract clients and grow your brand.</p>
                                     </div>
                                 </div>
                             </div>
