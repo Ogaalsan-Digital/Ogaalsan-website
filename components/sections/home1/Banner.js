@@ -9,9 +9,9 @@ export default function Banner() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="banner-content-two">
-                                <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>We Are Expert In This Field</span>
-                                <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Get a Smart Way For Your Business</h2>
-                                <p data-aos="fade-up" data-aos-delay={500}>Agilos helps you to convert your data into a strategic asset and get top-notch business insights.</p>
+                                <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>ICT &amp; Digital Innovation Experts</span>
+                                <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Smart Digital Solutions For Your Business</h2>
+                                <p data-aos="fade-up" data-aos-delay={500}>We design and implement modern ICT systems, digital products, and data-driven strategies that help organizations grow and innovate.</p>
                                 <div className="banner-btn">
                                     <Link href="/services" className="btn" data-aos="fade-right" data-aos-delay={700}>Our Services</Link>
                                     <VideoPopup style={1} />

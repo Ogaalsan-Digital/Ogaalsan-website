@@ -18,20 +18,20 @@ export default function ServiceDetails() {
                                             <img src="/assets/img/services/services_details01.jpg" alt="" />
                                         </div>
                                         <div className="services-details-content">
-                                            <h2 className="title">We help our clients identify their they area issues develop solutions and take action</h2>
-                                            <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia- list advice beyond the scope of our own expertise. That’s why we’ve developed close working relationships with a number of strategic partner.</p>
-                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
+                                            <h2 className="title">ICT Strategy &amp; Consulting for Sustainable Digital Growth</h2>
+                                            <p>We work with your team to understand your current ICT landscape, identify gaps and opportunities, and design a practical digital roadmap aligned with your business goals.</p>
+                                            <p>Our consultants bring experience across infrastructure, cloud, applications, data, and security, helping you prioritize investments and reduce risk while accelerating innovation.</p>
                                             <div className="sd-inner-wrap">
                                                 <div className="row align-items-center">
                                                     <div className="col-56">
                                                         <div className="content">
-                                                            <h3 className="title-two">Raise capital faster  negotiate on your own terms</h3>
-                                                            <p>when an unknown printer took a galley offer typey anddey scrambled make a type specimen bookhas survived not only five centuries but also.</p>
+                                                            <h3 className="title-two">Turn technology into a competitive advantage</h3>
+                                                            <p>We translate business requirements into clear ICT architectures, implementation plans, and measurable outcomes so you can move from ideas to execution with confidence.</p>
                                                             <ul className="list-wrap">
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />100% Better results</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Valuable Ideas</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Budget Friendly Theme</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Happy Customers</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Clear ICT vision &amp; roadmap</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Optimized infrastructure &amp; cloud strategy</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Improved security, resilience &amp; compliance</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Better user and customer experience</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -43,10 +43,10 @@ export default function ServiceDetails() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
+                                            <p>Our ICT advisory team helps you make the right technology choices, structure implementation projects, and ensure that every investment contributes to performance, agility, and long-term value.</p>
                                             <div className="company-benefit-wrap">
-                                                <h2 className="title-two">Company Key Benefits</h2>
-                                                <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
+                                                <h2 className="title-two">Key Benefits of Our ICT Consulting</h2>
+                                                <p>Engaging with us gives you access to senior ICT experts, proven methodologies, and practical guidance that reduces risk and speeds up your digital transformation journey.</p>
                                                 <div className="accordion-wrap-three">
                                                     <Accordion />
                                                 </div>
@@ -58,18 +58,18 @@ export default function ServiceDetails() {
                                     <aside className="services-sidebar">
                                         <div className="services-cat-list mb-30">
                                             <ul className="list-wrap">
-                                                <li className="active"><Link href="/services-details">business Analysis <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Tax Strategy <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Financial Advisory <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">business Growth <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Innovation Idea <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Market Research <i className="flaticon-right-arrow" /></Link></li>
+                                                <li className="active"><Link href="/services-details">ICT Strategy &amp; Consulting <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Training &amp; Capacity Building <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Digital Business Development <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Digital Marketing &amp; Growth <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Cloud &amp; Infrastructure Services <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Data &amp; Analytics Solutions <i className="flaticon-right-arrow" /></Link></li>
                                             </ul>
                                         </div>
                                         <div className="services-widget">
                                             <h4 className="sw-title">Brochure</h4>
                                             <div className="services-brochure-wrap">
-                                                <p>when an unknown printer took ga lley offer typey anddey.</p>
+                                                <p>Download our ICT services profile to explore how we can support your next digital initiative.</p>
                                                 <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-pdf" />PDF. Download</Link>
                                                 <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-alt" />DOC. Download</Link>
                                             </div>

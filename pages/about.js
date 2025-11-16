@@ -27,10 +27,10 @@ export default function About() {
                                 <div className="col-lg-6">
                                     <div className="about-content-seven">
                                         <div className="section-title mb-30">
-                                            <span className="sub-title">Who We are</span>
-                                            <h2 className="title">Innovative Business Solutions For Success Company</h2>
+                                            <span className="sub-title">Who We Are</span>
+                                            <h2 className="title">ICT &amp; Digital Innovation Partner For Your Organization</h2>
                                         </div>
-                                        <p>Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet consecteture Borem ipsum dolor sitter consectetur adipiscing elita florai psum.</p>
+                                        <p>We are an ICT and digital innovation company helping organizations plan, build, and scale modern technology solutions that drive real business results.</p>
                                         <div className="success-wrap-two">
                                             <ul className="list-wrap">
                                                 <li>
@@ -53,7 +53,7 @@ export default function About() {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p className="info-two">Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet, consecteture. consecteture.Borem ipsum dolor sit amectetur adipiscing.</p>
+                                        <p className="info-two">From infrastructure and cloud to applications, data, and digital marketing, we combine strategy, engineering, and training to accelerate your digital transformation.</p>
                                         <Link href="/contact" className="btn btn-three">Contact With Us</Link>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ export default function About() {
                                         </div>
                                         <div className="team-content-three">
                                             <h4 className="title"><Link href="/team-details">Brooklyn Simmons</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <span>Lead ICT Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@ export default function About() {
                                         </div>
                                         <div className="team-content-three">
                                             <h4 className="title"><Link href="/team-details">Jenny Wilson</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <span>Digital Transformation Lead</span>
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@ export default function About() {
                                         </div>
                                         <div className="team-content-three">
                                             <h4 className="title"><Link href="/team-details">Ronald Richards</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <span>Training &amp; Capacity Building Specialist</span>
                                         </div>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@ export default function About() {
                                         </div>
                                         <div className="team-content-three">
                                             <h4 className="title"><Link href="/team-details">Marvin McKinney</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <span>Digital Marketing Strategist</span>
                                         </div>
                                     </div>
                                 </div>

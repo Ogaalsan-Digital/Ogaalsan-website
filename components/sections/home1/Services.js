@@ -26,8 +26,8 @@ export default function Services() {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-8">
                             <div className="section-title-two mb-60 tg-heading-subheading animation-style3">
-                                <span className="sub-title">What We Do For You</span>
-                                <h2 className="title tg-element-title">We can inspire and Offer Different Services</h2>
+                                <span className="sub-title">ICT &amp; Digital Innovation Solutions</span>
+                                <h2 className="title tg-element-title">We plan, build &amp; grow your digital business</h2>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-4">
@@ -49,8 +49,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-piggy-bank" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Finance Planning</Link></h2>
-                                    <p style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">ICT Strategy &amp; Consulting</Link></h2>
+                                    <p style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>We assess your current systems and design a clear ICT roadmap that aligns technology with your business goals.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,8 +66,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-calculator" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Tax File Audit</Link></h2>
-                                    <p style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Training &amp; Capacity Building</Link></h2>
+                                    <p style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>We deliver hands-on digital skills training to empower your team on tools, platforms, and emerging technologies.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,8 +83,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-money" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Investment Idea</Link></h2>
-                                    <p style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Digital Business Development</Link></h2>
+                                    <p style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>We help you design new digital services, optimize processes, and unlock growth opportunities.</p>
                                 </div>
                             </div>
                         </div>
@@ -100,8 +100,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-layers" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Risk Management</Link></h2>
-                                    <p style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Digital Marketing &amp; Growth</Link></h2>
+                                    <p style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>We run integrated digital campaigns that increase your visibility, generate leads, and grow your brand online.</p>
                                 </div>
                             </div>
                         </div>

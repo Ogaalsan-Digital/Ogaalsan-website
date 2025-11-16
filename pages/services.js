@@ -10,8 +10,8 @@ export default function Services() {
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-8 col-md-10">
                                 <div className="section-title-two text-center mb-50">
-                                    <h2 className="title">Spotlight some most important features We have</h2>
-                                    <p>Borem ipsum dolor sit amet consectetur adipiscing elita</p>
+                                    <h2 className="title">ICT &amp; Digital Innovation Services</h2>
+                                    <p>We provide end-to-end ICT consulting, training, business development, and digital marketing services that power your digital transformation.</p>
                                 </div>
                             </div>
                         </div>
@@ -23,16 +23,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-briefcase" />
                                             </div>
-                                            <h2 className="title">Business Analysis</h2>
+                                            <h2 className="title">ICT Strategy &amp; Consulting</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img01.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Digital transformation roadmaps</li>
+                                            <li>ICT architecture &amp; solution design</li>
+                                            <li>Technology governance &amp; advisory</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -44,16 +44,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-taxes" />
                                             </div>
-                                            <h2 className="title">Tax Strategy</h2>
+                                            <h2 className="title">Training &amp; Capacity Building</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img02.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Digital skills &amp; productivity training</li>
+                                            <li>Technical upskilling &amp; workshops</li>
+                                            <li>Customized capacity-building programs</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -65,16 +65,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-money" />
                                             </div>
-                                            <h2 className="title">Financial Advice</h2>
+                                            <h2 className="title">Digital Business Development</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img03.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Digital product and service design</li>
+                                            <li>Process optimization &amp; automation</li>
+                                            <li>Innovation &amp; go-to-market support</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -86,16 +86,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-investment" />
                                             </div>
-                                            <h2 className="title">Market Research</h2>
+                                            <h2 className="title">Digital Marketing &amp; Growth</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img04.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Campaign strategy &amp; execution</li>
+                                            <li>Social, search &amp; email marketing</li>
+                                            <li>Analytics, reporting &amp; optimization</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -107,16 +107,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-data-management" />
                                             </div>
-                                            <h2 className="title">Business Goal</h2>
+                                            <h2 className="title">Cloud &amp; Infrastructure Services</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img05.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Cloud migration &amp; deployment</li>
+                                            <li>Network &amp; infrastructure design</li>
+                                            <li>Security, backup &amp; continuity</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -128,16 +128,16 @@ export default function Services() {
                                             <div className="icon">
                                                 <i className="flaticon-calculator" />
                                             </div>
-                                            <h2 className="title">Revenue Calculate</h2>
+                                            <h2 className="title">Data &amp; Analytics Solutions</h2>
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img06.jpg" alt="" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>seusmeyd tempose atidim area</li>
-                                            <li>aliquam duhipsum is simply free</li>
-                                            <li>Get Life Time Access</li>
+                                            <li>Business intelligence dashboards</li>
+                                            <li>Reporting &amp; decision support</li>
+                                            <li>Data strategy &amp; governance</li>
                                         </ul>
                                     </div>
                                 </div>
