@@ -8,13 +8,13 @@ export default function Project() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6">
                             <div className="section-title-two mb-40 tg-heading-subheading animation-style3">
-                                <span className="sub-title">Complete Projects</span>
-                                <h2 className="title tg-element-title">Our recently completed <br /> projects list</h2>
+                                <span className="sub-title">Our Portfolio</span>
+                                <h2 className="title tg-element-title">Recent ICT & Digital Innovation <br /> Projects</h2>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-10">
                             <div className="project-content-top">
-                                <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
+                                <p>Explore our successful ICT implementations, digital transformation initiatives, and innovative technology solutions that have helped organizations achieve their goals.</p>
                             </div>
                         </div>
                     </div>
@@ -27,8 +27,8 @@ export default function Project() {
                                     <img src="/assets/img/project/h2_project_img01.jpg" alt="" />
                                 </div>
                                 <div className="project-content-two">
-                                    <h2 className="title"><Link href="/project-details">Finance Consultancy</Link></h2>
-                                    <span>Advisory</span>
+                                    <h2 className="title"><Link href="/project-details">ICT Infrastructure Modernization</Link></h2>
+                                    <span>ICT Solutions</span>
                                     <Link href="/project-details" className="link-btn"><i className="fas fa-chevron-right" /></Link>
                                 </div>
                             </div>
@@ -39,8 +39,8 @@ export default function Project() {
                                     <img src="/assets/img/project/h2_project_img02.jpg" alt="" />
                                 </div>
                                 <div className="project-content-two">
-                                    <h2 className="title"><Link href="/project-details">Finance Consultancy</Link></h2>
-                                    <span>Advisory</span>
+                                    <h2 className="title"><Link href="/project-details">Digital Training Program</Link></h2>
+                                    <span>Training & Capacity Building</span>
                                     <Link href="/project-details" className="link-btn"><i className="fas fa-chevron-right" /></Link>
                                 </div>
                             </div>
@@ -51,8 +51,8 @@ export default function Project() {
                                     <img src="/assets/img/project/h2_project_img03.jpg" alt="" />
                                 </div>
                                 <div className="project-content-two">
-                                    <h2 className="title"><Link href="/project-details">Finance Consultancy</Link></h2>
-                                    <span>Advisory</span>
+                                    <h2 className="title"><Link href="/project-details">Digital Marketing Campaign</Link></h2>
+                                    <span>Digital Marketing</span>
                                     <Link href="/project-details" className="link-btn"><i className="fas fa-chevron-right" /></Link>
                                 </div>
                             </div>
