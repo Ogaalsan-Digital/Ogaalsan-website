@@ -11,10 +11,10 @@ export default function Footer2() {
                                 <div className="col-lg-4 col-md-7">
                                     <div className="footer-widget">
                                         <div className="fw-logo">
-                                            <Link href="/"><img src="/assets/img/logo/logo.png" alt="" /></Link>
+                                            <Link href="/"><img src="/assets/img/logo/logo-ogalsan.png" alt="OgaalSan Consultancy Logo" /></Link>
                                         </div>
                                         <div className="footer-content">
-                                            <p>When an unknown printer took a galley of type aawer awtnd scrambled it to make a type specimen book.</p>
+                                            <p>OgaalSan Consultancy provides ICT solutions, training & capacity building, business development, and digital marketing services to help organizations grow and innovate.</p>
                                             <div className="footer-info">
                                                 <ul className="list-wrap">
                                                     <li>
@@ -22,7 +22,7 @@ export default function Footer2() {
                                                             <i className="flaticon-phone-call" />
                                                         </div>
                                                         <div className="content">
-                                                            <Link href="tel:0123456789">+123 888 9999</Link>
+                                                            <Link href="tel:+252615280901">+252 61 5280901</Link>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -40,14 +40,14 @@ export default function Footer2() {
                                 </div>
                                 <div className="col-lg-2 col-md-5 col-sm-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Menu</h4>
+                                        <h4 className="fw-title">Services</h4>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/about">Company</Link></li>
-                                                <li><Link href="/contact">Careers</Link></li>
-                                                <li><Link href="/contact">Press media</Link></li>
-                                                <li><Link href="/blog">Our Blog</Link></li>
-                                                <li><Link href="/contact">Privacy Policy</Link></li>
+                                                <li><Link href="/services">ICT Solutions</Link></li>
+                                                <li><Link href="/services">Training & Capacity Building</Link></li>
+                                                <li><Link href="/services">Business Development</Link></li>
+                                                <li><Link href="/services">Digital Marketing</Link></li>
+                                                <li><Link href="/contact">Contact Us</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -57,11 +57,11 @@ export default function Footer2() {
                                         <h4 className="fw-title">Quick Links</h4>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/contact">How it’s Work</Link></li>
-                                                <li><Link href="/contact">Partners</Link></li>
-                                                <li><Link href="/contact">Testimonials</Link></li>
-                                                <li><Link href="/contact">Case Studies</Link></li>
-                                                <li><Link href="/contact">Pricing</Link></li>
+                                                <li><Link href="/about">About Us</Link></li>
+                                                <li><Link href="/services">Our Services</Link></li>
+                                                <li><Link href="/blog">Our Blog</Link></li>
+                                                <li><Link href="/contact">Contact</Link></li>
+                                                <li><Link href="/contact">Privacy Policy</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@ export default function Footer2() {
                                     <div className="footer-widget">
                                         <h4 className="fw-title">Our Newsletter</h4>
                                         <div className="footer-newsletter">
-                                            <p>Sign up to Privitar’s weekly newsletter to get the latest updates.</p>
+                                            <p>Sign up to OgaalSan's newsletter to get the latest updates on ICT solutions, digital innovation, and technology trends.</p>
                                             <form action="#">
                                                 <input type="email" placeholder="enter your e-mail" />
                                                 <button type="submit">Subscribe</button>
@@ -95,7 +95,7 @@ export default function Footer2() {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="copyright-text-two text-center">
-                                        <p>Copyright © gerow | All Right Reserved</p>
+                                        <p>Copyright © OgaalSan Consultancy | All Right Reserved</p>
                                     </div>
                                 </div>
                             </div>
