@@ -32,7 +32,7 @@ export default function Header1({
                     </li>
                     <li>
                       <i className="flaticon-mail" />
-                      <Link href="mailto:gerow@gmail.com">
+                      <Link href="mailto:consultancyogaalsan@gmail.com">
                         consultancyogaalsan@gmail.com
                       </Link>
                     </li>
@@ -87,127 +87,34 @@ export default function Header1({
                     </div>
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
                       <ul className="navigation">
-                        <li className="active menu-item-has-children">
-                          <Link href="#">Home</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/">Finance</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-2">Consulting</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-3">Insurance</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-4">Digital Agency</Link>
-                            </li>
-                            <li>
-                              <Link href="/index-5">Business</Link>
-                            </li>
-                          </ul>
+                        <li className="active">
+                          <Link href="/">Home</Link>
+                        </li>
+                        <li>
+                          <Link href="/about">About Us</Link>
                         </li>
                         <li className="menu-item-has-children">
-                          <Link href="#">About Us</Link>
+                          <Link href="/services">Services</Link>
                           <ul className="sub-menu">
                             <li>
-                              <Link href="/about">About One</Link>
+                              <Link href="/services">ICT Solutions</Link>
                             </li>
                             <li>
-                              <Link href="/about-2">About Two</Link>
+                              <Link href="/services">Training & Capacity Building</Link>
                             </li>
                             <li>
-                              <Link href="/about-3">About Three</Link>
+                              <Link href="/services">Business Development</Link>
                             </li>
                             <li>
-                              <Link href="/about-4">About Four</Link>
-                            </li>
-                            <li>
-                              <Link href="/about-5">About Five</Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Pages</Link>
-                          <ul className="sub-menu">
-                            <li className="menu-item-has-children">
-                              <Link href="/services">Services</Link>
-                              <ul className="sub-menu">
-                                <li>
-                                  <Link href="/services">Services One</Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-2">Services Two</Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-3">Services Three</Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-4">Services Four</Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-5">Services Five</Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="menu-item-has-children">
-                              <Link href="/services-details">
-                                Services Details
-                              </Link>
-                              <ul className="sub-menu">
-                                <li>
-                                  <Link href="/services-details">
-                                    Services Details One
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-details-2">
-                                    Services Details Two
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-details-3">
-                                    Services Details Three
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-details-4">
-                                    Services Details Four
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link href="/services-details-5">
-                                    Services Details Five
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <Link href="/project-details">
-                                Portfolio Details
-                              </Link>
-                            </li>
-                            <li>
-                              <Link href="/team-details">Team Details</Link>
-                            </li>
-                            <li>
-                              <Link href="/404">404 Error</Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link href="#">Blog</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link href="/blog">Our Blog</Link>
-                            </li>
-                            <li>
-                              <Link href="/blog-details">Blog Details</Link>
+                              <Link href="/services">Digital Marketing</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <Link href="/contact">contacts</Link>
+                          <Link href="/blog">Blog</Link>
+                        </li>
+                        <li>
+                          <Link href="/contact">Contact</Link>
                         </li>
                       </ul>
                     </div>
