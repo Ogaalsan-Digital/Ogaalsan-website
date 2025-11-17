@@ -12,7 +12,7 @@ export default function Header5({ scroll, isMobileMenu, handleMobileMenu, isSear
                             <div className="col-lg-7">
                                 <div className="header-top-left">
                                     <ul className="list-wrap">
-                                        <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
+                                        <li><i className="flaticon-location" />Mogadishu, Somalia</li>
                                         <li><i className="flaticon-mail" /><Link href="mailto:gerow@gmail.com">gerow@gmail.com</Link></li>
                                     </ul>
                                 </div>
@@ -20,7 +20,7 @@ export default function Header5({ scroll, isMobileMenu, handleMobileMenu, isSear
                             <div className="col-lg-5">
                                 <div className="header-top-right">
                                     <div className="header-contact">
-                                        <Link href="tel:0123456789"><i className="flaticon-phone-call" />+123 8989 444</Link>
+                                        <Link href="tel:+252615280901"><i className="flaticon-phone-call" />+252 61 5280901</Link>
                                     </div>
                                     <div className="header-social">
                                         <ul className="list-wrap">

@@ -14,7 +14,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSear
                             <div className="col-lg-7">
                                 <div className="header-top-left">
                                     <ul className="list-wrap">
-                                        <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
+                                        <li><i className="flaticon-location" />Mogadishu, Somalia</li>
                                         <li><i className="flaticon-mail" /><Link href="mailto:gerow@gmail.com">gerow@gmail.com</Link></li>
                                     </ul>
                                 </div>
@@ -28,9 +28,6 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSear
                                             <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
                                             <li><Link href="#"><i className="fab fa-pinterest-p" /></Link></li>
                                         </ul>
-                                    </div>
-                                    <div className="header-top-btn">
-                                        <Link href="/contact"><i className="flaticon-briefcase" />Get a Quote</Link>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +114,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSear
                                                     </div>
                                                     <div className="content">
                                                         <span>Hot Line Number</span>
-                                                        <Link href="tel:0123456789">+123 8989 444</Link>
+                                                        <Link href="tel:+252615280901">+252 61 5280901</Link>
                                                     </div>
                                                 </li>
                                             </ul>

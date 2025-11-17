@@ -87,7 +87,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSear
                                                     </div>
                                                     <div className="content">
                                                         <span>Hot Line Number</span>
-                                                        <Link href="tel:0123456789">+123 8989 444</Link>
+                                                        <Link href="tel:+252615280901">+252 61 5280901</Link>
                                                     </div>
                                                 </li>
                                             </ul>
