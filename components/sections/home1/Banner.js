@@ -10,7 +10,7 @@ export default function Banner() {
                         <div className="col-lg-10 col-md-11">
                             <div className="banner-content-two text-center">
                                 <div className="hero-logo mb-3" data-aos="fade-up" data-aos-delay={0}>
-                                    <img src="/assets/img/logo/hero-logo.png" alt="OgaalSan Consultancy" />
+                                    <img src="/assets/img/logo/ogaalsan version 4-03.png" alt="OgaalSan Consultancy" />
                                 </div>
                                 <span className="sub-title" data-aos="fade-up" data-aos-delay={100}>ICT &amp; Digital Innovation Experts</span>
                                 <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Smart Digital Solutions For Your Business</h2>
