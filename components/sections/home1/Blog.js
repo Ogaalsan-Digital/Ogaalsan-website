@@ -8,9 +8,9 @@ export default function Blog() {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section-title-two text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title">News  Blogs</span>
-                                <h2 className="title tg-element-title">Read Our Latest Updates</h2>
-                                <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
+                                <span className="sub-title">News & Insights</span>
+                                <h2 className="title tg-element-title">Latest ICT & Digital Innovation Updates</h2>
+                                <p>Stay informed with the latest trends, insights, and best practices in ICT solutions, digital transformation, and technology innovation.</p>
                             </div>
                         </div>
                     </div>
@@ -19,11 +19,11 @@ export default function Blog() {
                             <div className="blog-post-item-two">
                                 <div className="blog-post-thumb-two">
                                     <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_img01.jpg" alt="" /></Link>
-                                    <Link href="/blog" className="tag">Development</Link>
+                                    <Link href="/blog" className="tag">ICT Solutions</Link>
                                 </div>
                                 <div className="blog-post-content-two">
-                                    <h2 className="title"><Link href="/blog-details">Meet AutoManage, the best AI management tools</Link></h2>
-                                    <p>Everything you need to start building area atching presence for your business.</p>
+                                    <h2 className="title"><Link href="/blog-details">Modernizing Your ICT Infrastructure: A Strategic Guide</Link></h2>
+                                    <p>Discover how to transform your organization's ICT infrastructure with modern solutions that drive efficiency and innovation.</p>
                                     <div className="blog-meta">
                                         <ul className="list-wrap">
                                             <li>
@@ -39,11 +39,11 @@ export default function Blog() {
                             <div className="blog-post-item-two">
                                 <div className="blog-post-thumb-two">
                                     <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_img02.jpg" alt="" /></Link>
-                                    <Link href="/blog" className="tag">Business</Link>
+                                    <Link href="/blog" className="tag">Training & Capacity</Link>
                                 </div>
                                 <div className="blog-post-content-two">
-                                    <h2 className="title"><Link href="/blog-details">Meet AutoManage, the best AI management tools</Link></h2>
-                                    <p>Everything you need to start building area atching presence for your business.</p>
+                                    <h2 className="title"><Link href="/blog-details">Building Digital Skills: Essential Training Programs for Your Team</Link></h2>
+                                    <p>Learn how comprehensive training and capacity building programs can empower your workforce with essential digital skills.</p>
                                     <div className="blog-meta">
                                         <ul className="list-wrap">
                                             <li>
@@ -59,11 +59,11 @@ export default function Blog() {
                             <div className="blog-post-item-two">
                                 <div className="blog-post-thumb-two">
                                     <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_img03.jpg" alt="" /></Link>
-                                    <Link href="/blog" className="tag">Tax Advisory</Link>
+                                    <Link href="/blog" className="tag">Digital Marketing</Link>
                                 </div>
                                 <div className="blog-post-content-two">
-                                    <h2 className="title"><Link href="/blog-details">Meet AutoManage, the best AI management tools</Link></h2>
-                                    <p>Everything you need to start building area atching presence for your business.</p>
+                                    <h2 className="title"><Link href="/blog-details">Data-Driven Digital Marketing Strategies That Deliver Results</Link></h2>
+                                    <p>Explore effective digital marketing approaches that leverage data analytics to grow your online presence and reach new markets.</p>
                                     <div className="blog-meta">
                                         <ul className="list-wrap">
                                             <li>

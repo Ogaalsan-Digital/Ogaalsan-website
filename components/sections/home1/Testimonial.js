@@ -64,8 +64,8 @@ export default function Testimonial() {
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
                             <div className="section-title-two white-title text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title">Our Testimonials</span>
-                                <h2 className="title tg-element-title">What Customers Say’s About Our Gerow Services</h2>
+                                <span className="sub-title">Client Testimonials</span>
+                                <h2 className="title tg-element-title">What Our Clients Say About OgaalSan's ICT Solutions</h2>
                             </div>
                         </div>
                     </div>
@@ -81,14 +81,14 @@ export default function Testimonial() {
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
                                         </div>
-                                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur.</p>
+                                        <p>"OgaalSan transformed our ICT infrastructure with their expert solutions. Their team delivered a comprehensive digital transformation that significantly improved our operational efficiency and business growth."</p>
                                         <div className="testimonial-avatar">
                                             <div className="avatar-thumb">
                                                 <img src="/assets/img/images/testi_avatar01.png" alt="" />
                                             </div>
                                             <div className="avatar-info">
-                                                <h2 className="title">Mr.Robey Alexa</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <h2 className="title">Ahmed Hassan</h2>
+                                                <span>IT Director, Tech Solutions Ltd</span>
                                             </div>
                                         </div>
                                     </div>
@@ -104,14 +104,14 @@ export default function Testimonial() {
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
                                         </div>
-                                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur.</p>
+                                        <p>"The training and capacity building program from OgaalSan was exceptional. Our team gained valuable digital skills that have directly contributed to our organization's innovation and productivity."</p>
                                         <div className="testimonial-avatar">
                                             <div className="avatar-thumb">
                                                 <img src="/assets/img/images/testi_avatar02.png" alt="" />
                                             </div>
                                             <div className="avatar-info">
-                                                <h2 className="title">Robert Fox</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <h2 className="title">Fatima Ali</h2>
+                                                <span>HR Manager, Digital Innovations Co.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -127,14 +127,14 @@ export default function Testimonial() {
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
                                         </div>
-                                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur.</p>
+                                        <p>"OgaalSan's digital marketing strategies helped us reach new markets and increase our online presence. Their data-driven approach delivered measurable results that exceeded our expectations."</p>
                                         <div className="testimonial-avatar">
                                             <div className="avatar-thumb">
                                                 <img src="/assets/img/images/testi_avatar01.png" alt="" />
                                             </div>
                                             <div className="avatar-info">
-                                                <h2 className="title">Mr.Robey Alexa</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <h2 className="title">Mohamed Ibrahim</h2>
+                                                <span>Marketing Director, Business Growth Inc.</span>
                                             </div>
                                         </div>
                                     </div>
