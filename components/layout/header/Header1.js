@@ -80,7 +80,7 @@ export default function Header1({
                                         <div className="logo">
                       <Link href="/">
                         <img
-                          src="/assets/img/logo/ogaalsan version 4-03.png"
+                          src="/assets/img/logo/logo-ogalsan.png"
                           alt="OgaalSan Consultancy Logo"
                         />
                       </Link>
@@ -157,7 +157,7 @@ export default function Header1({
                                         <div className="nav-logo">
                       <Link href="/">
                         <img
-                          src="/assets/img/logo/ogaalsan version 4-03.png"
+                          src="/assets/img/logo/logo-ogalsan.png"
                           alt="OgaalSan Consultancy Logo"
                         />
                       </Link>
