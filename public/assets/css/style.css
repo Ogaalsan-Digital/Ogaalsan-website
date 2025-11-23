@@ -4506,6 +4506,8 @@ label {
 
 .services-thumb-two img {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .services-thumb-two .item-shape {

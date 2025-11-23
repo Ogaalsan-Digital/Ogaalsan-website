@@ -40,7 +40,7 @@ export default function Services() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="services-item-two" onMouseEnter={() => handleToggle(1)} onMouseLeave={() => handleToggle(1)}>
                                 <div className="services-thumb-two">
-                                    <img src="/assets/img/services/h2_services_img01.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/person.jpg" alt="" />
                                     <div className="item-shape">
                                         <img src="/assets/img/services/services_item_shape.png" alt="" />
                                     </div>
@@ -57,7 +57,7 @@ export default function Services() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="services-item-two" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
                                 <div className="services-thumb-two">
-                                    <img src="/assets/img/services/h2_services_img02.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/flat.jpg" alt="" />
                                     <div className="item-shape">
                                         <img src="/assets/img/services/services_item_shape.png" alt="" />
                                     </div>
@@ -74,7 +74,7 @@ export default function Services() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="services-item-two" onMouseEnter={() => handleToggle(3)} onMouseLeave={() => handleToggle(3)}>
                                 <div className="services-thumb-two">
-                                    <img src="/assets/img/services/h2_services_img03.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/factory.jpg" alt="" />
                                     <div className="item-shape">
                                         <img src="/assets/img/services/services_item_shape.png" alt="" />
                                     </div>
@@ -91,7 +91,7 @@ export default function Services() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="services-item-two" onMouseEnter={() => handleToggle(4)} onMouseLeave={() => handleToggle(4)}>
                                 <div className="services-thumb-two">
-                                    <img src="/assets/img/services/h2_services_img04.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/creative.jpg" alt="" />
                                     <div className="item-shape">
                                         <img src="/assets/img/services/services_item_shape.png" alt="" />
                                     </div>
