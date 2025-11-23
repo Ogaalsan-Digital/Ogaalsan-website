@@ -29,7 +29,7 @@ export default function Home1() {
                 <Cta />
                 <Team />
                 <Testimonial />
-                <Pricing />
+                {/* <Pricing /> */}
                 <Blog />
                 <Request />
             </Layout>

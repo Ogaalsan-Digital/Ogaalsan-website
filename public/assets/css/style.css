@@ -2431,6 +2431,9 @@ label {
 
 .about-img-wrap-three img:nth-child(1) {
     border-radius: 100px 0 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .about-img-wrap-three img:nth-child(2) {
@@ -2440,6 +2443,9 @@ label {
     right: 0;
     bottom: 25px;
     z-index: 2;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .about-img-wrap-three .experience-wrap {

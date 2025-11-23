@@ -7,13 +7,13 @@ export default function About() {
             <div className="col-lg-6 col-md-9">
               <div className="about-img-wrap-three">
                 <img
-                  src="/assets/img/images/h2_about_img01.jpg"
+                  src="/assets/img/ogalsan/digital.png"
                   alt=""
                   data-aos="fade-down-right"
                   data-aos-delay={0}
                 />
                 <img
-                  src="/assets/img/images/h2_about_img02.jpg"
+                  src="/assets/img/ogalsan/Growth .jpg"
                   alt=""
                   data-aos="fade-left"
                   data-aos-delay={400}
