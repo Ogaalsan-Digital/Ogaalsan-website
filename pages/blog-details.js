@@ -1,11 +1,12 @@
 import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function BlogDetails() {
     return (
         <>
-            <Layout headerStyle={6} footerStyle={1} breadcrumbTitle="Blog Details">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
                 <section className="blog-details-area pt-120 pb-120">
                     <div className="container">
                         <div className="blog-details-wrap">
@@ -186,7 +187,11 @@ export default function BlogDetails() {
                                             <div className="rc-post-wrap">
                                                 <div className="rc-post-item">
                                                     <div className="thumb">
-                                                        <Link href="/blog-details"><img src="/assets/img/blog/rc_post01.jpg" alt="" /></Link>
+                                                        <Link href="/blog-details"> <Image
+                                                            width="0"
+                                                            height="0"
+                                                            sizes="100vw"
+                                                            style={{ width: "auto", height: "auto" }} src="/assets/img/blog/rc_post01.jpg" alt="" /></Link>
                                                     </div>
                                                     <div className="content">
                                                         <span className="date"><i className="far fa-calendar" />22 Jan, 2023</span>
@@ -195,7 +200,11 @@ export default function BlogDetails() {
                                                 </div>
                                                 <div className="rc-post-item">
                                                     <div className="thumb">
-                                                        <Link href="/blog-details"><img src="/assets/img/blog/rc_post02.jpg" alt="" /></Link>
+                                                        <Link href="/blog-details"> <Image
+                                                            width="0"
+                                                            height="0"
+                                                            sizes="100vw"
+                                                            style={{ width: "auto", height: "auto" }} src="/assets/img/blog/rc_post02.jpg" alt="" /></Link>
                                                     </div>
                                                     <div className="content">
                                                         <span className="date"><i className="far fa-calendar" />22 Jan, 2023</span>
@@ -204,7 +213,11 @@ export default function BlogDetails() {
                                                 </div>
                                                 <div className="rc-post-item">
                                                     <div className="thumb">
-                                                        <Link href="/blog-details"><img src="/assets/img/blog/rc_post03.jpg" alt="" /></Link>
+                                                        <Link href="/blog-details"> <Image
+                                                            width="0"
+                                                            height="0"
+                                                            sizes="100vw"
+                                                            style={{ width: "auto", height: "auto" }} src="/assets/img/blog/rc_post03.jpg" alt="" /></Link>
                                                     </div>
                                                     <div className="content">
                                                         <span className="date"><i className="far fa-calendar" />22 Jan, 2023</span>
@@ -213,7 +226,11 @@ export default function BlogDetails() {
                                                 </div>
                                                 <div className="rc-post-item">
                                                     <div className="thumb">
-                                                        <Link href="/blog-details"><img src="/assets/img/blog/rc_post04.jpg" alt="" /></Link>
+                                                        <Link href="/blog-details"> <Image
+                                                            width="0"
+                                                            height="0"
+                                                            sizes="100vw"
+                                                            style={{ width: "auto", height: "auto" }} src="/assets/img/blog/rc_post04.jpg" alt="" /></Link>
                                                     </div>
                                                     <div className="content">
                                                         <span className="date"><i className="far fa-calendar" />22 Jan, 2023</span>

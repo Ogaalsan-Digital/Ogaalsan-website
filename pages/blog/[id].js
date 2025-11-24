@@ -16,7 +16,7 @@ export default function BlogDetails() {
 
     return (
         <>
-            <Layout headerStyle={6} footerStyle={1} breadcrumbTitle="Blog Details">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
                 {blogPost && (
                     <>
                         <section className="blog-details-area pt-120 pb-120">
