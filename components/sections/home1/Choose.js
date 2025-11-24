@@ -1,9 +1,7 @@
-import VideoPopup from "@/components/elements/PopupVideo"
-
 export default function Choose() {
     return (
         <>
-            <section className="choose-area jarallax choose-bg" data-background="/assets/img/bg/choose_bg.jpg">
+            <section className="choose-area jarallax choose-bg" data-background="/assets/img/ogalsan/labtob.jpg">
                 <div className="choose-shape">
                     <img src="/assets/img/images/choose_shape.png" alt="" data-aos="fade-right" data-aos-delay={0} />
                 </div>
@@ -15,7 +13,6 @@ export default function Choose() {
                                     <h2 className="title tg-element-title">We'll Ensure You Always Get the Best ICT Solutions & Digital Innovation Support.</h2>
                                 </div>
                                 <p>OgaalSan Consultancy delivers cutting-edge ICT strategies, comprehensive training programs, and digital transformation solutions that drive business growth and innovation.</p>
-                                <VideoPopup style={2} />
                             </div>
                         </div>
                         <div className="col-lg-6">

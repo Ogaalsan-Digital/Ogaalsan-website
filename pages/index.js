@@ -21,7 +21,7 @@ export default function Home1() {
                 <Banner />
                 <Features />
                 <About />
-                <Brand />
+                {/* <Brand /> */}
                 <Services />
                 <Overview />
                 <Choose />
