@@ -4,6 +4,13 @@ import data from "@/util/blog.json"
 export default function Blog() {
     const latestPosts = data.slice(0, 3)
 
+    const getThumbnailSrc = (post) => {
+        if (post.id === 1) return "/assets/img/ogalsan/infrustructure.jpg"
+        if (post.id === 2) return "/assets/img/ogalsan/process.jpg"
+        if (post.id === 3) return "/assets/img/ogalsan/training.jpg"
+        return `/assets/img/blog/${post.img}`
+    }
+
     return (
         <>
             <section className="blog-area-two blog-bg-two" data-background="/assets/img/bg/h2_blog_bg.jpg">
@@ -23,7 +30,7 @@ export default function Blog() {
                                 <div className="blog-post-item-two">
                                     <div className="blog-post-thumb-two">
                                         <Link href={`/blog/${post.id}`}>
-                                            <img src={`/assets/img/blog/${post.img}`} alt={post.title} />
+                                            <img src={getThumbnailSrc(post)} alt={post.title} />
                                         </Link>
                                         <Link href="/blog" className="tag">
                                             {post.category}

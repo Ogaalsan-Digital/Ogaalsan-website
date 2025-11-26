@@ -26,7 +26,19 @@ export default function BlogDetails() {
                                     <div className="row justify-content-center">
                                         <div className="col-71">
                                             <div className="blog-details-thumb">
-                                                <img src={`/assets/img/blog/${blogPost.img}`} className="w-100" alt="" />
+                                                <img
+                                                    src={
+                                                        blogPost.id === 1
+                                                            ? "/assets/img/ogalsan/infrustructure.jpg"
+                                                            : blogPost.id === 2
+                                                            ? "/assets/img/ogalsan/process.jpg"
+                                                            : blogPost.id === 3
+                                                            ? "/assets/img/ogalsan/training.jpg"
+                                                            : `/assets/img/blog/${blogPost.img}`
+                                                    }
+                                                    className="w-100"
+                                                    alt={blogPost.title}
+                                                />
                                             </div>
                                             <div className="blog-details-content">
                                                 <h2 className="title">{blogPost.title}</h2>
