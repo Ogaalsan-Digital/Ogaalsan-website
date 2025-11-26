@@ -3340,6 +3340,9 @@ label {
 
 .overview-img-wrap img:nth-child(1) {
     border-radius: 280px;
+    width: 350px;
+    height: 520px;
+    object-fit: cover;
 }
 
 .overview-img-wrap img:nth-child(2) {
