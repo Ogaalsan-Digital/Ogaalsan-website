@@ -24,7 +24,7 @@ export default function Project() {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="project-item-two">
                                 <div className="project-thumb-two">
-                                    <img src="/assets/img/project/h2_project_img01.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/servers.jpg" alt="ICT Infrastructure Modernization" />
                                 </div>
                                 <div className="project-content-two">
                                     <h2 className="title"><Link href="/project-details">ICT Infrastructure Modernization</Link></h2>
@@ -36,7 +36,7 @@ export default function Project() {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="project-item-two">
                                 <div className="project-thumb-two">
-                                    <img src="/assets/img/project/h2_project_img02.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/training-2.jpg" alt="Digital Training Program" />
                                 </div>
                                 <div className="project-content-two">
                                     <h2 className="title"><Link href="/project-details">Digital Training Program</Link></h2>
@@ -48,7 +48,7 @@ export default function Project() {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="project-item-two">
                                 <div className="project-thumb-two">
-                                    <img src="/assets/img/project/h2_project_img03.jpg" alt="" />
+                                    <img src="/assets/img/ogalsan/marketing.jpg" alt="Digital Marketing Campaign" />
                                 </div>
                                 <div className="project-content-two">
                                     <h2 className="title"><Link href="/project-details">Digital Marketing Campaign</Link></h2>
