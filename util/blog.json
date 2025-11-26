@@ -1,74 +1,110 @@
 [
     {
         "id": 1,
-        "title": "Scientists speculate that ours might not be held",
+        "title": "How Modern ICT Infrastructure Transforms Public Services",
         "img": "h3_blog_img01.jpg",
-        "category": "Development",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "ICT Solutions",
+        "author": "OgaalSan Team",
+        "date": "12 Jan 2025",
+        "content": [
+            "Modern ICT infrastructure is the backbone of efficient public service delivery. When networks, systems, and data platforms are reliable and secure, government institutions can respond faster, reduce paperwork, and provide citizens with easier access to essential services.",
+            "By investing in scalable infrastructure, standardising systems across departments, and improving connectivity in remote areas, organisations can unlock better transparency, accountability, and long‑term cost savings."
+        ]
     },
     {
         "id": 2,
-        "title": "The Multiverse is the collection of alternate universes",
+        "title": "Designing a Practical Digital Transformation Roadmap",
         "img": "h3_blog_img02.jpg",
-        "category": "Business",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Digital Transformation",
+        "author": "OgaalSan Team",
+        "date": "28 Jan 2025",
+        "content": [
+            "A successful digital transformation roadmap starts with a clear understanding of your organisation’s vision, current ICT maturity, and the gaps that are slowing you down. Instead of buying tools first, you align technology initiatives with the real challenges your teams and beneficiaries face.",
+            "Prioritising quick wins, setting realistic milestones, and involving stakeholders early helps build trust in the process. With the right roadmap, every new system and platform directly supports better services, stronger collaboration, and measurable impact."
+        ]
     },
     {
         "id": 3,
-        "title": "That share a universal hierarchy a large variety of these",
+        "title": "Building Digital Skills: Training Strategies That Actually Work",
         "img": "h3_blog_img03.jpg",
-        "category": "Tax Advisory",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Training & Capacity Building",
+        "author": "OgaalSan Team",
+        "date": "10 Feb 2025",
+        "content": [
+            "Digital training only works when it is practical, hands‑on, and adapted to the daily tasks of your team. Instead of generic workshops, organisations need role‑based programmes that show staff exactly how to use tools to deliver better results.",
+            "Blending classroom sessions with mentoring, on‑the‑job coaching, and follow‑up support ensures that new skills are actually applied. Over time, this creates a culture of continuous learning and innovation across the organisation."
+        ]
     },
     {
         "id": 4,
-        "title": "Universes were originated from another due to a major",
+        "title": "From Paper to Platforms: Digitising Core Business Processes",
         "img": "h3_blog_img01.jpg",
-        "category": "Consultancy",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Business Process Digitisation",
+        "author": "OgaalSan Team",
+        "date": "24 Feb 2025",
+        "content": [
+            "Many organisations still rely on paper forms, manual approvals, and spreadsheets that slow down decision‑making. Digitising these core processes can dramatically reduce errors, improve visibility, and free staff to focus on higher‑value work.",
+            "The key is to start with the processes that matter most—such as procurement, case management, or service requests—and redesign them around the user journey. Simple workflows, clear responsibilities, and integrated systems lead to faster, more reliable outcomes."
+        ]
     },
     {
         "id": 5,
-        "title": "A hypothetical collection of potentially diverse",
+        "title": "Data-Driven Decisions: Getting Value From Your Organisation’s Data",
         "img": "h3_blog_img02.jpg",
-        "category": "Development",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Data & Analytics",
+        "author": "OgaalSan Team",
+        "date": "05 Mar 2025",
+        "content": [
+            "Every organisation collects data, but few turn it into actionable insights. Effective data strategies focus on defining the key questions you need answered, then structuring data collection, storage, and reporting around those priorities.",
+            "By building simple dashboards, standardising reports, and improving data quality, leaders can make faster, evidence‑based decisions. Over time, this creates a culture where teams regularly use data to test ideas, track progress, and improve services."
+        ]
     },
     {
         "id": 6,
-        "title": "Stanford physicists Andrei Linde In a new study",
+        "title": "Cloud vs On-Premise: Choosing the Right ICT Architecture",
         "img": "h3_blog_img03.jpg",
-        "category": "Business",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Cloud & Infrastructure",
+        "author": "OgaalSan Team",
+        "date": "18 Mar 2025",
+        "content": [
+            "Choosing between cloud and on‑premise infrastructure is not just a technical question—it’s a strategic one. Cloud platforms can reduce upfront costs, improve scalability, and simplify maintenance, while on‑premise systems may offer more control in specific regulatory or connectivity contexts.",
+            "The best approach often combines both models in a hybrid architecture. By assessing your applications, security requirements, and budget, you can design an ICT environment that is secure, resilient, and ready to grow with your organisation."
+        ]
     },
     {
         "id": 7,
-        "title": "Accessible to telescopes, is about 90 billion years",
+        "title": "Digital Marketing Basics for Growing Somali Businesses",
         "img": "h3_blog_img01.jpg",
-        "category": "Tax Advisory",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "Digital Marketing",
+        "author": "OgaalSan Team",
+        "date": "01 Apr 2025",
+        "content": [
+            "For many Somali businesses, the first step in digital marketing is simply being discoverable online. A clear brand, active social media presence, and up‑to‑date contact information make it easier for customers to find and trust you.",
+            "From there, consistent content, targeted campaigns, and basic analytics can help you understand what works. Even small, well‑planned digital efforts can significantly increase visibility, customer engagement, and sales."
+        ]
     },
     {
         "id": 8,
-        "title": "Observable universes each of which would comprise",
+        "title": "Common ICT Challenges in NGOs and How to Solve Them",
         "img": "h3_blog_img02.jpg",
-        "category": "Consultancy",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "category": "NGO & Development",
+        "author": "OgaalSan Team",
+        "date": "15 Apr 2025",
+        "content": [
+            "NGOs often struggle with limited budgets, ageing hardware, and fragmented systems that don’t communicate with each other. These challenges can slow down project delivery, reporting, and coordination with partners.",
+            "By standardising tools, investing in staff training, and prioritising a few high‑impact ICT improvements, NGOs can strengthen accountability and service delivery. Strategic partnerships and phased implementation make digital change more manageable and sustainable."
+        ]
     },
     {
         "id": 9,
-        "title": "Observable universes each of which would comprise",
-        "img": "h3_blog_img02.jpg",
-        "category": "Finance",
-        "author": "miranda h.",
-        "date": "25 April 2023"
+        "title": "Planning Your Next ICT Project: A Simple Checklist",
+        "img": "h3_blog_img03.jpg",
+        "category": "Project Planning",
+        "author": "OgaalSan Team",
+        "date": "30 Apr 2025",
+        "content": [
+            "Successful ICT projects start with a clear problem statement, defined objectives, and realistic expectations about time and cost. Skipping these basics often leads to scope creep, frustration, and systems that don’t fit user needs.",
+            "A simple checklist—covering requirements, stakeholders, risks, training, and support—can keep everyone aligned from planning to rollout. With the right preparation, your next ICT initiative is far more likely to deliver lasting value."
+        ]
     }
 ]
