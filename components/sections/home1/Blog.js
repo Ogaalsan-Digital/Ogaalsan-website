@@ -45,7 +45,7 @@ export default function Blog() {
                                             <ul className="list-wrap">
                                                 <li>
                                                     <Link href={`/blog/${post.id}`}>
-                                                        <img src="/assets/img/blog/blog_avatar01.png" alt="" />
+                                                        <img src={post.authorImg || "/assets/img/ogalsan/image (8).png"} alt={post.author} />
                                                         {post.author}
                                                     </Link>
                                                 </li>

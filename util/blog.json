@@ -5,6 +5,7 @@
         "img": "h3_blog_img01.jpg",
         "category": "ICT Solutions",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "12 Jan 2025",
         "content": [
             "For Somali businesses, NGOs, and public institutions, reliable ICT infrastructure is the foundation of every modern service. When networks, servers, and core systems are well‑designed, teams can collaborate faster, reduce manual paperwork, and serve customers and beneficiaries more efficiently.",
@@ -17,6 +18,7 @@
         "img": "h3_blog_img02.jpg",
         "category": "Digital Transformation",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "28 Jan 2025",
         "content": [
             "Digital transformation is not about buying the latest tools—it’s about aligning technology with your real challenges and opportunities. We start by understanding your vision, operations, and current ICT maturity, then identify gaps that slow down your services or projects.",
@@ -29,6 +31,7 @@
         "img": "h3_blog_img03.jpg",
         "category": "Training & Capacity Building",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "10 Feb 2025",
         "content": [
             "Many staff are expected to use digital tools without ever receiving proper, context‑specific training. Our Training & Capacity Building programs focus on real tasks—such as managing data, using business applications, or collaborating online—so participants immediately see the value.",
@@ -41,6 +44,7 @@
         "img": "h3_blog_img01.jpg",
         "category": "Business Process Digitisation",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "24 Feb 2025",
         "content": [
             "Across Somalia, many organisations still rely on paper forms, manual approvals, and disconnected spreadsheets that make it hard to track performance. Digitising these core processes can reduce errors, speed up decisions, and give managers real‑time visibility on what is happening.",
@@ -53,6 +57,7 @@
         "img": "h3_blog_img02.jpg",
         "category": "Data & Analytics",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "05 Mar 2025",
         "content": [
             "Your organisation already collects data—from finance records and project reports to customer interactions—but it often remains scattered and under‑used. The first step is to clarify the key questions you need answered, then structure data collection and reporting around those priorities.",
@@ -65,6 +70,7 @@
         "img": "h3_blog_img03.jpg",
         "category": "Cloud & Infrastructure",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "18 Mar 2025",
         "content": [
             "Deciding between cloud and on‑premise systems in Somalia depends on connectivity, security, and budget. Cloud services can reduce upfront costs and simplify maintenance, while local infrastructure may be better for sensitive data or areas with unstable internet.",
@@ -77,6 +83,7 @@
         "img": "h3_blog_img01.jpg",
         "category": "Digital Marketing",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "01 Apr 2025",
         "content": [
             "For many Somali businesses, the first step in digital marketing is simply being visible and trustworthy online. Clear branding, active social media profiles, and accurate contact details make it easier for customers to find you and reach out.",
@@ -89,6 +96,7 @@
         "img": "h3_blog_img02.jpg",
         "category": "NGO & Development",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "15 Apr 2025",
         "content": [
             "NGOs in Somalia often operate with limited budgets, ageing hardware, and different systems that do not talk to each other. These issues can delay reporting, slow project delivery, and weaken coordination with donors and partners.",
@@ -101,6 +109,7 @@
         "img": "h3_blog_img03.jpg",
         "category": "Project Planning",
         "author": "OgaalSan Team",
+        "authorImg": "/assets/img/ogalsan/image (8).png",
         "date": "30 Apr 2025",
         "content": [
             "Successful ICT projects in Somalia start with a clear problem statement, realistic scope, and shared expectations across all stakeholders. Skipping this preparation often leads to delays, unexpected costs, and systems that users do not fully adopt.",

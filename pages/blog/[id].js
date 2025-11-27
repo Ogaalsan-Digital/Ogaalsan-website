@@ -50,8 +50,12 @@ export default function BlogDetails() {
                             </li>
                             <li>
                               <img
-                                src="/assets/img/blog/blog_avatar01.png"
-                                alt=""
+                                className="blog-meta-author-img"
+                                src={
+                                  blogPost.authorImg ||
+                                  "/assets/img/ogalsan/image (8).png"
+                                }
+                                alt={blogPost.author}
                               />{" "}
                               by{" "}
                               <Link href={`/blog/${blogPost.id}`}>
@@ -112,12 +116,18 @@ export default function BlogDetails() {
                           </div>
                         </div>
                       </div>
-                      <div className="blog-avatar-wrap mb-65">
-                        <div className="blog-avatar-img">
-                          <Link href="#">
-                            <img src="/assets/img/blog/avatar.png" alt="img" />
-                          </Link>
-                        </div>
+                       <div className="blog-avatar-wrap mb-65">
+                         <div className="blog-avatar-img">
+                           <Link href="#">
+                             <img
+                               src={
+                                 blogPost.authorImg ||
+                                 "/assets/img/ogalsan/image (8).png"
+                               }
+                               alt={blogPost.author}
+                             />
+                           </Link>
+                         </div>
                         <div className="blog-avatar-info">
                           <span className="designation">Author</span>
                           <h4 className="name">

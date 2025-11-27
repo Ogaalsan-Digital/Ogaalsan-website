@@ -9885,3 +9885,13 @@ label {
         transform: rotate(-360deg);
     }
 }
+
+/* OgaalSan blog meta author avatar size */
+.blog-meta-three .blog-meta-author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+}
