@@ -97,16 +97,16 @@ export default function Header1({
                           <Link href="/services">Services</Link>
                                                     <ul className="sub-menu">
                             <li>
-                              <Link href="/services">ICT Solutions</Link>
+                              <Link href="/services-details">ICT Strategy &amp; Consulting</Link>
                             </li>
                             <li>
-                              <Link href="/services">Training & Capacity Building</Link>
+                              <Link href="/services-details-2">Training &amp; Capacity Building</Link>
                                                 </li>
                             <li>
-                              <Link href="/services">Business Development</Link>
+                              <Link href="/services-details-3">Digital Business Development</Link>
                                                 </li>
                             <li>
-                              <Link href="/services">Digital Marketing</Link>
+                              <Link href="/services-details">Digital Marketing &amp; Growth</Link>
                                                         </li>
                                                             </ul>
                                                         </li>

@@ -1,3 +1,5 @@
+import Accordion from "@/components/elements/Accordion"
+import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
@@ -5,7 +7,7 @@ import Link from "next/link"
 export default function ServiceDetails3() {
     return (
         <>
-            <Layout headerStyle={6} footerStyle={1} breadcrumbTitle="Service Details">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Service Details">
                 <div>
                     <section className="services-details-area pt-120 pb-120">
                         <div className="container">
@@ -13,93 +15,64 @@ export default function ServiceDetails3() {
                                 <div className="col-71 order-0 order-lg-2">
                                     <div className="services-details-wrap">
                                         <div className="services-details-thumb">
-                                            <img src="/assets/img/services/services_details03.jpg" alt="" />
+                                            <img src="/assets/img/ogalsan/factory.jpg" alt="Digital Business Development" />
                                         </div>
                                         <div className="services-details-content">
-                                            <h2 className="title">Make better products make products better</h2>
-                                            <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia- list advice beyond the scope of our own expertise. That’s why we’ve developed close working relationships with a number of strategic partner.</p>
-                                            <div className="sd-inner-wrap sd-inner-wrap-three">
+                                            <h2 className="title">Digital Business Development for Somali Organisations</h2>
+                                            <p>At OgaalSan, we help Somali businesses and organisations design new digital services, optimize core processes, and unlock growth opportunities through technology. We work with you to identify where digital innovation can create the most value—whether in customer service, operations, or new revenue streams.</p>
+                                            <p>Our approach combines business analysis, user-centered design, and practical implementation support. We focus on solutions that fit your context, budget, and team capacity, ensuring that every digital initiative delivers measurable impact.</p>
+                                            <div className="sd-inner-wrap">
                                                 <div className="row align-items-center">
-                                                    <div className="col-43">
-                                                        <div className="services-details-list-two">
+                                                    <div className="col-56">
+                                                        <div className="content">
+                                                            <h3 className="title-two">Digital solutions that drive real growth</h3>
+                                                            <p>We help you map your key workflows, identify bottlenecks, and redesign processes using simple, user-friendly digital tools. The result is faster service delivery, clearer responsibilities, and better experiences for the people you serve.</p>
                                                             <ul className="list-wrap">
-                                                                <li>
-                                                                    <div className="icon">
-                                                                        <i className="flaticon-piggy-bank" />
-                                                                    </div>
-                                                                    <div className="content">
-                                                                        <h5 className="title">Finance Consulting</h5>
-                                                                        <p>eed are little help fromery fri of anery integrated</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div className="icon">
-                                                                        <i className="flaticon-calculator" />
-                                                                    </div>
-                                                                    <div className="content">
-                                                                        <h5 className="title">Tax Calculation</h5>
-                                                                        <p>eed are little help fromery fri of anery integrated</p>
-                                                                    </div>
-                                                                </li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Digital product &amp; service design</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Process optimization &amp; automation</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Innovation &amp; go-to-market support</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Business model transformation</li>
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div className="col-57">
-                                                        <div className="content">
-                                                            <h3 className="title-two">Raise capital faster  negotiate on your own terms</h3>
-                                                            <p>when an unknown printer took a galley offer typey anddey scrambled  make a type specimen bookhas survived not only five when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
-                                                            <ul className="list-wrap">
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />100% Better results</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Valuable Ideas</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Budget Friendly Theme</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Happy Customers</li>
-                                                            </ul>
+                                                    <div className="col-44">
+                                                        <div className="thumb">
+                                                            <img src="/assets/img/ogalsan/factory.jpg" alt="Digital Business Development" />
+                                                            <VideoPopup style={3} />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="industrial-working-wrap">
-                                                <h2 className="title-two">Quality Industrial Working</h2>
-                                                <p className="info-one">when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        <img src="/assets/img/services/sd_working_img01.jpg" alt="" />
-                                                    </div>
-                                                    <div className="col-md-6">
-                                                        <img src="/assets/img/services/sd_working_img02.jpg" alt="" />
-                                                    </div>
+                                            <p>Our digital business development services help you move from paper-based processes to efficient digital platforms, from manual workflows to automated systems, and from traditional services to innovative digital offerings that meet the needs of today's customers and beneficiaries.</p>
+                                            <div className="company-benefit-wrap">
+                                                <h2 className="title-two">Why Choose OgaalSan for Digital Business Development</h2>
+                                                <p>Working with OgaalSan gives you access to business development experts who understand the Somali market, proven methodologies for digital transformation, and practical support that helps you launch and scale new digital initiatives successfully.</p>
+                                                <div className="accordion-wrap-three">
+                                                    <Accordion />
                                                 </div>
-                                                <p className="info-two">when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-29">
                                     <aside className="services-sidebar">
-                                        <div className="services-widget">
-                                            <h4 className="sw-title">Our Services</h4>
-                                            <div className="services-cat-list">
-                                                <ul className="list-wrap">
-                                                    <li className="active"><Link href="/services-details">business Analysis <i className="flaticon-right-arrow" /></Link></li>
-                                                    <li><Link href="/services-details">Tax Strategy <i className="flaticon-right-arrow" /></Link></li>
-                                                    <li><Link href="/services-details">Financial Advisory <i className="flaticon-right-arrow" /></Link></li>
-                                                    <li><Link href="/services-details">business Growth <i className="flaticon-right-arrow" /></Link></li>
-                                                    <li><Link href="/services-details">Innovation Idea <i className="flaticon-right-arrow" /></Link></li>
-                                                    <li><Link href="/services-details">Market Research <i className="flaticon-right-arrow" /></Link></li>
-                                                </ul>
-                                            </div>
+                                        <div className="services-cat-list mb-30">
+                                            <ul className="list-wrap">
+                                                <li><Link href="/services-details">ICT Strategy &amp; Consulting <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details-2">Training &amp; Capacity Building <i className="flaticon-right-arrow" /></Link></li>
+                                                <li className="active"><Link href="/services-details-3">Digital Business Development <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Digital Marketing &amp; Growth <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Cloud &amp; Infrastructure Services <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details">Data &amp; Analytics Solutions <i className="flaticon-right-arrow" /></Link></li>
+                                            </ul>
                                         </div>
                                         <div className="services-widget">
-                                            <h4 className="sw-title">Brochure</h4>
+                                            <h4 className="sw-title">Service Brochure</h4>
                                             <div className="services-brochure-wrap">
-                                                <p>when an unknown printer took ga lley offer typey anddey.</p>
-                                                <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-pdf" />PDF. Download</Link>
-                                                <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-alt" />DOC. Download</Link>
+                                                <p>Download our digital business development services profile to explore how OgaalSan can support your organisation's growth initiatives.</p>
+                                                <Link href="#" className="download-btn"><i className="far fa-file-pdf" />PDF. Download</Link>
+                                                <Link href="#" className="download-btn"><i className="far fa-file-alt" />DOC. Download</Link>
                                             </div>
-                                        </div>
-                                        <div className="services-widget services-sidebar-contact">
-                                            <h4 className="title">If You Need Any Help Contact With Us</h4>
-                                            <Link href="tel:0123456789"><i className="flaticon-phone-call" /> +91 705 2101 786</Link>
                                         </div>
                                         <div className="services-widget">
                                             <h4 className="sw-title">Get a Free Quote</h4>
@@ -127,7 +100,7 @@ export default function ServiceDetails3() {
                     {/* brand-area */}
                     <div className="brand-area-seven">
                         <div className="container">
-                            <BrandSlider />
+                            {/* <BrandSlider /> */}
                         </div>
                     </div>
                 </div>
