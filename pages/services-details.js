@@ -15,38 +15,38 @@ export default function ServiceDetails() {
                                 <div className="col-71 order-0 order-lg-2">
                                     <div className="services-details-wrap">
                                         <div className="services-details-thumb">
-                                            <img src="/assets/img/services/services_details01.jpg" alt="" />
+                                            <img src="/assets/img/ogalsan/person.jpg" alt="ICT Strategy & Consulting" />
                                         </div>
                                         <div className="services-details-content">
-                                            <h2 className="title">ICT Strategy &amp; Consulting for Sustainable Digital Growth</h2>
-                                            <p>We work with your team to understand your current ICT landscape, identify gaps and opportunities, and design a practical digital roadmap aligned with your business goals.</p>
-                                            <p>Our consultants bring experience across infrastructure, cloud, applications, data, and security, helping you prioritize investments and reduce risk while accelerating innovation.</p>
+                                            <h2 className="title">ICT Strategy &amp; Consulting for Somali Organisations</h2>
+                                            <p>At OgaalSan, we work with Somali businesses, NGOs, and public institutions to assess your current ICT systems, identify gaps and opportunities, and design a practical digital roadmap that aligns technology with your real challenges and goals.</p>
+                                            <p>Our consultants understand the unique context of operating in Somalia—from connectivity constraints to budget realities—and help you prioritize ICT investments that deliver measurable impact while building resilience and scalability.</p>
                                             <div className="sd-inner-wrap">
                                                 <div className="row align-items-center">
                                                     <div className="col-56">
                                                         <div className="content">
-                                                            <h3 className="title-two">Turn technology into a competitive advantage</h3>
-                                                            <p>We translate business requirements into clear ICT architectures, implementation plans, and measurable outcomes so you can move from ideas to execution with confidence.</p>
+                                                            <h3 className="title-two">Practical ICT solutions that fit your context</h3>
+                                                            <p>We translate your operational needs into clear ICT architectures, step-by-step implementation plans, and realistic timelines. Every recommendation considers your local infrastructure, team capacity, and budget constraints.</p>
                                                             <ul className="list-wrap">
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Clear ICT vision &amp; roadmap</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Optimized infrastructure &amp; cloud strategy</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Improved security, resilience &amp; compliance</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Better user and customer experience</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Clear ICT vision &amp; practical roadmap</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Infrastructure &amp; cloud strategy for Somalia</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Security, resilience &amp; compliance support</li>
+                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Better service delivery &amp; user experience</li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div className="col-44">
                                                         <div className="thumb">
-                                                            <img src="/assets/img/services/sd_video_img.jpg" alt="" />
+                                                            <img src="/assets/img/ogalsan/person.jpg" alt="ICT Strategy Consulting" />
                                                             <VideoPopup style={3} />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p>Our ICT advisory team helps you make the right technology choices, structure implementation projects, and ensure that every investment contributes to performance, agility, and long-term value.</p>
+                                            <p>Our ICT advisory team helps you make informed technology choices, structure implementation projects that fit your capacity, and ensure every investment contributes to better operations, stronger accountability, and long-term sustainability.</p>
                                             <div className="company-benefit-wrap">
-                                                <h2 className="title-two">Key Benefits of Our ICT Consulting</h2>
-                                                <p>Engaging with us gives you access to senior ICT experts, proven methodologies, and practical guidance that reduces risk and speeds up your digital transformation journey.</p>
+                                                <h2 className="title-two">Why Choose OgaalSan for ICT Consulting</h2>
+                                                <p>Working with OgaalSan gives you access to ICT experts who understand the Somali context, proven methodologies adapted for local conditions, and practical guidance that reduces risk and accelerates your digital transformation journey.</p>
                                                 <div className="accordion-wrap-three">
                                                     <Accordion />
                                                 </div>
@@ -59,19 +59,19 @@ export default function ServiceDetails() {
                                         <div className="services-cat-list mb-30">
                                             <ul className="list-wrap">
                                                 <li className="active"><Link href="/services-details">ICT Strategy &amp; Consulting <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Training &amp; Capacity Building <i className="flaticon-right-arrow" /></Link></li>
-                                                <li><Link href="/services-details">Digital Business Development <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details-2">Training &amp; Capacity Building <i className="flaticon-right-arrow" /></Link></li>
+                                                <li><Link href="/services-details-3">Digital Business Development <i className="flaticon-right-arrow" /></Link></li>
                                                 <li><Link href="/services-details">Digital Marketing &amp; Growth <i className="flaticon-right-arrow" /></Link></li>
                                                 <li><Link href="/services-details">Cloud &amp; Infrastructure Services <i className="flaticon-right-arrow" /></Link></li>
                                                 <li><Link href="/services-details">Data &amp; Analytics Solutions <i className="flaticon-right-arrow" /></Link></li>
                                             </ul>
                                         </div>
                                         <div className="services-widget">
-                                            <h4 className="sw-title">Brochure</h4>
+                                            <h4 className="sw-title">Service Brochure</h4>
                                             <div className="services-brochure-wrap">
-                                                <p>Download our ICT services profile to explore how we can support your next digital initiative.</p>
-                                                <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-pdf" />PDF. Download</Link>
-                                                <Link href="assets/img/services/services_details01.jpg" target="_blank" download className="download-btn"><i className="far fa-file-alt" />DOC. Download</Link>
+                                                <p>Download our ICT services profile to explore how OgaalSan can support your organisation's digital transformation journey.</p>
+                                                <Link href="#" className="download-btn"><i className="far fa-file-pdf" />PDF. Download</Link>
+                                                <Link href="#" className="download-btn"><i className="far fa-file-alt" />DOC. Download</Link>
                                             </div>
                                         </div>
                                         <div className="services-widget">
@@ -100,7 +100,7 @@ export default function ServiceDetails() {
                     {/* brand-area */}
                     <div className="brand-area-seven">
                         <div className="container">
-                            <BrandSlider />
+                            {/* <BrandSlider /> */}
                         </div>
                     </div>
                 </div>
