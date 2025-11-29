@@ -193,7 +193,9 @@ export default function BlogDetails() {
                         <div className="blog-widget">
                           <h4 className="bw-title">Recent Posts</h4>
                           <div className="rc-post-wrap">
-                            {data.slice(0, 4).map((post) => (
+                            {data.slice(0, 4).map((post) => {
+                              const imageSrc = post.img?.startsWith('/assets') ? post.img : `/assets/img/blog/${post.img}`
+                              return (
                               <div key={post.id} className="rc-post-item">
                                 <div className="thumb">
                                   <Link href={`/blog/${post.id}`}>
@@ -203,7 +205,7 @@ export default function BlogDetails() {
                                       height="0"
                                       sizes="100vw"
                                       style={{ width: "auto", height: "auto" }}
-                                      src={`/assets/img/blog/${post.img}`}
+                                      src={imageSrc}
                                       alt=""
                                     />
                                   </Link>
@@ -220,7 +222,8 @@ export default function BlogDetails() {
                                   </h2>
                                 </div>
                               </div>
-                            ))}
+                              )
+                            })}
                           </div>
                         </div>
                         <div className="blog-widget">
