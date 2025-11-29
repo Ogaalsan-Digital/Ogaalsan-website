@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
 import { useState } from 'react'
+import Image from "next/image"
 
 export default function Service2() {
     const [isActive, setIsActive] = useState({
@@ -45,9 +46,9 @@ export default function Service2() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="services-item-two" onMouseEnter={() => handleToggle(1)} onMouseLeave={() => handleToggle(1)}>
                                         <div className="services-thumb-two">
-                                            <img src="/assets/img/services/h2_services_img01.jpg" alt="" />
+                                            <Image src="/assets/img/services/h2_services_img01.jpg" alt="" width={400} height={300} loading="lazy" />
                                             <div className="item-shape">
-                                                <img src="/assets/img/services/services_item_shape.png" alt="" />
+                                                <Image src="/assets/img/services/services_item_shape.png" alt="" width={100} height={100} loading="lazy" />
                                             </div>
                                         </div>
                                         <div className="services-content-two">

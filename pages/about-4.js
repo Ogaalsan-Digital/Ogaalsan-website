@@ -2,6 +2,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function About4() {
     return (
@@ -13,8 +14,8 @@ export default function About4() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-8">
                                     <div className="about-img-wrap-five about-img-wrap-ten">
-                                        <img src="/assets/img/images/h4_about_img01.jpg" alt="" />
-                                        <img src="/assets/img/images/h4_about_img02.jpg" alt="" data-parallax="{&quot;y&quot; : 100 }" />
+                                        <Image src="/assets/img/images/h4_about_img01.jpg" alt="" width={600} height={700} loading="lazy" />
+                                        <Image src="/assets/img/images/h4_about_img02.jpg" alt="" width={300} height={400} data-parallax="{&quot;y&quot; : 100 }" loading="lazy" />
                                         <div className="experience-wrap">
                                             <h2 className="title">25 <span>Years Of Experience</span></h2>
                                         </div>
@@ -55,7 +56,7 @@ export default function About4() {
                             </div>
                         </div>
                         <div className="about-shape-five">
-                            <img src="/assets/img/images/h4_about_shape.png" alt="" />
+                            <Image src="/assets/img/images/h4_about_shape.png" alt="" width={200} height={200} loading="lazy" />
                         </div>
                     </section>
                     {/* about-area-end */}
@@ -142,7 +143,7 @@ export default function About4() {
                             </div>
                         </div>
                         <div className="inner-features-shape">
-                            <img src="/assets/img/images/inner_features_shape.png" alt="" data-aos="fade-left" data-aos-delay={0} />
+                            <Image src="/assets/img/images/inner_features_shape.png" alt="" width={200} height={200} data-aos="fade-left" data-aos-delay={0} loading="lazy" />
                         </div>
                     </section>
                     {/* features-area-end */}
@@ -162,7 +163,7 @@ export default function About4() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item-two">
                                         <div className="team-thumb-two">
-                                            <Link href="/team-details"><img src="/assets/img/team/h2_team_img01.jpg" alt="" /></Link>
+                                            <Link href="/team-details"><Image src="/assets/img/team/h2_team_img01.jpg" alt="" width={300} height={400} loading="lazy" /></Link>
                                             <div className="team-social-two">
                                                 <ul className="list-wrap">
                                                     <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -280,8 +281,8 @@ export default function About4() {
                             </div>
                         </div>
                         <div className="request-shape-wrap">
-                            <img src="/assets/img/images/h2_request_shape01.png" alt="" />
-                            <img src="/assets/img/images/h2_request_shape02.png" alt="" data-aos="fade-left" data-aos-delay={200} />
+                            <Image src="/assets/img/images/h2_request_shape01.png" alt="" width={150} height={150} loading="lazy" />
+                            <Image src="/assets/img/images/h2_request_shape02.png" alt="" width={150} height={150} data-aos="fade-left" data-aos-delay={200} loading="lazy" />
                         </div>
                     </section>
                     {/* request-area-end */}

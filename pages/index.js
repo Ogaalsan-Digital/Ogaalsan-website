@@ -1,18 +1,32 @@
+import dynamic from "next/dynamic";
 import Layout from "@/components/layout/Layout";
-import About from "@/components/sections/home1/About";
 import Banner from "@/components/sections/home1/Banner";
-import Blog from "@/components/sections/home1/Blog";
-import Brand from "@/components/sections/home1/Brand";
-import Choose from "@/components/sections/home1/Choose";
-import Cta from "@/components/sections/home1/Cta";
 import Features from "@/components/sections/home1/Features";
-import Overview from "@/components/sections/home1/Overview";
-import Pricing from "@/components/sections/home1/Pricing";
-import Project from "@/components/sections/home1/Project";
-import Request from "@/components/sections/home1/Request";
+import About from "@/components/sections/home1/About";
 import Services from "@/components/sections/home1/Services";
-import Team from "@/components/sections/home1/Team";
-import Testimonial from "@/components/sections/home1/Testimonial";
+
+// Lazy load below-the-fold components for better initial load performance
+const Overview = dynamic(() => import("@/components/sections/home1/Overview"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Choose = dynamic(() => import("@/components/sections/home1/Choose"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Project = dynamic(() => import("@/components/sections/home1/Project"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Cta = dynamic(() => import("@/components/sections/home1/Cta"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Testimonial = dynamic(() => import("@/components/sections/home1/Testimonial"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Blog = dynamic(() => import("@/components/sections/home1/Blog"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Request = dynamic(() => import("@/components/sections/home1/Request"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
 
 export default function Home1() {
   return (

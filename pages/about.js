@@ -2,6 +2,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
 import TestimonialSlider1 from "@/components/slider/TestimonialSlider1"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function About() {
     return (
@@ -13,9 +14,9 @@ export default function About() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-9 order-0 order-lg-2">
                                     <div className="about-img-seven-wrap">
-                                        <img src="/assets/img/ogalsan/person.jpg" alt="" style={{ maxWidth: "100%", height: "auto" }} data-aos="fade-right" data-aos-delay={0} />
-                                        <img src="/assets/img/ogalsan/creative.jpg" alt="" style={{ maxWidth: "300px", height: "auto" }} data-aos="fade-up" data-aos-delay={300} />
-                                        <img src="/assets/img/images/inner_about_shape01.png" alt="" className="shape" data-aos="zoom-in" data-aos-delay={500} />
+                                        <Image src="/assets/img/ogalsan/person.jpg" alt="" width={600} height={800} style={{ maxWidth: "100%", height: "auto" }} data-aos="fade-right" data-aos-delay={0} loading="lazy" />
+                                        <Image src="/assets/img/ogalsan/creative.jpg" alt="" width={300} height={400} style={{ maxWidth: "300px", height: "auto" }} data-aos="fade-up" data-aos-delay={300} loading="lazy" />
+                                        <Image src="/assets/img/images/inner_about_shape01.png" alt="" width={200} height={200} className="shape" data-aos="zoom-in" data-aos-delay={500} loading="lazy" />
                                         <div className="experience-wrap" data-aos="fade-left" data-aos-delay={0}>
                                             <h2 className="title">25</h2>
                                             <p>Years Of Experience</p>
@@ -113,8 +114,8 @@ export default function About() {
                             </div>
                         </div>
                         <div className="features-shape-wrap">
-                            <img src="/assets/img/images/features_shape01.png" alt="" />
-                            <img src="/assets/img/images/features_shape02.png" alt="" />
+                            <Image src="/assets/img/images/features_shape01.png" alt="" width={150} height={150} loading="lazy" />
+                            <Image src="/assets/img/images/features_shape02.png" alt="" width={150} height={150} loading="lazy" />
                         </div>
                     </section>
                     {/* features-area-end */}
@@ -124,9 +125,9 @@ export default function About() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-5 col-md-8">
                                     <div className="testimonial-img">
-                                        <img src="/assets/img/images/testimonial_img.jpg" alt="" />
+                                        <Image src="/assets/img/images/testimonial_img.jpg" alt="" width={500} height={600} loading="lazy" />
                                         <div className="review-wrap">
-                                            <img src="/assets/img/icons/rating.svg" alt="" />
+                                            <Image src="/assets/img/icons/rating.svg" alt="" width={100} height={20} loading="lazy" />
                                             <div className="content">
                                                 <h2 className="title">15k</h2>
                                                 <p>Positive <br /> Review</p>

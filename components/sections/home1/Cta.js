@@ -1,11 +1,38 @@
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 
 export default function Cta() {
+    const ctaRef = useRef(null)
+
+    useEffect(() => {
+        // Initialize background image for dynamically loaded component
+        const initBackground = () => {
+            if (ctaRef.current) {
+                const bgUrl = ctaRef.current.getAttribute('data-background')
+                if (bgUrl) {
+                    // Set background image with all necessary properties
+                    ctaRef.current.style.backgroundImage = `url(${bgUrl})`
+                    ctaRef.current.style.backgroundSize = 'cover'
+                    ctaRef.current.style.backgroundPosition = 'center'
+                    ctaRef.current.style.backgroundRepeat = 'no-repeat'
+                    // Ensure element is visible
+                    ctaRef.current.style.minHeight = 'auto'
+                }
+            }
+        }
+        
+        // Run immediately and also after a small delay to ensure DOM is ready
+        initBackground()
+        const timer = setTimeout(initBackground, 100)
+        
+        return () => clearTimeout(timer)
+    }, [])
+
     return (
         <>
             <section className="cta-area">
                 <div className="container">
-                    <div className="cta-inner-wrap" data-background="/assets/img/bg/cta_bg.jpg">
+                    <div className="cta-inner-wrap" ref={ctaRef} data-background="/assets/img/bg/cta_bg.jpg">
                         <div className="row align-items-center">
                             <div className="col-lg-9">
                                 <div className="cta-content">

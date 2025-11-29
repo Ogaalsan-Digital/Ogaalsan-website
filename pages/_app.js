@@ -1,5 +1,6 @@
 import Preloader from "@/components/elements/Preloader"
 import { useEffect, useState } from "react"
+import dynamic from "next/dynamic"
 import AOS from 'aos'
 import "public/assets/css/bootstrap.min.css"
 import "public/assets/css/animate.min.css"
@@ -18,10 +19,21 @@ import "public/assets/css/responsive.css"
 function MyApp({ Component, pageProps }) {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        setTimeout(() => {
+        // Reduce preloader time for better UX
+        const timer = setTimeout(() => {
             setLoading(false)
-        }, 1000)
-        AOS.init()
+        }, 500)
+        
+        // Initialize AOS after component mounts
+        if (typeof window !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100,
+            })
+        }
+        
+        return () => clearTimeout(timer)
     }, [])
     return (
         <>

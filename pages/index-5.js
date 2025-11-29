@@ -1,19 +1,42 @@
+import dynamic from "next/dynamic";
 import Layout from "@/components/layout/Layout"
-import About from "@/components/sections/home5/About"
-import AboutTwo from "@/components/sections/home5/AboutTwo"
-import Blog from "@/components/sections/home5/Blog"
-import Brand from "@/components/sections/home5/Brand"
-import Contact from "@/components/sections/home5/Contact"
-import Counter from "@/components/sections/home5/Counter"
-import Faq from "@/components/sections/home5/Faq"
-import Features from "@/components/sections/home5/Features"
-import Pricing from "@/components/sections/home5/Pricing"
-import Project from "@/components/sections/home5/Project"
-import Request from "@/components/sections/home5/Request"
-import Services from "@/components/sections/home5/Services"
 import Slider from "@/components/sections/home5/Slider"
-import Team from "@/components/sections/home5/Team"
-import Testimonial from "@/components/sections/home5/Testimonial"
+import About from "@/components/sections/home5/About"
+import Features from "@/components/sections/home5/Features"
+import AboutTwo from "@/components/sections/home5/AboutTwo"
+import Services from "@/components/sections/home5/Services"
+
+// Lazy load below-the-fold components for better initial load performance
+const Counter = dynamic(() => import("@/components/sections/home5/Counter"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Project = dynamic(() => import("@/components/sections/home5/Project"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Faq = dynamic(() => import("@/components/sections/home5/Faq"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Request = dynamic(() => import("@/components/sections/home5/Request"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Team = dynamic(() => import("@/components/sections/home5/Team"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Testimonial = dynamic(() => import("@/components/sections/home5/Testimonial"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Pricing = dynamic(() => import("@/components/sections/home5/Pricing"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Contact = dynamic(() => import("@/components/sections/home5/Contact"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Blog = dynamic(() => import("@/components/sections/home5/Blog"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Brand = dynamic(() => import("@/components/sections/home5/Brand"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
 
 export default function Home5() {
     return (

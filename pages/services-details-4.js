@@ -2,6 +2,7 @@ import Accordion from "@/components/elements/Accordion"
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ServiceDetails4() {
     return (
@@ -18,7 +19,7 @@ export default function ServiceDetails4() {
                                                 <div className="row align-items-center">
                                                     <div className="col-55">
                                                         <div className="thumb">
-                                                            <img src="/assets/img/services/services_details04.jpg" alt="" />
+                                                            <Image src="/assets/img/services/services_details04.jpg" alt="" width={600} height={500} loading="lazy" />
                                                         </div>
                                                     </div>
                                                     <div className="col-45">
@@ -26,10 +27,10 @@ export default function ServiceDetails4() {
                                                             <h2 className="title">Key Features For your Insurance Business</h2>
                                                             <p>when an unknown printer took ar galley offer type year anddey scrambled  make type aewer specimen book bethas survived not only five when annery unknown printer.</p>
                                                             <ul className="list-wrap">
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />100% Better results</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Valuable Ideas</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Budget Friendly Theme</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Happy Customers</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />100% Better results</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Valuable Ideas</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Budget Friendly Theme</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Happy Customers</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -63,10 +64,10 @@ export default function ServiceDetails4() {
                                                 <p className="info-one">when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
                                                 <div className="row">
                                                     <div className="col-md-6">
-                                                        <img src="/assets/img/services/sd_working_img03.jpg" alt="" />
+                                                        <Image src="/assets/img/services/sd_working_img03.jpg" alt="" width={500} height={400} loading="lazy" />
                                                     </div>
                                                     <div className="col-md-6">
-                                                        <img src="/assets/img/services/sd_working_img04.jpg" alt="" />
+                                                        <Image src="/assets/img/services/sd_working_img04.jpg" alt="" width={500} height={400} loading="lazy" />
                                                     </div>
                                                 </div>
                                                 <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>

@@ -3,6 +3,7 @@ import SocialToggle from "@/components/elements/SocialToggle"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function About3() {
     const [isToggled, setToggled] = useState(false)
@@ -17,14 +18,14 @@ export default function About3() {
                                 <div className="col-lg-7 col-md-10 order-0 order-lg-2">
                                     <div className="about-img-wrap-four">
                                         <div className="mask-img-wrap">
-                                            <img src="/assets/img/images/h3_about_img01.jpg" alt="" />
+                                            <Image src="/assets/img/images/h3_about_img01.jpg" alt="" width={600} height={700} loading="lazy" />
                                         </div>
                                         <div className="icon"><i className="flaticon-business-presentation" /></div>
-                                        <img src="/assets/img/images/h3_about_img02.jpg" alt="" className="img-two" />
+                                        <Image src="/assets/img/images/h3_about_img02.jpg" alt="" className="img-two" width={300} height={400} loading="lazy" />
                                         <div className="about-shape-wrap-three">
-                                            <img src="/assets/img/images/h3_about_shape01.png" alt="" />
-                                            <img src="/assets/img/images/h3_about_shape02.png" alt="" />
-                                            <img src="/assets/img/images/h3_about_shape03.png" alt="" />
+                                            <Image src="/assets/img/images/h3_about_shape01.png" alt="" width={150} height={150} loading="lazy" />
+                                            <Image src="/assets/img/images/h3_about_shape02.png" alt="" width={150} height={150} loading="lazy" />
+                                            <Image src="/assets/img/images/h3_about_shape03.png" alt="" width={150} height={150} loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +159,7 @@ export default function About3() {
                             </div>
                         </div>
                         <div className="inner-counter-shape">
-                            <img src="/assets/img/images/inner_counter_shape.png" alt="" data-aos="fade-left" data-aos-delay={0} />
+                            <Image src="/assets/img/images/inner_counter_shape.png" alt="" width={200} height={200} data-aos="fade-left" data-aos-delay={0} loading="lazy" />
                         </div>
                     </section>
                     {/* counter-area-end */}
@@ -179,7 +180,7 @@ export default function About3() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                     <div className="team-item-four">
                                         <div className="team-thumb-four">
-                                            <img src="/assets/img/team/h4_team_img01.jpg" alt="" />
+                                            <Image src="/assets/img/team/h4_team_img01.jpg" alt="" width={300} height={400} loading="lazy" />
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-four">
@@ -231,7 +232,7 @@ export default function About3() {
                     {/* pricing-area */}
                     <section className="pricing-area-three">
                         <div className="pricing-shape">
-                            <img src="/assets/img/images/pricing_shape.png" alt="" data-aos="fade-left" data-aos-delay={200} />
+                            <Image src="/assets/img/images/pricing_shape.png" alt="" width={200} height={200} data-aos="fade-left" data-aos-delay={200} loading="lazy" />
                         </div>
                         <div className="container">
                             <div className="row align-items-center justify-content-center">
@@ -267,11 +268,11 @@ export default function About3() {
                                             </div>
                                             <div className="pricing-list">
                                                 <ul className="list-wrap">
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />5000 User Activities</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Unlimited Access</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />No Hidden Charge</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />03 Time Updates</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Figma Source File</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />5000 User Activities</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Unlimited Access</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />No Hidden Charge</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />03 Time Updates</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Figma Source File</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-btn-two">
@@ -292,11 +293,11 @@ export default function About3() {
                                             </div>
                                             <div className="pricing-list">
                                                 <ul className="list-wrap">
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />5000 User Activities</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Unlimited Access</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />No Hidden Charge</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />03 Time Updates</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Figma Source File</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />5000 User Activities</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Unlimited Access</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />No Hidden Charge</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />03 Time Updates</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Figma Source File</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-btn-two">
@@ -317,11 +318,11 @@ export default function About3() {
                                             </div>
                                             <div className="pricing-list">
                                                 <ul className="list-wrap">
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />5000 User Activities</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Unlimited Access</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />No Hidden Charge</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />03 Time Updates</li>
-                                                    <li><img src="/assets/img/icons/check_icon03.svg" alt="" />Figma Source File</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />5000 User Activities</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Unlimited Access</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />No Hidden Charge</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />03 Time Updates</li>
+                                                    <li><Image src="/assets/img/icons/check_icon03.svg" alt="" width={20} height={20} loading="lazy" />Figma Source File</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-btn-two">

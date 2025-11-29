@@ -3,6 +3,7 @@ import VideoPopup from "@/components/elements/PopupVideo";
 import Layout from "@/components/layout/Layout";
 import BrandSlider from "@/components/slider/BrandSlider";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ServiceDetails() {
   return (
@@ -15,9 +16,12 @@ export default function ServiceDetails() {
                 <div className="col-71 order-0 order-lg-2">
                   <div className="services-details-wrap">
                     <div className="services-details-thumb">
-                      <img
+                      <Image
                         src="/assets/img/ogalsan/person.jpg"
                         alt="ICT Strategy & Consulting"
+                        width={800}
+                        height={600}
+                        loading="lazy"
                       />
                     </div>
                     <div className="services-details-content">
@@ -55,31 +59,43 @@ export default function ServiceDetails() {
                               </p>
                               <ul className="list-wrap">
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Clear ICT vision &amp; practical roadmap
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Infrastructure &amp; cloud strategy for
                                   Somalia
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Security, resilience &amp; compliance support
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Better service delivery &amp; user experience
                                 </li>
@@ -88,9 +104,12 @@ export default function ServiceDetails() {
                           </div>
                           <div className="col-44">
                             <div className="thumb">
-                              <img
+                              <Image
                                 src="/assets/img/ogalsan/person.jpg"
                                 alt="ICT Strategy Consulting"
+                                width={500}
+                                height={400}
+                                loading="lazy"
                               />
                               <VideoPopup style={3} />
                             </div>

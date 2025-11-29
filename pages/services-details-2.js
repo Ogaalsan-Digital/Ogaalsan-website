@@ -3,6 +3,7 @@ import VideoPopup from "@/components/elements/PopupVideo";
 import Layout from "@/components/layout/Layout";
 import BrandSlider from "@/components/slider/BrandSlider";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ServiceDetails2() {
   return (
@@ -15,9 +16,12 @@ export default function ServiceDetails2() {
                 <div className="col-71 order-0 order-lg-2">
                   <div className="services-details-wrap">
                     <div className="services-details-thumb">
-                      <img
+                      <Image
                         src="/assets/img/ogalsan/training.jpg"
                         alt="Training & Capacity Building"
+                        width={800}
+                        height={600}
+                        loading="lazy"
                       />
                     </div>
                     <div className="services-details-content">
@@ -55,30 +59,42 @@ export default function ServiceDetails2() {
                               </p>
                               <ul className="list-wrap">
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Role-based digital skills training
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Hands-on workshops &amp; practical exercises
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   On-the-job coaching &amp; mentoring
                                 </li>
                                 <li>
-                                  <img
+                                  <Image
                                     src="/assets/img/icons/check_icon.svg"
                                     alt=""
+                                    width={20}
+                                    height={20}
+                                    loading="lazy"
                                   />
                                   Follow-up support &amp; continuous learning
                                 </li>

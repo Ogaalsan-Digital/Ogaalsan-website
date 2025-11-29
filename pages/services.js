@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Services() {
     return (
@@ -26,7 +27,7 @@ export default function Services() {
                                             <h2 className="title">ICT Strategy &amp; Consulting</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img01.jpg" alt="" />
+                                            <Image src="/assets/img/services/services_img01.jpg" alt="" width={400} height={300} loading="lazy" />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">

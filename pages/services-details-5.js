@@ -2,6 +2,7 @@ import Accordion from "@/components/elements/Accordion"
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ServiceDetails5() {
     return (
@@ -17,7 +18,7 @@ export default function ServiceDetails5() {
                                             <h2 className="title">Marketing Strategy</h2>
                                             <p>when an unknown printer took ar galley offer type year anddey scrambled  make type aewer specimen book bethas survived not only five when annery unknown printer.eed a little help from our friends from time to time. Although we offer the one-stop convenience.</p>
                                             <div className="services-details-thumb-two">
-                                                <img src="/assets/img/services/services_details05.jpg" alt="" />
+                                                <Image src="/assets/img/services/services_details05.jpg" alt="" width={800} height={600} loading="lazy" />
                                             </div>
                                             <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia- list advice beyond the scope of our own expertise. That’s why we’ve developed close working relationships with a number of strategic partner.</p>
                                             <div className="speed-optimized-wrap">
@@ -37,9 +38,9 @@ export default function ServiceDetails5() {
                                                             <h4 className="title-two">The Challange</h4>
                                                             <p>when an unknown printer took a galley type</p>
                                                             <ul className="list-wrap">
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Commercial Property Insurance</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Budget Friendly Theme</li>
-                                                                <li><img src="/assets/img/icons/check_icon.svg" alt="" />Happy Customers</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Commercial Property Insurance</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Budget Friendly Theme</li>
+                                                                <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Happy Customers</li>
                                                             </ul>
                                                         </div>
                                                     </div>

@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import TestimonialSlider3 from "@/components/slider/TestimonialSlider3"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function About2() {
     return (
@@ -15,7 +16,7 @@ export default function About2() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-9">
                                     <div className="about-img-eight">
-                                        <img src="/assets/img/images/inner_about_img03.jpg" alt="" />
+                                        <Image src="/assets/img/images/inner_about_img03.jpg" alt="" width={600} height={700} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -47,7 +48,7 @@ export default function About2() {
                                                 </li>
                                             </ul>
                                             <div className="right-slide-img">
-                                                <img src="/assets/img/images/inner_about_img04.jpg" alt="" />
+                                                <Image src="/assets/img/images/inner_about_img04.jpg" alt="" width={300} height={400} loading="lazy" />
                                             </div>
                                         </div>
                                         <div className="about-content-bottom">
@@ -56,7 +57,7 @@ export default function About2() {
                                             </div>
                                             <div className="about-author-info">
                                                 <div className="thumb">
-                                                    <img src="/assets/img/images/about_author.png" alt="" />
+                                                    <Image src="/assets/img/images/about_author.png" alt="" width={80} height={80} loading="lazy" />
                                                 </div>
                                                 <div className="content">
                                                     <h2 className="title">Mark Stranger</h2>
@@ -88,7 +89,7 @@ export default function About2() {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="choose-img-three">
-                                        <img src="/assets/img/images/inner_choose_img.jpg" alt="" />
+                                        <Image src="/assets/img/images/inner_choose_img.jpg" alt="" width={600} height={700} loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +112,7 @@ export default function About2() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-9">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img01.jpg" alt="" />
+                                            <Image src="/assets/img/team/team_img01.jpg" alt="" width={300} height={400} loading="lazy" />
                                             <div className="team-social">
                                                 <ul className="list-wrap">
                                                     <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -194,7 +195,7 @@ export default function About2() {
                             <div className="row g-0 align-items-end">
                                 <div className="col-37">
                                     <div className="testimonial-img-three">
-                                        <img src="/assets/img/images/h3_testimonial_img.jpg" alt="" />
+                                        <Image src="/assets/img/images/h3_testimonial_img.jpg" alt="" width={500} height={600} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-63">

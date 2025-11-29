@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Service3() {
     return (
@@ -27,7 +28,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Finance Planning</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +40,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Business Consulting</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +52,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Tax Advisory</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +64,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Business Audit</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +76,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">BAudit  Evaluation</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +88,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Customer Experience</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +100,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Project Management</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +112,7 @@ export default function Service3() {
                                         <div className="features-content-three">
                                             <h2 className="title">Investment Planning</h2>
                                             <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                            <Link href="/services-details" className="link-btn">See Details <img src="/assets/img/icons/right-arrow.svg" alt="" /></Link>
+                                            <Link href="/services-details" className="link-btn">See Details <Image src="/assets/img/icons/right-arrow.svg" alt="" width={20} height={20} loading="lazy" /></Link>
                                         </div>
                                     </div>
                                 </div>

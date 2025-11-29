@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Service4() {
     return (
@@ -26,7 +27,7 @@ export default function Service4() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                     <div className="services-item-three">
                                         <div className="services-thumb-three">
-                                            <Link href="/services-details"><img src="/assets/img/services/h4_services_img01.jpg" alt="" /></Link>
+                                            <Link href="/services-details"><Image src="/assets/img/services/h4_services_img01.jpg" alt="" width={400} height={300} loading="lazy" /></Link>
                                         </div>
                                         <div className="services-content-three">
                                             <div className="services-icon">
@@ -162,7 +163,7 @@ export default function Service4() {
                             </div>
                         </div>
                         <div className="services-shape-four">
-                            <img src="/assets/img/services/h4_services_shape.png" alt="" data-aos="fade-left" data-aos-delay={200} />
+                            <Image src="/assets/img/services/h4_services_shape.png" alt="" width={200} height={200} data-aos="fade-left" data-aos-delay={200} loading="lazy" />
                         </div>
                     </section>
                     {/* services-area-end */}

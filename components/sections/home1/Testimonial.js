@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 import Slider from "react-slick"
 
 const settings = {
@@ -45,6 +45,29 @@ const settings = {
 export default function Testimonial() {
 
     const sliderRef = useRef(null)
+    const sectionRef = useRef(null)
+
+    useEffect(() => {
+        // Initialize background image for dynamically loaded component
+        const initBackground = () => {
+            if (sectionRef.current) {
+                const bgUrl = sectionRef.current.getAttribute('data-background')
+                if (bgUrl) {
+                    // Set background image with all necessary properties
+                    sectionRef.current.style.backgroundImage = `url(${bgUrl})`
+                    sectionRef.current.style.backgroundSize = 'cover'
+                    sectionRef.current.style.backgroundPosition = 'center'
+                    sectionRef.current.style.backgroundRepeat = 'no-repeat'
+                }
+            }
+        }
+        
+        // Run immediately and also after a small delay to ensure DOM is ready
+        initBackground()
+        const timer = setTimeout(initBackground, 100)
+        
+        return () => clearTimeout(timer)
+    }, [])
 
     const next = () => {
         if (sliderRef.current) {
@@ -59,7 +82,7 @@ export default function Testimonial() {
     }
     return (
         <>
-            <section className="testimonial-area-two testimonial-bg-two" data-background="/assets/img/bg/h2_testimonial_bg.jpg">
+            <section ref={sectionRef} className="testimonial-area-two testimonial-bg-two" data-background="/assets/img/bg/h2_testimonial_bg.jpg">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">

@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function TeamDetails() {
     return (
@@ -11,7 +12,7 @@ export default function TeamDetails() {
                             <div className="col-lg-5">
                                 <div className="team-details-info-wrap">
                                     <div className="team-details-thumb">
-                                        <img src="/assets/img/team/team_details_img.jpg" alt="" />
+                                        <Image src="/assets/img/team/team_details_img.jpg" alt="" width={400} height={500} loading="lazy" />
                                     </div>
                                     <div className="team-details-info">
                                         <ul className="list-wrap">
@@ -21,7 +22,7 @@ export default function TeamDetails() {
                                         </ul>
                                         <div className="td-info-bottom">
                                             <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
+                                            <Link href="#" className="share-btn"><Image src="/assets/img/icons/share.svg" alt="" width={20} height={20} loading="lazy" />Share</Link>
                                         </div>
                                     </div>
                                 </div>

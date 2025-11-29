@@ -1,16 +1,33 @@
+import dynamic from "next/dynamic";
 import Layout from "@/components/layout/Layout"
-import About from "@/components/sections/home3/About"
 import Banner from "@/components/sections/home3/Banner"
-import Blog from "@/components/sections/home3/Blog"
-import Brand from "@/components/sections/home3/Brand"
-import Choose from "@/components/sections/home3/Choose"
-import Cta from "@/components/sections/home3/Cta"
-import Estimate from "@/components/sections/home3/Estimate"
 import Features from "@/components/sections/home3/Features"
-import Pricing from "@/components/sections/home3/Pricing"
+import About from "@/components/sections/home3/About"
+import Brand from "@/components/sections/home3/Brand"
 import Services from "@/components/sections/home3/Services"
-import Team from "@/components/sections/home3/Team"
-import Testimonial from "@/components/sections/home3/Testimonial"
+
+// Lazy load below-the-fold components for better initial load performance
+const Choose = dynamic(() => import("@/components/sections/home3/Choose"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Cta = dynamic(() => import("@/components/sections/home3/Cta"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Estimate = dynamic(() => import("@/components/sections/home3/Estimate"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Team = dynamic(() => import("@/components/sections/home3/Team"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Testimonial = dynamic(() => import("@/components/sections/home3/Testimonial"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Pricing = dynamic(() => import("@/components/sections/home3/Pricing"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Blog = dynamic(() => import("@/components/sections/home3/Blog"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
 
 export default function Home3() {
     return (

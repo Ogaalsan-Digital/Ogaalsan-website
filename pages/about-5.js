@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function About5() {
     return (
@@ -11,9 +12,9 @@ export default function About5() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-9 order-0 order-lg-2">
                                     <div className="about-img-wrap-eleven">
-                                        <img src="/assets/img/images/inner_about_img05.png" alt="" />
-                                        <img src="/assets/img/images/inner_about_shape01.png" alt="" className="shape-one" />
-                                        <img src="/assets/img/images/inner_about_shape02.png" alt="" className="shape-two" />
+                                        <Image src="/assets/img/images/inner_about_img05.png" alt="" width={600} height={700} loading="lazy" />
+                                        <Image src="/assets/img/images/inner_about_shape01.png" alt="" className="shape-one" width={150} height={150} loading="lazy" />
+                                        <Image src="/assets/img/images/inner_about_shape02.png" alt="" className="shape-two" width={150} height={150} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -43,9 +44,9 @@ export default function About5() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-10">
                                     <div className="about-img-six about-img-twelve">
-                                        <img src="/assets/img/images/h5_about_img.png" alt="" />
-                                        <img src="/assets/img/images/inner_about_shape03.png" alt="" />
-                                        <img src="/assets/img/images/h5_about_shape02.png" alt="" />
+                                        <Image src="/assets/img/images/h5_about_img.png" alt="" width={600} height={700} loading="lazy" />
+                                        <Image src="/assets/img/images/inner_about_shape03.png" alt="" width={150} height={150} loading="lazy" />
+                                        <Image src="/assets/img/images/h5_about_shape02.png" alt="" width={150} height={150} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -126,7 +127,7 @@ export default function About5() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                     <div className="team-item-five">
                                         <div className="team-thumb-five">
-                                            <img src="/assets/img/team/h5_team_img01.png" alt="" />
+                                            <Image src="/assets/img/team/h5_team_img01.png" alt="" width={300} height={400} loading="lazy" />
                                         </div>
                                         <div className="team-content-five">
                                             <h2 className="title"><Link href="/team-details">Brooklyn Simmons</Link></h2>
@@ -231,7 +232,7 @@ export default function About5() {
                             </div>
                         </div>
                         <div className="request-shape">
-                            <img src="/assets/img/images/request_shape.png" alt="" />
+                            <Image src="/assets/img/images/request_shape.png" alt="" width={200} height={200} loading="lazy" />
                         </div>
                     </section>
                 </div>

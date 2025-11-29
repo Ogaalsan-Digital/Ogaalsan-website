@@ -1,15 +1,32 @@
+import dynamic from "next/dynamic";
 import Layout from "@/components/layout/Layout"
-import About from "@/components/sections/home4/About"
 import Banner from "@/components/sections/home4/Banner"
-import Blog from "@/components/sections/home4/Blog"
 import Brand from "@/components/sections/home4/Brand"
-import Counter from "@/components/sections/home4/Counter"
-import Cta from "@/components/sections/home4/Cta"
-import Project from "@/components/sections/home4/Project"
-import Request from "@/components/sections/home4/Request"
 import Services from "@/components/sections/home4/Services"
-import Team from "@/components/sections/home4/Team"
-import Testimonial from "@/components/sections/home4/Testimonial"
+import About from "@/components/sections/home4/About"
+
+// Lazy load below-the-fold components for better initial load performance
+const Counter = dynamic(() => import("@/components/sections/home4/Counter"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Team = dynamic(() => import("@/components/sections/home4/Team"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Project = dynamic(() => import("@/components/sections/home4/Project"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Cta = dynamic(() => import("@/components/sections/home4/Cta"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Testimonial = dynamic(() => import("@/components/sections/home4/Testimonial"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Blog = dynamic(() => import("@/components/sections/home4/Blog"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+const Request = dynamic(() => import("@/components/sections/home4/Request"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
 
 export default function Home4() {
     return (

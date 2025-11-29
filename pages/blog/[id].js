@@ -26,7 +26,7 @@ export default function BlogDetails() {
                   <div className="row justify-content-center">
                     <div className="col-71">
                       <div className="blog-details-thumb">
-                        <img
+                        <Image
                           src={
                             blogPost.img?.startsWith('/assets') 
                               ? blogPost.img 
@@ -34,6 +34,9 @@ export default function BlogDetails() {
                           }
                           className="w-100"
                           alt={blogPost.title}
+                          width={800}
+                          height={500}
+                          loading="lazy"
                         />
                       </div>
                       <div className="blog-details-content">
@@ -45,13 +48,16 @@ export default function BlogDetails() {
                               {blogPost.date}
                             </li>
                             <li>
-                              <img
+                              <Image
                                 className="blog-meta-author-img"
                                 src={
                                   blogPost.authorImg ||
                                   "/assets/img/ogalsan/image (8).png"
                                 }
                                 alt={blogPost.author}
+                                width={40}
+                                height={40}
+                                loading="lazy"
                               />{" "}
                               by{" "}
                               <Link href={`/blog/${blogPost.id}`}>

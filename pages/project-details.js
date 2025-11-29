@@ -1,6 +1,7 @@
 import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ProjectDetails() {
     return (
@@ -14,7 +15,7 @@ export default function ProjectDetails() {
                                     <div className="row">
                                         <div className="col-71">
                                             <div className="project-details-thumb">
-                                                <img src="/assets/img/project/project_details01.jpg" alt="" />
+                                                <Image src="/assets/img/project/project_details01.jpg" alt="" width={800} height={600} loading="lazy" />
                                             </div>
                                         </div>
                                         <div className="col-29">
@@ -54,17 +55,17 @@ export default function ProjectDetails() {
                                                         <h3 className="title-two">Raise capital faster  negotiate on your own terms</h3>
                                                         <p className="info-one">when an unknown printer took a galley offer typey anddey scrambled make a type specimen bookhas survived not only five centuries but also.</p>
                                                         <ul className="list-wrap">
-                                                            <li><img src="/assets/img/icons/check_icon.svg" alt="" />100% Better results</li>
-                                                            <li><img src="/assets/img/icons/check_icon.svg" alt="" />Valuable Ideas</li>
-                                                            <li><img src="/assets/img/icons/check_icon.svg" alt="" />Budget Friendly Theme</li>
-                                                            <li><img src="/assets/img/icons/check_icon.svg" alt="" />Happy Customers</li>
+                                                            <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />100% Better results</li>
+                                                            <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Valuable Ideas</li>
+                                                            <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Budget Friendly Theme</li>
+                                                            <li><Image src="/assets/img/icons/check_icon.svg" alt="" width={20} height={20} loading="lazy" />Happy Customers</li>
                                                         </ul>
                                                         <p className="info-two">when an unknown printer took a galley of type and  aweratr scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
                                                     </div>
                                                 </div>
                                                 <div className="col-59">
                                                     <div className="thumb">
-                                                        <img src="/assets/img/project/project_details02.jpg" alt="" />
+                                                        <Image src="/assets/img/project/project_details02.jpg" alt="" width={700} height={500} loading="lazy" />
                                                         <VideoPopup style={3} />
                                                     </div>
                                                 </div>

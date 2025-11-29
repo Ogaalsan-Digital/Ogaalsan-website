@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout"
+import Image from "next/image"
 
 export default function Contact() {
     return (
@@ -10,7 +11,7 @@ export default function Contact() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="inner-contact-img">
-                                        <img src="/assets/img/ogalsan/contact.jpg" alt="Contact OgaalSan Consultancy" />
+                                        <Image src="/assets/img/ogalsan/contact.jpg" alt="Contact OgaalSan Consultancy" width={600} height={800} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
