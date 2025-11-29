@@ -81,7 +81,7 @@ export default function Testimonial() {
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
                                         </div>
-                                        <p>"OgaalSan transformed our ICT infrastructure with their expert solutions. Their team delivered a comprehensive digital transformation that significantly improved our operational efficiency and business growth."</p>
+                                        <p>"OgaalSan transformed our ICT infrastructure with expert solutions. Their team delivered a comprehensive digital transformation that improved our operational efficiency and business growth."</p>
                                         <div className="testimonial-avatar">
                                             <div className="avatar-thumb">
                                                 <img src="/assets/img/images/testi_avatar01.png" alt="" />
