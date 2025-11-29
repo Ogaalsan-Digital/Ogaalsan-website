@@ -162,33 +162,33 @@ export default function BlogDetails() {
                           <div className="bs-cat-list">
                             <ul className="list-wrap">
                               <li>
-                                <Link href="#">
-                                  Business <span>(02)</span>
+                                <Link href="/blog">
+                                  ICT Solutions <span>(01)</span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="#">
-                                  Consulting <span>(08)</span>
+                                <Link href="/blog">
+                                  Digital Transformation <span>(01)</span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="#">
-                                  Corporate <span>(05)</span>
+                                <Link href="/blog">
+                                  Training &amp; Capacity Building <span>(01)</span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="#">
-                                  Design <span>(02)</span>
+                                <Link href="/blog">
+                                  Business Process Digitisation <span>(01)</span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="#">
-                                  Fashion <span>(11)</span>
+                                <Link href="/blog">
+                                  Data &amp; Analytics <span>(01)</span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="#">
-                                  Marketing <span>(12)</span>
+                                <Link href="/blog">
+                                  Digital Marketing <span>(01)</span>
                                 </Link>
                               </li>
                             </ul>
