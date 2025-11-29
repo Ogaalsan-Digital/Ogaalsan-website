@@ -8527,6 +8527,9 @@ label {
 
 .blog-post-item-two {
     margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-post-thumb-two {
@@ -8567,6 +8570,9 @@ label {
     border-radius: 0 0 10px 10px;
     padding: 35px 30px;
     background: var(--tg-white);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .blog-post-content-two .title {
@@ -8576,6 +8582,10 @@ label {
 
 .blog-post-content-two p {
     margin-bottom: 25px;
+    flex: 1;
+    min-height: 60px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .blog-meta .list-wrap {

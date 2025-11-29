@@ -11,6 +11,12 @@ export default function Blog() {
         return `/assets/img/blog/${post.img}`
     }
 
+    const getExcerpt = (post) => {
+        const firstParagraph = Array.isArray(post.content) ? post.content[0] : ""
+        if (!firstParagraph) return "Discover how OgaalSan helps organisations plan, build, and grow with ICT and digital innovation."
+        return firstParagraph.length > 120 ? `${firstParagraph.slice(0, 120)}...` : firstParagraph
+    }
+
     return (
         <>
             <section className="blog-area-two blog-bg-two" data-background="/assets/img/bg/h2_blog_bg.jpg">
@@ -24,9 +30,9 @@ export default function Blog() {
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center align-items-stretch">
                         {latestPosts.map((post) => (
-                            <div key={post.id} className="col-lg-4 col-md-6 col-sm-10">
+                            <div key={post.id} className="col-lg-4 col-md-6 col-sm-10 d-flex">
                                 <div className="blog-post-item-two">
                                     <div className="blog-post-thumb-two">
                                         <Link href={`/blog/${post.id}`}>
@@ -40,7 +46,7 @@ export default function Blog() {
                                         <h2 className="title">
                                             <Link href={`/blog/${post.id}`}>{post.title}</Link>
                                         </h2>
-                                        <p>Everything you need to start building a strong digital presence for your organisation.</p>
+                                        <p>{getExcerpt(post)}</p>
                                         <div className="blog-meta">
                                             <ul className="list-wrap">
                                                 <li>
