@@ -28,12 +28,8 @@ export default function BlogDetails() {
                       <div className="blog-details-thumb">
                         <img
                           src={
-                            blogPost.id === 1
-                              ? "/assets/img/ogalsan/infrustructure.jpg"
-                              : blogPost.id === 2
-                              ? "/assets/img/ogalsan/process.jpg"
-                              : blogPost.id === 3
-                              ? "/assets/img/ogalsan/training.jpg"
+                            blogPost.img?.startsWith('/assets') 
+                              ? blogPost.img 
                               : `/assets/img/blog/${blogPost.img}`
                           }
                           className="w-100"

@@ -14,7 +14,7 @@ export default function Blog() {
                 <div className="col-71">
                   <div className="blog-post-wrap">
                     <div className="row">
-                      <BlogPost showItem={6} style={1} showPagination />
+                      <BlogPost showItem={4} style={1} showPagination />
                     </div>
                   </div>
                 </div>

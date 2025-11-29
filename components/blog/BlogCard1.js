@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function BlogCard1({ item }) {
+    const imageSrc = item.img?.startsWith('/assets') ? item.img : `/assets/img/blog/${item.img}`
+    
     return (
         <>
             <div className="col-md-6">
@@ -12,7 +14,7 @@ export default function BlogCard1({ item }) {
                             height="0"
                             sizes="100vw"
                             style={{ width: "auto", height: "auto" }}
-                            src={`/assets/img/blog/${item.img}`} alt="" /></Link>
+                            src={imageSrc} alt="" /></Link>
                         <Link href="/blog" className="tag tag-two">{item.category}</Link>
                     </div>
                     <div className="blog-post-content-two">
@@ -21,11 +23,7 @@ export default function BlogCard1({ item }) {
                         <div className="blog-meta">
                             <ul className="list-wrap">
                                 <li>
-                                    <Link href={`/blog/${item.id}`}> <Image
-                                        width="0"
-                                        height="0"
-                                        sizes="100vw"
-                                        style={{ width: "auto", height: "auto" }} src="/assets/img/blog/blog_avatar01.png" alt="" />{item.author}</Link>
+                                    <Link href={`/blog/${item.id}`}> <img src={item.authorImg || "/assets/img/ogalsan/image (8).png"} alt={item.author} />{item.author}</Link>
                                 </li>
                                 <li><i className="far fa-calendar" />{item.date}</li>
                             </ul>

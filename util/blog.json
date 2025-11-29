@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "How Modern ICT Infrastructure Powers Somali Organisations",
-        "img": "h3_blog_img01.jpg",
+        "img": "/assets/img/ogalsan/infrustructure.jpg",
         "category": "ICT Solutions",
         "author": "OgaalSan Team",
         "authorImg": "/assets/img/ogalsan/image (8).png",
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "title": "Creating a Digital Transformation Roadmap With OgaalSan",
-        "img": "h3_blog_img02.jpg",
+        "img": "/assets/img/ogalsan/process.jpg",
         "category": "Digital Transformation",
         "author": "OgaalSan Team",
         "authorImg": "/assets/img/ogalsan/image (8).png",
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "title": "Practical Digital Skills Training for Somali Teams",
-        "img": "h3_blog_img03.jpg",
+        "img": "/assets/img/ogalsan/training.jpg",
         "category": "Training & Capacity Building",
         "author": "OgaalSan Team",
         "authorImg": "/assets/img/ogalsan/image (8).png",
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "title": "From Paper to Platforms: Digitising Your Core Services",
-        "img": "h3_blog_img01.jpg",
+        "img": "/assets/img/ogalsan/digital.png",
         "category": "Business Process Digitisation",
         "author": "OgaalSan Team",
         "authorImg": "/assets/img/ogalsan/image (8).png",
@@ -49,71 +49,6 @@
         "content": [
             "Across Somalia, many organisations still rely on paper forms, manual approvals, and disconnected spreadsheets that make it hard to track performance. Digitising these core processes can reduce errors, speed up decisions, and give managers real‑time visibility on what is happening.",
             "OgaalSan works with you to map your key workflows—such as procurement, case management, or customer service—and redesign them using simple, user‑friendly digital tools. The result is faster service delivery, clearer responsibilities, and better experiences for the people you serve."
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Using Data to Make Better Decisions in Somali Organisations",
-        "img": "h3_blog_img02.jpg",
-        "category": "Data & Analytics",
-        "author": "OgaalSan Team",
-        "authorImg": "/assets/img/ogalsan/image (8).png",
-        "date": "05 Mar 2025",
-        "content": [
-            "Your organisation already collects data—from finance records and project reports to customer interactions—but it often remains scattered and under‑used. The first step is to clarify the key questions you need answered, then structure data collection and reporting around those priorities.",
-            "OgaalSan helps you design simple dashboards, standardised templates, and practical reporting processes that your team can maintain. With better data and clear visuals, leaders can take faster, evidence‑based decisions and track the real impact of their ICT and digital investments."
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Choosing the Right ICT Infrastructure for the Somali Context",
-        "img": "h3_blog_img03.jpg",
-        "category": "Cloud & Infrastructure",
-        "author": "OgaalSan Team",
-        "authorImg": "/assets/img/ogalsan/image (8).png",
-        "date": "18 Mar 2025",
-        "content": [
-            "Deciding between cloud and on‑premise systems in Somalia depends on connectivity, security, and budget. Cloud services can reduce upfront costs and simplify maintenance, while local infrastructure may be better for sensitive data or areas with unstable internet.",
-            "Our team at OgaalSan helps you design a balanced architecture—often a hybrid of cloud and on‑premise—that fits your operations today and can grow with you tomorrow. We focus on stability, security, and practicality so your ICT environment supports your daily work instead of blocking it."
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Digital Marketing Basics for Growing Somali Businesses",
-        "img": "h3_blog_img01.jpg",
-        "category": "Digital Marketing",
-        "author": "OgaalSan Team",
-        "authorImg": "/assets/img/ogalsan/image (8).png",
-        "date": "01 Apr 2025",
-        "content": [
-            "For many Somali businesses, the first step in digital marketing is simply being visible and trustworthy online. Clear branding, active social media profiles, and accurate contact details make it easier for customers to find you and reach out.",
-            "OgaalSan supports you with content planning, campaign setup, and basic analytics so you understand what is working. Even small, consistent digital marketing efforts can significantly increase awareness, customer engagement, and sales for your business."
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Solving Common ICT Challenges in Somali NGOs",
-        "img": "h3_blog_img02.jpg",
-        "category": "NGO & Development",
-        "author": "OgaalSan Team",
-        "authorImg": "/assets/img/ogalsan/image (8).png",
-        "date": "15 Apr 2025",
-        "content": [
-            "NGOs in Somalia often operate with limited budgets, ageing hardware, and different systems that do not talk to each other. These issues can delay reporting, slow project delivery, and weaken coordination with donors and partners.",
-            "OgaalSan helps NGOs standardise tools, prioritise a few high‑impact ICT improvements, and build internal capacity to manage them. With the right approach, your organisation can improve accountability, meet donor requirements more easily, and deliver services more effectively on the ground."
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Planning Your Next ICT Project With Confidence",
-        "img": "h3_blog_img03.jpg",
-        "category": "Project Planning",
-        "author": "OgaalSan Team",
-        "authorImg": "/assets/img/ogalsan/image (8).png",
-        "date": "30 Apr 2025",
-        "content": [
-            "Successful ICT projects in Somalia start with a clear problem statement, realistic scope, and shared expectations across all stakeholders. Skipping this preparation often leads to delays, unexpected costs, and systems that users do not fully adopt.",
-            "OgaalSan supports you from the planning stage with checklists, risk reviews, and training and support plans. With the right structure in place, your next ICT initiative is far more likely to be delivered on time, within budget, and with lasting value for your organisation."
         ]
     }
 ]
