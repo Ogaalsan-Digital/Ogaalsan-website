@@ -1,7 +1,5 @@
 import CounterUp from "@/components/elements/CounterUp"
-import SocialToggle from "@/components/elements/SocialToggle"
 import Layout from "@/components/layout/Layout"
-import BrandSlider from "@/components/slider/BrandSlider"
 import TestimonialSlider1 from "@/components/slider/TestimonialSlider1"
 import Link from "next/link"
 
@@ -15,8 +13,8 @@ export default function About() {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6 col-md-9 order-0 order-lg-2">
                                     <div className="about-img-seven-wrap">
-                                        <img src="/assets/img/images/inner_about_img01.jpg" alt="" data-aos="fade-right" data-aos-delay={0} />
-                                        <img src="/assets/img/images/inner_about_img02.jpg" alt="" data-aos="fade-up" data-aos-delay={300} />
+                                        <img src="/assets/img/ogalsan/person.jpg" alt="" style={{ maxWidth: "100%", height: "auto" }} data-aos="fade-right" data-aos-delay={0} />
+                                        <img src="/assets/img/ogalsan/creative.jpg" alt="" style={{ maxWidth: "300px", height: "auto" }} data-aos="fade-up" data-aos-delay={300} />
                                         <img src="/assets/img/images/inner_about_shape01.png" alt="" className="shape" data-aos="zoom-in" data-aos-delay={500} />
                                         <div className="experience-wrap" data-aos="fade-left" data-aos-delay={0}>
                                             <h2 className="title">25</h2>
@@ -120,71 +118,6 @@ export default function About() {
                         </div>
                     </section>
                     {/* features-area-end */}
-                    {/* team-area */}
-                    <section className="team-area-three">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-6">
-                                    <div className="section-title-two text-center mb-50">
-                                        <span className="sub-title">Expert People</span>
-                                        <h2 className="title">Dedicated Team Members</h2>
-                                        <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row justify-content-center">
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item-three">
-                                        <div className="team-thumb-three">
-                                            <img src="/assets/img/team/h3_team_img01.png" alt="" />
-                                            <SocialToggle />
-                                        </div>
-                                        <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Brooklyn Simmons</Link></h4>
-                                            <span>Lead ICT Consultant</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item-three">
-                                        <div className="team-thumb-three">
-                                            <img src="/assets/img/team/h3_team_img02.png" alt="" />
-                                            <SocialToggle />
-                                        </div>
-                                        <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Jenny Wilson</Link></h4>
-                                            <span>Digital Transformation Lead</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item-three">
-                                        <div className="team-thumb-three">
-                                            <img src="/assets/img/team/h3_team_img03.png" alt="" />
-                                            <SocialToggle />
-                                        </div>
-                                        <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Ronald Richards</Link></h4>
-                                            <span>Training &amp; Capacity Building Specialist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item-three">
-                                        <div className="team-thumb-three">
-                                            <img src="/assets/img/team/h3_team_img04.png" alt="" />
-                                            <SocialToggle />
-                                        </div>
-                                        <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Marvin McKinney</Link></h4>
-                                            <span>Digital Marketing Strategist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    {/* team-area-end */}
                     {/* testimonial-area */}
                     <section className="testimonial-area testimonial-bg" data-background="/assets/img/bg/testimonial_bg.jpg">
                         <div className="container">
@@ -210,12 +143,6 @@ export default function About() {
                         </div>
                     </section>
                     {/* testimonial-area-end */}
-                    {/* brand-area */}
-                    <div className="brand-area-six pt-80 pb-80">
-                        <div className="container">
-                            <BrandSlider />
-                        </div>
-                    </div>
                 </div>
             </Layout>
         </>
