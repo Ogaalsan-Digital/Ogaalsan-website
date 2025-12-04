@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
-import OffcanvusMenu from "../OffcanvusMenu";
 import SearchPopup from "../SearchPopup";
 
 export default function Header1({
@@ -134,16 +133,6 @@ export default function Header1({
                             <i className="flaticon-search" />
                           </Link>
                         </li>
-                        <li
-                          className="offcanvas-menu"
-                          onClick={handleOffcanvus}
-                        >
-                                                    <Link href="#" className="menu-tigger">
-                                                        <span />
-                                                        <span />
-                                                        <span />
-                                                    </Link>
-                                                </li>
                                             </ul>
                                         </div>
                                     </nav>
@@ -210,10 +199,6 @@ export default function Header1({
                     </div>
                 </div>
                 <SearchPopup isSearch={isSearch} handleSearch={handleSearch} />
-        <OffcanvusMenu
-          isOffcanvus={isOffcanvus}
-          handleOffcanvus={handleOffcanvus}
-        />
             </header>
         </>
   );
