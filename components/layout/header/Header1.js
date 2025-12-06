@@ -92,23 +92,9 @@ export default function Header1({
                         <li>
                           <Link href="/about">About Us</Link>
                         </li>
-                        <li className="menu-item-has-children">
+                        <li>
                           <Link href="/services">Services</Link>
-                                                    <ul className="sub-menu">
-                            <li>
-                              <Link href="/services-details">ICT Strategy &amp; Consulting</Link>
-                            </li>
-                            <li>
-                              <Link href="/services-details-2">Training &amp; Capacity Building</Link>
-                                                </li>
-                            <li>
-                              <Link href="/services-details-3">Digital Business Development</Link>
-                                                </li>
-                            <li>
-                              <Link href="/services-details">Digital Marketing &amp; Growth</Link>
-                                                        </li>
-                                                            </ul>
-                                                        </li>
+                        </li>
                         <li>
                           <Link href="/blog">Blog</Link>
                                                 </li>
