@@ -32,7 +32,7 @@ const Blog = dynamic(() => import("@/components/sections/home3/Blog"), {
 export default function Home3() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={1}>
+            <Layout headerStyle={3} footerStyle={2}>
                 <Banner />
                 <Features />
                 <About />

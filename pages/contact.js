@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Contact() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Contact Us">
+            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact Us">
                 <div>
                     <section className="inner-contact-area pt-120 pb-120">
                         <div className="container">

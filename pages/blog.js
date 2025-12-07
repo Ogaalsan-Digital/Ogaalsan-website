@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Latest Blog">
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Latest Blog">
         <section className="blog-area pt-120 pb-120">
           <div className="container">
             <div className="inner-blog-wrap">

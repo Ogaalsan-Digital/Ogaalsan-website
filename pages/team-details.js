@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function TeamDetails() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Team Details">
+            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Team Details">
                 <section className="team-details-area pt-120 pb-120">
                     <div className="container">
                         <div className="row">

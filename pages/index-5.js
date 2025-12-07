@@ -41,7 +41,7 @@ const Brand = dynamic(() => import("@/components/sections/home5/Brand"), {
 export default function Home5() {
     return (
         <>
-            <Layout headerStyle={5} footerStyle={1}>
+            <Layout headerStyle={5} footerStyle={2}>
                 <Slider />
                 <About />
                 <Features />

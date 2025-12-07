@@ -62,7 +62,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {children}
             </main>
 
-            {!footerStyle && < Footer1 />}
+            {!footerStyle && < Footer2 />}
             {footerStyle == 1 ? < Footer1 /> : null}
             {footerStyle == 2 ? < Footer2 /> : null}
             {footerStyle == 3 ? < Footer3 /> : null}

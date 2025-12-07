@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function ServiceDetails2() {
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Service Details">
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Service Details">
         <div>
           <section className="services-details-area pt-120 pb-120">
             <div className="container">
