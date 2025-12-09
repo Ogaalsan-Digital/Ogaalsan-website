@@ -68,6 +68,15 @@ export default function Testimonial() {
         return () => clearTimeout(timer)
     }, [])
 
+    const focusAreas = [
+        "ICT Strategy",
+        "Digital Innovation",
+        "Training & Development",
+        "Business Growth",
+        "Technology Solutions",
+        "Digital Transformation"
+    ]
+
     return (
         <>
             <section ref={sectionRef} className="brand-area-two pt-120 pb-120" data-background="/assets/img/bg/h2_testimonial_bg.jpg">
@@ -75,49 +84,43 @@ export default function Testimonial() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title-two white-title text-center mb-60 tg-heading-subheading animation-style3">
-                                <span className="sub-title">Trusted Partners</span>
-                                <h2 className="title tg-element-title">Organizations We Work With</h2>
-                                <p className="mt-3">We're proud to partner with leading organizations across various sectors, helping them achieve their digital transformation goals through innovative ICT solutions.</p>
+                                <span className="sub-title">What We Do</span>
+                                <h2 className="title tg-element-title">Our Focus Areas</h2>
                             </div>
                         </div>
                     </div>
                     <div className="brand-item-wrap">
                         <Slider ref={sliderRef} {...settings} className="row brand-active-two">
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img01.png" alt="Partner Company" />
+                            {focusAreas.map((area, index) => (
+                                <div key={index} className="col-lg-12">
+                                    <div className="brand-item-two" style={{ padding: '0 10px' }}>
+                                        <div className="focus-item" style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            padding: '30px 25px',
+                                            minHeight: '140px',
+                                            background: 'rgba(255, 255, 255, 0.05)',
+                                            borderRadius: '8px',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'
+                                        }}>
+                                            <h4 style={{ 
+                                                color: '#fff', 
+                                                fontSize: '20px', 
+                                                fontWeight: '500',
+                                                margin: 0,
+                                                textAlign: 'center'
+                                            }}>{area}</h4>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img02.png" alt="Partner Company" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img03.png" alt="Partner Company" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img04.png" alt="Partner Company" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img05.png" alt="Partner Company" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img01.png" alt="Partner Company" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="brand-item-two">
-                                    <img src="/assets/img/brand/brand_img02.png" alt="Partner Company" />
-                                </div>
-                            </div>
+                            ))}
                         </Slider>
                     </div>
                 </div>
