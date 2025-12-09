@@ -27,7 +27,7 @@ export default function Services() {
                                             <h2 className="title">ICT Strategy &amp; Consulting</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <Image src="/assets/img/services/services_img01.jpg" alt="" width={400} height={300} loading="lazy" />
+                                            <Image src="/assets/img/ogalsan/strategy.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
@@ -48,7 +48,7 @@ export default function Services() {
                                             <h2 className="title">Training &amp; Capacity Building</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img02.jpg" alt="" />
+                                            <Image src="/assets/img/ogalsan/training.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
@@ -69,7 +69,7 @@ export default function Services() {
                                             <h2 className="title">Digital Business Development</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img03.jpg" alt="" />
+                                            <Image src="/assets/img/ogalsan/digital-1.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
@@ -85,64 +85,24 @@ export default function Services() {
                                     <div className="services-content">
                                         <div className="content-top">
                                             <div className="icon">
-                                                <i className="flaticon-investment" />
+                                                <i className="flaticon-business-presentation" />
                                             </div>
-                                            <h2 className="title">Digital Marketing &amp; Growth</h2>
+                                            <h2 className="title">Business Development</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img04.jpg" alt="" />
+                                            <Image src="/assets/img/ogalsan/factory.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
                                             <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>Campaign strategy &amp; execution</li>
-                                            <li>Social, search &amp; email marketing</li>
-                                            <li>Analytics, reporting &amp; optimization</li>
+                                            <li>Business strategy &amp; growth planning</li>
+                                            <li>Market analysis &amp; opportunity assessment</li>
+                                            <li>Partnership development &amp; networking</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-6 col-sm-10">
-                                <div className="services-item">
-                                    <div className="services-content">
-                                        <div className="content-top">
-                                            <div className="icon">
-                                                <i className="flaticon-data-management" />
-                                            </div>
-                                            <h2 className="title">Cloud &amp; Infrastructure Services</h2>
-                                        </div>
-                                        <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img05.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
-                                        </div>
-                                        <ul className="list-wrap">
-                                            <li>Cloud migration &amp; deployment</li>
-                                            <li>Network &amp; infrastructure design</li>
-                                            <li>Security, backup &amp; continuity</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-10">
-                                <div className="services-item">
-                                    <div className="services-content">
-                                        <div className="content-top">
-                                            <div className="icon">
-                                                <i className="flaticon-calculator" />
-                                            </div>
-                                            <h2 className="title">Data &amp; Analytics Solutions</h2>
-                                        </div>
-                                        <div className="services-thumb">
-                                            <img src="/assets/img/services/services_img06.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
-                                        </div>
-                                        <ul className="list-wrap">
-                                            <li>Business intelligence dashboards</li>
-                                            <li>Reporting &amp; decision support</li>
-                                            <li>Data strategy &amp; governance</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                         
+                       
                         </div>
                     </div>
                 </section>
