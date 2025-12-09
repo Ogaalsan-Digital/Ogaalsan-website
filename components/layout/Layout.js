@@ -30,19 +30,49 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleOffcanvus = () => setOffcanvus(!isOffcanvus)
 
     useEffect(() => {
-        const WOW = require('wowjs')
-        window.wow = new WOW.WOW({
-            live: false
-        })
-        window.wow.init()
-
-        document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
+        // Lazy load WOW.js for better initial performance
+        const loadWOW = async () => {
+            const WOW = require('wowjs')
+            window.wow = new WOW.WOW({
+                live: false,
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: false // Disable on mobile for better performance
+            })
+            window.wow.init()
+        }
+        
+        // Load WOW.js after initial render
+        if (typeof window !== 'undefined') {
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadWOW, { timeout: 2000 })
+            } else {
+                setTimeout(loadWOW, 500)
             }
-        })
-    }, [])
+        }
+
+        // Throttle scroll event for better performance
+        let ticking = false
+        const handleScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollCheck = window.scrollY > 100
+                    if (scrollCheck !== scroll) {
+                        setScroll(scrollCheck)
+                    }
+                    ticking = false
+                })
+                ticking = true
+            }
+        }
+
+        document.addEventListener("scroll", handleScroll, { passive: true })
+        
+        return () => {
+            document.removeEventListener("scroll", handleScroll)
+        }
+    }, [scroll])
     return (
         <>
             <PageHead headTitle={headTitle} />

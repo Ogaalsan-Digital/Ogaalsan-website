@@ -2,35 +2,32 @@ import Preloader from "@/components/elements/Preloader"
 import { useEffect, useState } from "react"
 import dynamic from "next/dynamic"
 import AOS from 'aos'
-import "public/assets/css/bootstrap.min.css"
-import "public/assets/css/animate.min.css"
-import "public/assets/css/magnific-popup.css"
-import "public/assets/css/fontawesome-all.min.css"
-import "public/assets/css/flaticon.css"
-import "public/assets/css/odometer.css"
-import "public/assets/css/jarallax.css"
-import "public/assets/css/swiper-bundle.min.css"
-import "public/assets/css/slick.css"
-import "public/assets/css/aos.css"
-import "public/assets/css/default.css"
-import "public/assets/css/style.css"
-import "public/assets/css/responsive.css"
 
 function MyApp({ Component, pageProps }) {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        // Reduce preloader time for better UX
+        // Reduce preloader time for better UX - reduced from 500ms to 200ms
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 500)
+        }, 200)
         
-        // Initialize AOS after component mounts
+        // Initialize AOS after component mounts - lazy load
         if (typeof window !== 'undefined') {
-            AOS.init({
-                duration: 800,
-                once: true,
-                offset: 100,
-            })
+            // Use requestIdleCallback for better performance
+            const initAOS = () => {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                    offset: 100,
+                    disable: 'mobile', // Disable on mobile for better performance
+                })
+            }
+            
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(initAOS, { timeout: 2000 })
+            } else {
+                setTimeout(initAOS, 100)
+            }
         }
         
         return () => clearTimeout(timer)
