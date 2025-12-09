@@ -1,4 +1,3 @@
-import VideoPopup from "@/components/elements/PopupVideo"
 import Link from "next/link"
 
 export default function Banner() {
@@ -17,7 +16,6 @@ export default function Banner() {
                                 <p data-aos="fade-up" data-aos-delay={500}>We design and implement modern ICT systems, digital products, and data-driven strategies that help organizations grow and innovate.</p>
                                 <div className="banner-btn">
                                     <Link href="/services" className="btn" data-aos="fade-right" data-aos-delay={700}>Our Services</Link>
-                                    <VideoPopup style={1} />
                                 </div>
                             </div>
                         </div>

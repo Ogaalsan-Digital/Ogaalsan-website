@@ -26,37 +26,18 @@ export default function ServiceDetails() {
                     </div>
                     <div className="services-details-content">
                       <h2 className="title">
-                        ICT Strategy &amp; Consulting for Somali Organisations
+                        ICT Strategy &amp; Consulting
                       </h2>
                       <p>
-                        At OgaalSan, we work with Somali businesses, NGOs, and
-                        public institutions to assess your current ICT systems,
-                        identify gaps and opportunities, and design a practical
-                        digital roadmap that aligns technology with your real
-                        challenges and goals.
-                      </p>
-                      <p>
-                        Our consultants understand the unique context of
-                        operating in Somalia—from connectivity constraints to
-                        budget realities—and help you prioritize ICT investments
-                        that deliver measurable impact while building resilience
-                        and scalability.
+                        We help organizations assess ICT systems, identify gaps, and design practical digital roadmaps.
                       </p>
                       <div className="sd-inner-wrap">
                         <div className="row align-items-center">
                           <div className="col-56">
                             <div className="content">
                               <h3 className="title-two">
-                                Practical ICT solutions that fit your context
+                                Our Services
                               </h3>
-                              <p>
-                                We translate your operational needs into clear
-                                ICT architectures, step-by-step implementation
-                                plans, and realistic timelines. Every
-                                recommendation considers your local
-                                infrastructure, team capacity, and budget
-                                constraints.
-                              </p>
                               <ul className="list-wrap">
                                 <li>
                                   <Image
@@ -66,7 +47,7 @@ export default function ServiceDetails() {
                                     height={20}
                                     loading="lazy"
                                   />
-                                  Clear ICT vision &amp; practical roadmap
+                                  ICT vision &amp; roadmap
                                 </li>
                                 <li>
                                   <Image
@@ -76,8 +57,7 @@ export default function ServiceDetails() {
                                     height={20}
                                     loading="lazy"
                                   />
-                                  Infrastructure &amp; cloud strategy for
-                                  Somalia
+                                  Infrastructure &amp; cloud
                                 </li>
                                 <li>
                                   <Image
@@ -87,7 +67,7 @@ export default function ServiceDetails() {
                                     height={20}
                                     loading="lazy"
                                   />
-                                  Security, resilience &amp; compliance support
+                                  Security &amp; compliance
                                 </li>
                                 <li>
                                   <Image
@@ -97,7 +77,7 @@ export default function ServiceDetails() {
                                     height={20}
                                     loading="lazy"
                                   />
-                                  Better service delivery &amp; user experience
+                                  Implementation support
                                 </li>
                               </ul>
                             </div>
@@ -116,24 +96,10 @@ export default function ServiceDetails() {
                           </div>
                         </div>
                       </div>
-                      <p>
-                        Our ICT advisory team helps you make informed technology
-                        choices, structure implementation projects that fit your
-                        capacity, and ensure every investment contributes to
-                        better operations, stronger accountability, and
-                        long-term sustainability.
-                      </p>
                       <div className="company-benefit-wrap">
                         <h2 className="title-two">
-                          Why Choose OgaalSan for ICT Consulting
+                          Why Choose Us
                         </h2>
-                        <p>
-                          Working with OgaalSan gives you access to ICT experts
-                          who understand the Somali context, proven
-                          methodologies adapted for local conditions, and
-                          practical guidance that reduces risk and accelerates
-                          your digital transformation journey.
-                        </p>
                         <div className="accordion-wrap-three">
                           <Accordion />
                         </div>
@@ -174,11 +140,6 @@ export default function ServiceDetails() {
                     <div className="services-widget">
                       <h4 className="sw-title">Service Brochure</h4>
                       <div className="services-brochure-wrap">
-                        <p>
-                          Download our ICT services profile to explore how
-                          OgaalSan can support your organisation's digital
-                          transformation journey.
-                        </p>
                         <Link href="#" className="download-btn">
                           <i className="far fa-file-pdf" />
                           PDF. Download

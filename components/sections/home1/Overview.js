@@ -9,7 +9,7 @@ export default function Overview() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-10">
                             <div className="overview-img-wrap">
-                                <img src="/assets/img/ogalsan/power.jpg" alt="" />
+                                <img src="/assets/img/ogalsan/power2.jpg" alt="" style={{ width: '400px' }} />
                                 <img src="/assets/img/images/overview_img02.jpg" alt="" data-parallax="{&quot;x&quot; : 50 }" />
                                 <img src="/assets/img/images/overview_img_shape.png" alt="" />
                                 <div className="icon">

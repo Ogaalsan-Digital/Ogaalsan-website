@@ -45,7 +45,7 @@ export default function Home1() {
         <Testimonial />
         {/* <Pricing /> */}
         <Blog />
-        <Request />
+        {/* <Request /> */}
       </Layout>
     </>
   );
