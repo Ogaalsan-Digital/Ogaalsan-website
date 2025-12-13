@@ -22,7 +22,9 @@ export default function Footer2() {
                                                             <i className="flaticon-phone-call" />
                                                         </div>
                                                         <div className="content">
-                                                            <Link href="tel:+252615280901">+252 61 5280901</Link>
+                                                            <Link href="tel:770904044">770904044</Link>
+                                                            <br />
+                                                            <Link href="tel:770904045">770904045</Link>
                                                         </div>
                                                     </li>
                                                     <li>
