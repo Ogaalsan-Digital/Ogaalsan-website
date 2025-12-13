@@ -111,7 +111,10 @@ export default function Header1({
                                                     </div>
                                                     <div className="content">
                                                         <span>Hot Line Number</span>
-                            <Link href="tel:+252615280901">+252 61 5280901</Link>
+                            <span>
+                                <Link href="tel:770904044">770904044</Link>
+                                <Link href="tel:770904045">770904045</Link>
+                            </span>
                                                     </div>
                                                 </li>
                         <li className="header-search" onClick={handleSearch}>

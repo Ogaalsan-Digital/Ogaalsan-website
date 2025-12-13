@@ -32,7 +32,7 @@ export default function Footer2() {
                                                             <i className="flaticon-clock" />
                                                         </div>
                                                         <div className="content">
-                                                            <p>Mon – Sat: 8 am – 5 pm, <br /> Sunday: <span>CLOSED</span></p>
+                                                            <p>Mon – Sat: 8 am – 5 pm, <br /> Friday: <span>CLOSED</span></p>
                                                         </div>
                                                     </li>
                                                 </ul>
