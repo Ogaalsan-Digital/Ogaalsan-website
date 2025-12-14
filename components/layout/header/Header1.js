@@ -43,23 +43,23 @@ export default function Header1({
                   <div className="header-social">
                     <ul className="list-wrap">
                       <li>
-                        <Link href="#">
+                        <Link href="https://www.facebook.com/profile.php?id=61552529542233" target="_blank" rel="noopener noreferrer">
                           <i className="fab fa-facebook-f" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
+                        <Link href="https://x.com/OgaalsanC" target="_blank" rel="noopener noreferrer">
+                          <span style={{fontWeight: 'bold', fontSize: '18px'}}>X</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
+                        <Link href="https://www.instagram.com/ogaalsan.consultancy/" target="_blank" rel="noopener noreferrer">
                           <i className="fab fa-instagram" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fab fa-pinterest-p" />
+                        <Link href="https://www.tiktok.com/@ogaalsanconsultancy" target="_blank" rel="noopener noreferrer">
+                          <i className="fab fa-tiktok" />
                         </Link>
                       </li>
                     </ul>
@@ -154,28 +154,28 @@ export default function Header1({
                     <div className="social-links">
                       <ul className="clearfix list-wrap">
                         <li>
-                          <Link href="#">
+                          <Link href="https://www.facebook.com/profile.php?id=61552529542233" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-facebook-f" />
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
-                            <i className="fab fa-twitter" />
+                          <Link href="https://x.com/OgaalsanC" target="_blank" rel="noopener noreferrer">
+                            <span style={{fontWeight: 'bold', fontSize: '18px'}}>X</span>
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link href="https://www.instagram.com/ogaalsan.consultancy/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-instagram" />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="https://www.tiktok.com/@ogaalsanconsultancy" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-tiktok" />
                           </Link>
                         </li>
                         <li>
                           <Link href="#">
                             <i className="fab fa-linkedin-in" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-youtube" />
                           </Link>
                         </li>
                       </ul>

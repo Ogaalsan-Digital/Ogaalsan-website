@@ -52,16 +52,7 @@ export default function Blog() {
                               Digital Marketing <span>(02)</span>
                             </Link>
                           </li>
-                          <li>
-                            <Link href="#">
-                              NGO &amp; Development <span>(02)</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              Data &amp; Analytics <span>(02)</span>
-                            </Link>
-                          </li>
+                         
                         </ul>
                       </div>
                     </div>
