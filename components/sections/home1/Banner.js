@@ -9,11 +9,54 @@ export default function Banner() {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
                             <div className="banner-content-two">
-                                <span className="sub-title" data-aos="fade-up" data-aos-delay={100}>ICT &amp; Digital Innovation Experts</span>
-                                <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Smart Digital Solutions For Your Business</h2>
-                                <p data-aos="fade-up" data-aos-delay={500}>We design and implement modern ICT systems, digital products, and data-driven strategies that help organizations grow and innovate.</p>
-                                <div className="banner-btn" data-aos="fade-up" data-aos-delay={700}>
-                                    <Link href="/services" className="btn">Our Services</Link>
+                                <span
+                                    className="sub-title"
+                                    data-aos="fade-up"
+                                    data-aos-delay={100}
+                                >
+                                    ICT &amp; Digital Innovation Experts
+                                </span>
+                                <h2
+                                    className="title"
+                                    data-aos="fade-up"
+                                    data-aos-delay={300}
+                                >
+                                    Smart Digital{" "}
+                                    <span className="text-primary">
+                                        Solutions
+                                    </span>
+                                    <br />
+                                    For Your Business
+                                </h2>
+                                <p
+                                    className="mb-25"
+                                    data-aos="fade-up"
+                                    data-aos-delay={500}
+                                >
+                                    We plan, design, and implement modern ICT systems,
+                                    digital products, and data-driven strategies that
+                                    help organisations work smarter and grow faster.
+                                </p>
+                                <ul
+                                    className="list-wrap banner-feature-list"
+                                    data-aos="fade-up"
+                                    data-aos-delay={600}
+                                >
+                                    <li>End-to-end ICT &amp; infrastructure support</li>
+                                    <li>Hands-on training &amp; capacity building</li>
+                                    <li>Digital marketing &amp; growth strategies</li>
+                                </ul>
+                                <div
+                                    className="banner-btn d-flex align-items-center gap-3 mt-30"
+                                    data-aos="fade-up"
+                                    data-aos-delay={700}
+                                >
+                                    <Link href="/services" className="btn">
+                                        Our Services
+                                    </Link>
+                                    <Link href="/contact" className="btn border-btn">
+                                        Talk to an Expert
+                                    </Link>
                                 </div>
                             </div>
                         </div>
