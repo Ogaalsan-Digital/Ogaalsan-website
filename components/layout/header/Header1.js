@@ -39,30 +39,53 @@ export default function Header1({
                 </div>
               </div>
               <div className="col-lg-5">
-                <div className="header-top-right">
+                <div className="header-top-right d-flex justify-content-end align-items-center">
                   <div className="header-social">
                     <ul className="list-wrap">
                       <li>
-                        <Link href="https://www.facebook.com/profile.php?id=61552529542233" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://www.facebook.com/profile.php?id=61552529542233"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fab fa-facebook-f" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://x.com/OgaalsanC" target="_blank" rel="noopener noreferrer">
-                          <span style={{fontWeight: 'bold', fontSize: '18px'}}>X</span>
+                        <Link
+                          href="https://x.com/OgaalsanC"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                            X
+                          </span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://www.instagram.com/ogaalsan.consultancy/" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://www.instagram.com/ogaalsan.consultancy/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fab fa-instagram" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://www.tiktok.com/@ogaalsanconsultancy" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://www.tiktok.com/@ogaalsanconsultancy"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="fab fa-tiktok" />
                         </Link>
                       </li>
                     </ul>
+                  </div>
+                  <div className="header-top-btn d-none d-md-block ms-3">
+                    <Link href="/contact" className="btn btn-sm">
+                      Book a Consultation
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -110,9 +133,10 @@ export default function Header1({
                             <i className="flaticon-phone-call" />
                           </div>
                           <div className="content">
-                            <span>Hot Line Number</span>
-                            <span>
-                              <Link href="tel:770904044">770904044</Link>
+                            <span>Hotline</span>
+                            <span className="d-block">
+                              <Link href="tel:770904044">770904044</Link>{" "}
+                              <span style={{ opacity: 0.7 }}> / </span>
                               <Link href="tel:770904045">770904045</Link>
                             </span>
                           </div>
