@@ -16,7 +16,7 @@ export default function ServiceDetails3() {
                   <div className="services-details-wrap">
                     <div className="services-details-thumb">
                       <img
-                        src="/assets/img/ogalsan/factory.jpg"
+                        src="/assets/img/ogalsan/person.jpg"
                         alt="Digital Business Development"
                       />
                     </div>

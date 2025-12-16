@@ -49,7 +49,7 @@ export default function Services() {
                                         </div>
                                         <div className="services-thumb">
                                             <Image src="/assets/img/ogalsan/training.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Link href="/services-details-2" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Digital skills &amp; productivity training</li>
@@ -69,8 +69,8 @@ export default function Services() {
                                             <h2 className="title">Digital Business Development</h2>
                                         </div>
                                         <div className="services-thumb">
-                                            <Image src="/assets/img/ogalsan/digital-1.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Image src="/assets/img/ogalsan/person.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
+                                            <Link href="/services-details-3" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Digital product and service design</li>
@@ -82,23 +82,23 @@ export default function Services() {
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-10">
                                 <div className="services-item">
-                                    <div className="services-content">
-                                        <div className="content-top">
-                                            <div className="icon">
-                                                <i className="flaticon-business-presentation" />
+                                        <div className="services-content">
+                                            <div className="content-top">
+                                                <div className="icon">
+                                                    <i className="flaticon-business-presentation" />
+                                                </div>
+                                                <h2 className="title">Digital Marketing &amp; Growth</h2>
                                             </div>
-                                            <h2 className="title">Business Development</h2>
-                                        </div>
                                         <div className="services-thumb">
-                                            <Image src="/assets/img/ogalsan/factory.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                                <Image src="/assets/img/ogalsan/digital-1.jpg" alt="" width={400} height={300} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '300px' }} />
+                                                <Link href="/services-details-4" className="btn transparent-btn">Our Services</Link>
+                                            </div>
+                                            <ul className="list-wrap">
+                                                <li>Social media &amp; content campaigns</li>
+                                                <li>Digital outreach &amp; audience growth</li>
+                                                <li>Analytics &amp; performance reporting</li>
+                                            </ul>
                                         </div>
-                                        <ul className="list-wrap">
-                                            <li>Business strategy &amp; growth planning</li>
-                                            <li>Market analysis &amp; opportunity assessment</li>
-                                            <li>Partnership development &amp; networking</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                          
