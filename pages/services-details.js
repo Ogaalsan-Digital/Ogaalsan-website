@@ -25,81 +25,24 @@ export default function ServiceDetails() {
                       />
                     </div>
                     <div className="services-details-content">
-                      <h2 className="title">
-                        ICT Strategy &amp; Consulting
-                      </h2>
+                      <h2 className="title">ICT Strategy &amp; Consulting</h2>
                       <p>
-                        We help organizations assess ICT systems, identify gaps, and design practical digital roadmaps.
+                        We help organizations assess ICT systems, identify gaps,
+                        and design practical digital roadmaps.
                       </p>
-                      <div className="sd-inner-wrap">
-                        <div className="row align-items-center">
-                          <div className="col-56">
-                            <div className="content">
-                              <h3 className="title-two">
-                                Our Services
-                              </h3>
-                              <ul className="list-wrap">
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  ICT vision &amp; roadmap
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Infrastructure &amp; cloud
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Security &amp; compliance
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Implementation support
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="col-44">
-                            <div className="thumb">
-                              <Image
-                                src="/assets/img/ogalsan/person.jpg"
-                                alt="ICT Strategy Consulting"
-                                width={500}
-                                height={400}
-                                loading="lazy"
-                              />
-                              <VideoPopup style={3} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <h3 className="title-two">Consulting focus</h3>
+                      <ul className="list-wrap mb-20">
+                        <li>
+                          Aligning your ICT plans with your business goals
+                        </li>
+                        <li>
+                          Reviewing current systems and highlighting key risks
+                        </li>
+                        <li>Recommending clear next steps for improvement</li>
+                      </ul>
+
                       <div className="company-benefit-wrap">
-                        <h2 className="title-two">
-                          Why Choose Us
-                        </h2>
+                        <h2 className="title-two">Why Choose Us</h2>
                         <div className="accordion-wrap-three">
                           <Accordion />
                         </div>
@@ -136,41 +79,6 @@ export default function ServiceDetails() {
                           </Link>
                         </li>
                       </ul>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Service Brochure</h4>
-                      <div className="services-brochure-wrap">
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-pdf" />
-                          PDF. Download
-                        </Link>
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-alt" />
-                          DOC. Download
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Get a Free Quote</h4>
-                      <div className="services-widget-form">
-                        <form action="#">
-                          <div className="form-grp">
-                            <input type="text" placeholder="Your Name" />
-                          </div>
-                          <div className="form-grp">
-                            <input type="email" placeholder="E-mail Address" />
-                          </div>
-                          <div className="form-grp">
-                            <textarea
-                              name="message"
-                              placeholder="Type Your Message"
-                            />
-                          </div>
-                          <button type="submit" className="submit-btn">
-                            Send Message
-                          </button>
-                        </form>
-                      </div>
                     </div>
                   </aside>
                 </div>
