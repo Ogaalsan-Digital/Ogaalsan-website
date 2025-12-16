@@ -15,16 +15,16 @@ export default function ServiceDetails2() {
               <div className="row justify-content-center">
                 <div className="col-71 order-0 order-lg-2">
                   <div className="services-details-wrap">
-                    <div className="services-details-thumb">
-                      <Image
-                        src="/assets/img/ogalsan/training.jpg"
-                        alt="Training & Capacity Building"
-                        width={800}
-                        height={600}
-                        loading="lazy"
-                      />
-                    </div>
                     <div className="services-details-content">
+                      <div className="services-details-thumb mb-30">
+                        <Image
+                          src="/assets/img/ogalsan/training.jpg"
+                          alt="Training & Capacity Building"
+                          width={800}
+                          height={600}
+                          loading="lazy"
+                        />
+                      </div>
                       <h2 className="title">
                         Training &amp; Capacity Building for Somali Teams
                       </h2>
