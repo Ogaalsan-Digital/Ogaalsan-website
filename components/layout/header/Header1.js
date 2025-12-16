@@ -57,7 +57,9 @@ export default function Header1({
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                          <span
+                            style={{ fontWeight: "bold", fontSize: "18px" }}
+                          >
                             X
                           </span>
                         </Link>
@@ -136,7 +138,6 @@ export default function Header1({
                             <span>Hotline</span>
                             <span className="d-block">
                               <Link href="tel:770904044">770904044</Link>{" "}
-                              <span style={{ opacity: 0.7 }}> / </span>
                               <Link href="tel:770904045">770904045</Link>
                             </span>
                           </div>
@@ -178,22 +179,42 @@ export default function Header1({
                     <div className="social-links">
                       <ul className="clearfix list-wrap">
                         <li>
-                          <Link href="https://www.facebook.com/profile.php?id=61552529542233" target="_blank" rel="noopener noreferrer">
+                          <Link
+                            href="https://www.facebook.com/profile.php?id=61552529542233"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fab fa-facebook-f" />
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://x.com/OgaalsanC" target="_blank" rel="noopener noreferrer">
-                            <span style={{fontWeight: 'bold', fontSize: '18px'}}>X</span>
+                          <Link
+                            href="https://x.com/OgaalsanC"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span
+                              style={{ fontWeight: "bold", fontSize: "18px" }}
+                            >
+                              X
+                            </span>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.instagram.com/ogaalsan.consultancy/" target="_blank" rel="noopener noreferrer">
+                          <Link
+                            href="https://www.instagram.com/ogaalsan.consultancy/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fab fa-instagram" />
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.tiktok.com/@ogaalsanconsultancy" target="_blank" rel="noopener noreferrer">
+                          <Link
+                            href="https://www.tiktok.com/@ogaalsanconsultancy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fab fa-tiktok" />
                           </Link>
                         </li>

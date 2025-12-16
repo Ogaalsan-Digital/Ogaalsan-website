@@ -1,7 +1,7 @@
 export default function Choose() {
     return (
         <>
-            <section className="choose-area jarallax choose-bg" data-background="/assets/img/ogalsan/labtob.jpg">
+            <section className="choose-area jarallax choose-bg" data-background="/assets/img/ogalsan/sure.jpg">
                 <div className="choose-shape">
                     <img src="/assets/img/images/choose_shape.png" alt="" data-aos="fade-right" data-aos-delay={0} />
                 </div>
@@ -19,7 +19,7 @@ export default function Choose() {
                             <div className="skill-wrap wow fadeInRight" data-wow-delay=".2s">
                                 <div className="section-title-two mb-15">
                                     <span className="sub-title">Why Choose OgaalSan</span>
-                                    <h2 className="title">Expert ICT & Digital Innovation Solutions</h2>
+                                    {/* <h2 className="title">Expert ICT & Digital Innovation Solutions</h2> */}
                                 </div>
                                 <p>We combine deep technical expertise with practical business insights to deliver ICT solutions that transform organizations and drive digital innovation.</p>
                                 <div className="progress-wrap">

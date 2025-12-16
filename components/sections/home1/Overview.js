@@ -32,7 +32,7 @@ export default function Overview() {
                                                 <i className="flaticon-trophy" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp count={235} />+</h2>
+                                                <h2 className="count"><CounterUp count={5} />+</h2>
                                                 <p>Best Award</p>
                                             </div>
                                         </li>
@@ -41,7 +41,7 @@ export default function Overview() {
                                                 <i className="flaticon-rating" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp count={98} />k</h2>
+                                                <h2 className="count"><CounterUp count={10} /></h2>
                                                 <p>Happy Clients</p>
                                             </div>
                                         </li>
