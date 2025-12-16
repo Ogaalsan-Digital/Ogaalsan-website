@@ -25,97 +25,20 @@ export default function ServiceDetails3() {
                         Digital Business Development for Somali Organisations
                       </h2>
                       <p>
-                        At OgaalSan, we help Somali businesses and organisations
-                        design new digital services, optimize core processes,
-                        and unlock growth opportunities through technology. We
-                        work with you to identify where digital innovation can
-                        create the most value—whether in customer service,
-                        operations, or new revenue streams.
+                        We help organisations use simple digital tools to improve
+                        services, streamline processes, and create new
+                        opportunities for growth.
                       </p>
-                      <p>
-                        Our approach combines business analysis, user-centered
-                        design, and practical implementation support. We focus
-                        on solutions that fit your context, budget, and team
-                        capacity, ensuring that every digital initiative
-                        delivers measurable impact.
-                      </p>
-                      <div className="sd-inner-wrap">
-                        <div className="row align-items-center">
-                          <div className="col-56">
-                            <div className="content">
-                              <h3 className="title-two">
-                                Digital solutions that drive real growth
-                              </h3>
-                              <p>
-                                We help you map your key workflows, identify
-                                bottlenecks, and redesign processes using
-                                simple, user-friendly digital tools. The result
-                                is faster service delivery, clearer
-                                responsibilities, and better experiences for the
-                                people you serve.
-                              </p>
-                              <ul className="list-wrap">
-                                <li>
-                                  <img
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                  />
-                                  Digital product &amp; service design
-                                </li>
-                                <li>
-                                  <img
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                  />
-                                  Process optimization &amp; automation
-                                </li>
-                                <li>
-                                  <img
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                  />
-                                  Innovation &amp; go-to-market support
-                                </li>
-                                <li>
-                                  <img
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                  />
-                                  Business model transformation
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="col-44">
-                            <div className="thumb">
-                              <img
-                                src="/assets/img/ogalsan/factory.jpg"
-                                alt="Digital Business Development"
-                              />
-                              <VideoPopup style={3} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        Our digital business development services help you move
-                        from paper-based processes to efficient digital
-                        platforms, from manual workflows to automated systems,
-                        and from traditional services to innovative digital
-                        offerings that meet the needs of today's customers and
-                        beneficiaries.
-                      </p>
+                      <h3 className="title-two">What we do</h3>
+                      <ul className="list-wrap mb-20">
+                        <li>Improve key processes with digital tools</li>
+                        <li>Support new digital products and services</li>
+                        <li>Guide teams through change and adoption</li>
+                      </ul>
                       <div className="company-benefit-wrap">
                         <h2 className="title-two">
                           Why Choose OgaalSan for Digital Business Development
                         </h2>
-                        <p>
-                          Working with OgaalSan gives you access to business
-                          development experts who understand the Somali market,
-                          proven methodologies for digital transformation, and
-                          practical support that helps you launch and scale new
-                          digital initiatives successfully.
-                        </p>
                         <div className="accordion-wrap-three">
                           <Accordion />
                         </div>
@@ -152,46 +75,6 @@ export default function ServiceDetails3() {
                           </Link>
                         </li>
                       </ul>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Service Brochure</h4>
-                      <div className="services-brochure-wrap">
-                        <p>
-                          Download our digital business development services
-                          profile to explore how OgaalSan can support your
-                          organisation's growth initiatives.
-                        </p>
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-pdf" />
-                          PDF. Download
-                        </Link>
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-alt" />
-                          DOC. Download
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Get a Free Quote</h4>
-                      <div className="services-widget-form">
-                        <form action="#">
-                          <div className="form-grp">
-                            <input type="text" placeholder="Your Name" />
-                          </div>
-                          <div className="form-grp">
-                            <input type="email" placeholder="E-mail Address" />
-                          </div>
-                          <div className="form-grp">
-                            <textarea
-                              name="message"
-                              placeholder="Type Your Message"
-                            />
-                          </div>
-                          <button type="submit" className="submit-btn">
-                            Send Message
-                          </button>
-                        </form>
-                      </div>
                     </div>
                   </aside>
                 </div>

@@ -29,108 +29,20 @@ export default function ServiceDetails2() {
                         Training &amp; Capacity Building for Somali Teams
                       </h2>
                       <p>
-                        At OgaalSan, we understand that technology alone doesn't
-                        drive transformation—your team's digital skills do. We
-                        deliver practical, hands-on training programs designed
-                        specifically for Somali organisations, focusing on the
-                        tools and platforms your staff actually use every day.
+                        We offer simple, practical ICT and digital skills
+                        trainings so your team can use the tools they need every
+                        day with confidence.
                       </p>
-                      <p>
-                        Our training approach blends classroom workshops,
-                        on-the-job coaching, and follow-up support to ensure new
-                        skills are applied immediately. We adapt our programs to
-                        your team's current level, your operational context, and
-                        your budget, making digital capability building
-                        accessible and sustainable.
-                      </p>
-                      <div className="sd-inner-wrap">
-                        <div className="row align-items-center">
-                          <div className="col-56">
-                            <div className="content">
-                              <h3 className="title-two">
-                                Practical digital skills that make a difference
-                              </h3>
-                              <p>
-                                We focus on real tasks—managing data, using
-                                business applications, collaborating online, and
-                                leveraging digital tools for better service
-                                delivery. Every training session is designed to
-                                show immediate value and build confidence.
-                              </p>
-                              <ul className="list-wrap">
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Role-based digital skills training
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Hands-on workshops &amp; practical exercises
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  On-the-job coaching &amp; mentoring
-                                </li>
-                                <li>
-                                  <Image
-                                    src="/assets/img/icons/check_icon.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                    loading="lazy"
-                                  />
-                                  Follow-up support &amp; continuous learning
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="col-44">
-                            <div className="thumb">
-                              <img
-                                src="/assets/img/ogalsan/training.jpg"
-                                alt="Training & Capacity Building"
-                              />
-                              <VideoPopup style={3} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        Our training programs build a digitally capable
-                        workforce that can support your organisation's growth
-                        and innovation goals. Over time, this creates a culture
-                        of continuous learning where teams regularly use
-                        technology to improve services and operations.
-                      </p>
+                      <h3 className="title-two">What we do</h3>
+                      <ul className="list-wrap mb-20">
+                        <li>Short, focused training sessions</li>
+                        <li>Hands-on practice with real tools</li>
+                        <li>Support to apply new skills at work</li>
+                      </ul>
                       <div className="company-benefit-wrap">
                         <h2 className="title-two">
-                          Why Choose OgaalSan for Training &amp; Capacity
-                          Building
+                          Why Choose OgaalSan for Training
                         </h2>
-                        <p>
-                          Working with OgaalSan gives you access to trainers who
-                          understand the Somali context, practical training
-                          methodologies adapted for local conditions, and
-                          ongoing support that ensures your team successfully
-                          applies new digital skills.
-                        </p>
                         <div className="accordion-wrap-three">
                           <Accordion />
                         </div>
@@ -167,46 +79,6 @@ export default function ServiceDetails2() {
                           </Link>
                         </li>
                       </ul>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Service Brochure</h4>
-                      <div className="services-brochure-wrap">
-                        <p>
-                          Download our training services profile to explore how
-                          OgaalSan can support your team's digital skills
-                          development.
-                        </p>
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-pdf" />
-                          PDF. Download
-                        </Link>
-                        <Link href="#" className="download-btn">
-                          <i className="far fa-file-alt" />
-                          DOC. Download
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="services-widget">
-                      <h4 className="sw-title">Get a Free Quote</h4>
-                      <div className="services-widget-form">
-                        <form action="#">
-                          <div className="form-grp">
-                            <input type="text" placeholder="Your Name" />
-                          </div>
-                          <div className="form-grp">
-                            <input type="email" placeholder="E-mail Address" />
-                          </div>
-                          <div className="form-grp">
-                            <textarea
-                              name="message"
-                              placeholder="Type Your Message"
-                            />
-                          </div>
-                          <button type="submit" className="submit-btn">
-                            Send Message
-                          </button>
-                        </form>
-                      </div>
                     </div>
                   </aside>
                 </div>
