@@ -10,7 +10,6 @@ export default function Courses() {
       title: "ICT Strategy & Consulting Bootcamp: Digital Transformation in 5 Days",
       description: "Learn how to assess, plan, and implement ICT strategies for your organization. This intensive bootcamp is designed for both new leaders launching their first digital transformation and experienced professionals looking to enhance their strategic ICT capabilities and drive organizational growth.",
       image: "/assets/img/ogalsan/strategy.jpg",
-      price: "Free",
     },
     {
       id: 2,
@@ -18,7 +17,6 @@ export default function Courses() {
       title: "Digital Skills & Productivity Masterclass",
       description: "Master essential digital tools and productivity techniques that will transform how your team works. Learn to leverage modern applications for data management, collaboration, and streamlined operations in this comprehensive training program.",
       image: "/assets/img/ogalsan/training.jpg",
-      price: "Free",
     },
     {
       id: 3,
@@ -26,7 +24,6 @@ export default function Courses() {
       title: "Digital Business Development Workshop: Build Your Digital Products in 4 Weeks",
       description: "Create and launch your first digital business solution in less than 4 weeks. The goal of this workshop is to take you from an idea to launching your digital product within just a 4-week intensive program!",
       image: "/assets/img/ogalsan/person.jpg",
-      price: "Free",
     },
     {
       id: 4,
@@ -34,7 +31,6 @@ export default function Courses() {
       title: "Digital Marketing & Growth Masterclass",
       description: "Discover how to create effective digital marketing campaigns and grow your online presence. Learn social media strategies, content creation, analytics, and performance measurement to drive real business results.",
       image: "/assets/img/ogalsan/digital-1.jpg",
-      price: "Free",
     },
     {
       id: 5,
@@ -42,7 +38,6 @@ export default function Courses() {
       title: "Cloud & Infrastructure Bootcamp",
       description: "Get hands-on experience with cloud computing fundamentals, infrastructure management, and security best practices. Perfect for IT professionals and organizations looking to modernize their technology infrastructure.",
       image: "/assets/img/ogalsan/infrustructure.jpg",
-      price: "Free",
     },
     {
       id: 6,
@@ -50,7 +45,6 @@ export default function Courses() {
       title: "Technical Skills & Hands-On Workshops",
       description: "Practical, interactive workshops focused on building real technical capabilities. Participate in hands-on exercises and learn from industry experts in a collaborative learning environment designed for skill-building and knowledge application.",
       image: "/assets/img/ogalsan/training-2.jpg",
-      price: "Free",
     },
   ];
 
@@ -133,46 +127,31 @@ export default function Courses() {
                     >
                       {course.description}
                     </p>
-                    <div
+                    <Link
+                      href="/contact"
+                      className="btn btn-three"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
+                        backgroundColor: "#3FA9F5",
+                        color: "#fff",
+                        padding: "10px 25px",
+                        borderRadius: "5px",
+                        fontWeight: "600",
+                        textDecoration: "none",
+                        display: "inline-block",
+                        transition: "all 0.3s ease",
+                        fontSize: "14px",
+                        width: "100%",
+                        textAlign: "center",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#22428F";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "#3FA9F5";
                       }}
                     >
-                      <Link
-                        href="/contact"
-                        className="btn btn-three"
-                        style={{
-                          backgroundColor: "#3FA9F5",
-                          color: "#fff",
-                          padding: "10px 25px",
-                          borderRadius: "5px",
-                          fontWeight: "600",
-                          textDecoration: "none",
-                          display: "inline-block",
-                          transition: "all 0.3s ease",
-                          fontSize: "14px",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.backgroundColor = "#22428F";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.backgroundColor = "#3FA9F5";
-                        }}
-                      >
-                        Enroll
-                      </Link>
-                      <span
-                        style={{
-                          color: "#3FA9F5",
-                          fontWeight: "600",
-                          fontSize: "16px",
-                        }}
-                      >
-                        {course.price}
-                      </span>
-                    </div>
+                      Enroll Now
+                    </Link>
                   </div>
                 </div>
               ))}
