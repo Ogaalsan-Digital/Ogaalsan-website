@@ -114,14 +114,17 @@ export default function Header1({
                         <li className="active">
                           <Link href="/">Home</Link>
                         </li>
-                        <li className="active">
-                          <Link href="/courses">Courses</Link>
-                        </li>
                         <li>
                           <Link href="/about">About Us</Link>
                         </li>
                         <li>
                           <Link href="/services">Services</Link>
+                        </li>
+                        <li>
+                          <Link href="/courses">Courses</Link>
+                        </li>
+                        <li>
+                          <Link href="/events">Events</Link>
                         </li>
                         <li>
                           <Link href="/blog">Blog</Link>
