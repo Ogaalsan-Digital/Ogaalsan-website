@@ -76,10 +76,10 @@ export default function Contact() {
                 <div className="col-lg-6">
                   <div className="inner-contact-img">
                     <Image
-                      src="/assets/img/ogalsan/contact.jpg"
+                      src="/assets/img/ogalsan/contact.png"
                       alt="Contact OgaalSan Consultancy"
                       width={600}
-                      height={800}
+                      height={600}
                       loading="lazy"
                     />
                   </div>

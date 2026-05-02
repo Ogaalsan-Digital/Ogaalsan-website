@@ -1,52 +1,10 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Image from "next/image";
+import { coursesData } from "@/util/coursesData";
 
 export default function Courses() {
-  const courses = [
-    {
-      id: 1,
-      category: "BOOTCAMP",
-      title: "ICT Strategy & Consulting Bootcamp: Digital Transformation in 5 Days",
-      description: "Learn how to assess, plan, and implement ICT strategies for your organization. This intensive bootcamp is designed for both new leaders launching their first digital transformation and experienced professionals looking to enhance their strategic ICT capabilities and drive organizational growth.",
-      image: "/assets/img/ogalsan/strategy.jpg",
-    },
-    {
-      id: 2,
-      category: "TRAINING",
-      title: "Digital Skills & Productivity Masterclass",
-      description: "Master essential digital tools and productivity techniques that will transform how your team works. Learn to leverage modern applications for data management, collaboration, and streamlined operations in this comprehensive training program.",
-      image: "/assets/img/ogalsan/training.jpg",
-    },
-    {
-      id: 3,
-      category: "WORKSHOP",
-      title: "Digital Business Development Workshop: Build Your Digital Products in 4 Weeks",
-      description: "Create and launch your first digital business solution in less than 4 weeks. The goal of this workshop is to take you from an idea to launching your digital product within just a 4-week intensive program!",
-      image: "/assets/img/ogalsan/person.jpg",
-    },
-    {
-      id: 4,
-      category: "MASTERCLASS",
-      title: "Digital Marketing & Growth Masterclass",
-      description: "Discover how to create effective digital marketing campaigns and grow your online presence. Learn social media strategies, content creation, analytics, and performance measurement to drive real business results.",
-      image: "/assets/img/ogalsan/digital-1.jpg",
-    },
-    {
-      id: 5,
-      category: "BOOTCAMP",
-      title: "Cloud & Infrastructure Bootcamp",
-      description: "Get hands-on experience with cloud computing fundamentals, infrastructure management, and security best practices. Perfect for IT professionals and organizations looking to modernize their technology infrastructure.",
-      image: "/assets/img/ogalsan/infrustructure.jpg",
-    },
-    {
-      id: 6,
-      category: "WORKSHOP",
-      title: "Technical Skills & Hands-On Workshops",
-      description: "Practical, interactive workshops focused on building real technical capabilities. Participate in hands-on exercises and learn from industry experts in a collaborative learning environment designed for skill-building and knowledge application.",
-      image: "/assets/img/ogalsan/training-2.jpg",
-    },
-  ];
+  const courses = coursesData;
 
   return (
     <>
@@ -91,18 +49,21 @@ export default function Courses() {
                       {course.category}
                     </span>
                     <div style={{ borderRadius: "10px", overflow: "hidden", height: "200px", marginBottom: "20px" }}>
-                      <Image
-                        src={course.image}
-                        alt={course.title}
-                        width={400}
-                        height={200}
-                        loading="lazy"
-                        style={{
-                          objectFit: "cover",
-                          width: "100%",
-                          height: "100%",
-                        }}
-                      />
+                      <Link href={`/course/${course.id}`}>
+                        <Image
+                          src={course.image}
+                          alt={course.title}
+                          width={400}
+                          height={200}
+                          loading="lazy"
+                          style={{
+                            objectFit: "cover",
+                            width: "100%",
+                            height: "100%",
+                            cursor: "pointer"
+                          }}
+                        />
+                      </Link>
                     </div>
                     <h2
                       className="title"
@@ -114,7 +75,9 @@ export default function Courses() {
                         color: "#22428F",
                       }}
                     >
-                      {course.title}
+                      <Link href={`/course/${course.id}`} style={{ color: "inherit", textDecoration: "none" }}>
+                        {course.title}
+                      </Link>
                     </h2>
                     <p
                       style={{
@@ -128,7 +91,7 @@ export default function Courses() {
                       {course.description}
                     </p>
                     <Link
-                      href="/contact"
+                      href={`/course/${course.id}`}
                       className="btn btn-three"
                       style={{
                         backgroundColor: "#3FA9F5",
@@ -150,7 +113,7 @@ export default function Courses() {
                         e.currentTarget.style.backgroundColor = "#3FA9F5";
                       }}
                     >
-                      Enroll Now
+                      View Details
                     </Link>
                   </div>
                 </div>
