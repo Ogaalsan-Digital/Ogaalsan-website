@@ -9,6 +9,7 @@ export const coursesData = [
     location: "Online via Zoom / In-person at Ogaalsan Center",
     whereToWatch: "Live sessions will be held on Zoom. Recordings and materials will be available on our learning management system.",
     instructor: "Senior ICT Strategists",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Introduction to Digital Transformation",
       "Assessing Your Organization's ICT Maturity",
@@ -27,6 +28,7 @@ export const coursesData = [
     location: "Online via Zoom",
     whereToWatch: "Interactive live sessions on Zoom. Access to recorded sessions and resources on our learning portal.",
     instructor: "Digital Productivity Experts",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Mastering Modern Collaboration Tools",
       "Efficient Data Management Strategies",
@@ -45,6 +47,7 @@ export const coursesData = [
     location: "Online / Hybrid",
     whereToWatch: "Weekly live workshops on Zoom with dedicated access to an interactive learning platform for assignments.",
     instructor: "Digital Business Developers",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Ideation and Market Research",
       "Prototyping Your Digital Product",
@@ -63,6 +66,7 @@ export const coursesData = [
     location: "Online via Zoom",
     whereToWatch: "All lectures and practical sessions are conducted online. Access course materials and recordings through our student portal.",
     instructor: "Growth Marketing Specialists",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Foundations of Digital Marketing",
       "Social Media Marketing Strategies",
@@ -81,6 +85,7 @@ export const coursesData = [
     location: "Hybrid (Online + In-person practicals)",
     whereToWatch: "Theory sessions online via Zoom. Practical labs can be accessed virtually or in-person at our tech labs.",
     instructor: "Certified Cloud Architects",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Introduction to Cloud Computing",
       "Core Cloud Services (AWS/Azure)",
@@ -99,6 +104,7 @@ export const coursesData = [
     location: "In-person at Ogaalsan Tech Center",
     whereToWatch: "This is a strictly in-person workshop focused on hands-on physical and virtual lab environments.",
     instructor: "Industry Technical Experts",
+    videoId: "dQw4w9WgXcQ", // Add relevant YouTube video ID here
     syllabus: [
       "Hands-on Technical Troubleshooting",
       "Network Configuration Labs",

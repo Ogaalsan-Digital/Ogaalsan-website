@@ -99,7 +99,7 @@ export default function CourseDetails() {
                     </div>
 
                     <Link
-                      href="/contact"
+                      href={`/course/watch/${course.id}`}
                       className="btn btn-three w-100 text-center"
                       style={{
                         backgroundColor: "#3FA9F5",
@@ -108,7 +108,10 @@ export default function CourseDetails() {
                         borderRadius: "5px",
                         fontWeight: "600",
                         textDecoration: "none",
-                        display: "block",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "10px",
                         transition: "all 0.3s ease",
                       }}
                       onMouseEnter={(e) => {
@@ -118,7 +121,8 @@ export default function CourseDetails() {
                         e.currentTarget.style.backgroundColor = "#3FA9F5";
                       }}
                     >
-                      Enroll in this Course
+                      <i className="fas fa-play-circle" style={{ fontSize: "18px" }}></i>
+                      Go to Course Player
                     </Link>
                   </div>
                 </div>
