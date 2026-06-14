@@ -94,7 +94,7 @@ export function mapApiCourse(course, apiBaseUrl = getApiBaseUrl()) {
 
   return {
     id: course.id,
-    slug: course.slug,
+    slug: course.slug || null,
     category: course.category?.name || (typeof course.category === "string" ? course.category : null) || course.level || "Course",
     title: course.title,
     description: course.description || "",
@@ -108,11 +108,11 @@ export function mapApiCourse(course, apiBaseUrl = getApiBaseUrl()) {
     price: Number(course.price || 0),
     discountPrice: course.discount_price ? Number(course.discount_price) : null,
     lessonCount: countLessons(course),
-    videoId: extractYouTubeId(firstVideo) || extractYouTubeId(course.videoId),
+    videoId: extractYouTubeId(firstVideo) || extractYouTubeId(course.videoId) || null,
     syllabus: lessons.map((lesson) => lesson.title),
     lessons,
-    status: course.status,
-    raw: course,
+    status: course.status || null,
+    raw: JSON.parse(JSON.stringify(course)),
   };
 }
 
