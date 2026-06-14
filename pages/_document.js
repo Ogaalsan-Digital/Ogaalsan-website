@@ -23,6 +23,7 @@ export default function Document() {
                 <link rel="stylesheet" href="/assets/css/slick.css" />
                 <link rel="stylesheet" href="/assets/css/aos.css" />
                 <link rel="stylesheet" href="/assets/css/responsive.css" />
+                <link rel="stylesheet" href="/assets/css/courses.css" />
             </Head>
             <body>
                 <Main />
