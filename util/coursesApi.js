@@ -17,8 +17,17 @@ export function resolveCourseImage(image, apiBaseUrl = getApiBaseUrl()) {
     return image;
   }
 
-  if (image.startsWith("/")) {
+  // Website static assets — served by Next.js, not the admin API
+  if (image.startsWith("/assets/")) {
+    return image;
+  }
+
+  if (image.startsWith("/storage/")) {
     return `${apiBaseUrl.replace(/\/$/, "")}${image}`;
+  }
+
+  if (image.startsWith("/")) {
+    return image;
   }
 
   return `${apiBaseUrl.replace(/\/$/, "")}/${image}`;

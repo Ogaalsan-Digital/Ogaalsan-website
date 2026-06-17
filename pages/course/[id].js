@@ -1,8 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import { coursesData } from "@/util/coursesData";
-import { fetchPublishedCourse, mapApiCourse } from "@/util/coursesApi";
+import { fetchPublishedCourse } from "@/util/coursesApi";
 
 export default function CourseDetails({ course }) {
   return (
@@ -232,21 +231,9 @@ export async function getServerSideProps({ params }) {
 
   try {
     const course = await fetchPublishedCourse(identifier);
-    if (course) {
-      return { props: { course } };
-    }
+    return { props: { course } };
   } catch (error) {
     console.error("Failed to load course from API:", error.message);
+    return { props: { course: null } };
   }
-
-  const staticCourse = coursesData.find(
-    (data) =>
-      data.id.toString() === identifier || data.slug === identifier
-  );
-
-  return {
-    props: {
-      course: staticCourse ? mapApiCourse(staticCourse) : null,
-    },
-  };
 }

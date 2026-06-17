@@ -1,9 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import CourseCard from "@/components/courses/CourseCard";
-import { coursesData } from "@/util/coursesData";
-import { fetchPublishedCourses, mapApiCourse } from "@/util/coursesApi";
+import { fetchPublishedCourses } from "@/util/coursesApi";
 
-export default function Courses({ courses, source }) {
+export default function Courses({ courses }) {
   return (
     <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Our Courses">
       <section
@@ -19,11 +18,6 @@ export default function Courses({ courses, source }) {
                   Practical, hands-on training programs designed to build digital
                   capabilities and empower your team with essential ICT skills.
                 </p>
-                {source === "api" && (
-                  <p style={{ fontSize: "14px", color: "#3FA9F5", marginTop: "10px" }}>
-                    Courses are synced from the Ogaalsan admin panel.
-                  </p>
-                )}
               </div>
             </div>
           </div>
@@ -56,23 +50,9 @@ export default function Courses({ courses, source }) {
 export async function getServerSideProps() {
   try {
     const courses = await fetchPublishedCourses();
-
-    if (courses.length > 0) {
-      return {
-        props: {
-          courses,
-          source: "api",
-        },
-      };
-    }
+    return { props: { courses } };
   } catch (error) {
     console.error("Failed to load courses from API:", error.message);
+    return { props: { courses: [] } };
   }
-
-  return {
-    props: {
-      courses: coursesData.map((course) => mapApiCourse(course)),
-      source: "static",
-    },
-  };
 }

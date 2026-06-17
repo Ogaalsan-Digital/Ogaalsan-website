@@ -1,11 +1,9 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { useState } from "react";
-import { coursesData } from "@/util/coursesData";
 import {
   extractYouTubeId,
   fetchPublishedCourse,
-  mapApiCourse,
 } from "@/util/coursesApi";
 
 export default function CourseWatch({ course }) {
@@ -267,21 +265,9 @@ export async function getServerSideProps({ params }) {
 
   try {
     const course = await fetchPublishedCourse(identifier);
-    if (course) {
-      return { props: { course } };
-    }
+    return { props: { course } };
   } catch (error) {
     console.error("Failed to load course from API:", error.message);
+    return { props: { course: null } };
   }
-
-  const staticCourse = coursesData.find(
-    (data) =>
-      data.id.toString() === identifier || data.slug === identifier
-  );
-
-  return {
-    props: {
-      course: staticCourse ? mapApiCourse(staticCourse) : null,
-    },
-  };
 }
