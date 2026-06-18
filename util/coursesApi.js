@@ -1,3 +1,4 @@
+import { fetchPublicJson } from "./api";
 import { getApiBaseUrl, resolveMediaUrl } from "./media";
 
 const DEFAULT_COURSE_IMAGE = "/assets/img/ogalsan/contact.png";
@@ -72,7 +73,7 @@ export function flattenLessons(course) {
   return lessons;
 }
 
-export function mapApiCourse(course, apiBaseUrl = getApiBaseUrl()) {
+export function mapApiCourse(course, apiBaseUrl) {
   const lessons = flattenLessons(course);
   const firstVideo = lessons.find((lesson) => lesson.video_url)?.video_url;
 
@@ -101,34 +102,19 @@ export function mapApiCourse(course, apiBaseUrl = getApiBaseUrl()) {
 }
 
 export async function fetchPublishedCourses() {
-  const apiBaseUrl = getApiBaseUrl();
-  const response = await fetch(`${apiBaseUrl}/api/v1/public/courses`, {
-    headers: { Accept: "application/json" },
-  });
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch courses");
-  }
-
-  const payload = await response.json();
+  const { payload, apiBaseUrl } = await fetchPublicJson("/api/v1/public/courses");
   const courses = payload.data || [];
 
   return courses.map((course) => mapApiCourse(course, apiBaseUrl));
 }
 
 export async function fetchPublishedCourse(identifier) {
-  const apiBaseUrl = getApiBaseUrl();
-  const response = await fetch(
-    `${apiBaseUrl}/api/v1/public/courses/${identifier}`,
-    {
-      headers: { Accept: "application/json" },
-    }
-  );
-
-  if (!response.ok) {
+  try {
+    const { payload, apiBaseUrl } = await fetchPublicJson(
+      `/api/v1/public/courses/${identifier}`
+    );
+    return mapApiCourse(payload.data, apiBaseUrl);
+  } catch {
     return null;
   }
-
-  const payload = await response.json();
-  return mapApiCourse(payload.data, apiBaseUrl);
 }

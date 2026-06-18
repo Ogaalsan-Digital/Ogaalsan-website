@@ -17,7 +17,13 @@ export default function Services({ services = [] }) {
   };
 
   if (!services.length) {
-    return null;
+    return (
+      <section className="services-area-two services-bg-two py-80">
+        <div className="container text-center">
+          <p>Services are loading from the admin API. Start the Ogaalsan admin server if this message persists.</p>
+        </div>
+      </section>
+    );
   }
 
   return (

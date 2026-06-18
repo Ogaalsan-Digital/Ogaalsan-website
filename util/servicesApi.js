@@ -1,6 +1,7 @@
-import { getApiBaseUrl, resolveMediaUrl } from "./media";
+import { fetchPublicJson } from "./api";
+import { resolveMediaUrl } from "./media";
 
-export function mapApiService(service, apiBaseUrl = getApiBaseUrl()) {
+export function mapApiService(service, apiBaseUrl) {
   return {
     id: service.id,
     slug: service.slug,
@@ -16,34 +17,19 @@ export function mapApiService(service, apiBaseUrl = getApiBaseUrl()) {
 }
 
 export async function fetchActiveServices() {
-  const apiBaseUrl = getApiBaseUrl();
-  const response = await fetch(`${apiBaseUrl}/api/v1/public/services`, {
-    headers: { Accept: "application/json" },
-  });
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch services");
-  }
-
-  const payload = await response.json();
+  const { payload, apiBaseUrl } = await fetchPublicJson("/api/v1/public/services");
   const services = payload.data || [];
 
   return services.map((service) => mapApiService(service, apiBaseUrl));
 }
 
 export async function fetchActiveService(identifier) {
-  const apiBaseUrl = getApiBaseUrl();
-  const response = await fetch(
-    `${apiBaseUrl}/api/v1/public/services/${identifier}`,
-    {
-      headers: { Accept: "application/json" },
-    }
-  );
-
-  if (!response.ok) {
+  try {
+    const { payload, apiBaseUrl } = await fetchPublicJson(
+      `/api/v1/public/services/${identifier}`
+    );
+    return mapApiService(payload.data, apiBaseUrl);
+  } catch {
     return null;
   }
-
-  const payload = await response.json();
-  return mapApiService(payload.data, apiBaseUrl);
 }

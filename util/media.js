@@ -4,8 +4,8 @@ export function getApiBaseUrl() {
   return (
     process.env.OGAALSAN_API_URL ||
     process.env.NEXT_PUBLIC_OGAALSAN_API_URL ||
-    "http://localhost:8000"
-  );
+    "http://localhost:9000"
+  ).replace(/\/$/, "");
 }
 
 export function resolveMediaUrl(image, apiBaseUrl = getApiBaseUrl()) {
