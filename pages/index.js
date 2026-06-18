@@ -4,8 +4,8 @@ import Banner from "@/components/sections/home1/Banner";
 import Features from "@/components/sections/home1/Features";
 import About from "@/components/sections/home1/About";
 import Services from "@/components/sections/home1/Services";
+import { fetchActiveServices } from "@/util/servicesApi";
 
-// Lazy load below-the-fold components for better initial load performance
 const Overview = dynamic(() => import("@/components/sections/home1/Overview"), {
   loading: () => <div style={{ minHeight: "200px" }} />,
 });
@@ -24,29 +24,30 @@ const Testimonial = dynamic(() => import("@/components/sections/home1/Testimonia
 const Blog = dynamic(() => import("@/components/sections/home1/Blog"), {
   loading: () => <div style={{ minHeight: "200px" }} />,
 });
-const Request = dynamic(() => import("@/components/sections/home1/Request"), {
-  loading: () => <div style={{ minHeight: "200px" }} />,
-});
 
-export default function Home1() {
+export default function Home1({ services }) {
   return (
-    <>
-      <Layout headerStyle={1} footerStyle={2}>
-        <Banner />
-        <Features />
-        <About />
-        {/* <Brand /> */}
-        <Services />
-        <Overview />
-        <Choose />
-        <Project />
-        <Cta />
-        {/* <Team /> */}
-        <Testimonial />
-        {/* <Pricing /> */}
-        <Blog />
-        {/* <Request /> */}
-      </Layout>
-    </>
+    <Layout headerStyle={1} footerStyle={2}>
+      <Banner />
+      <Features />
+      <About />
+      <Services services={services} />
+      <Overview />
+      <Choose />
+      <Project />
+      <Cta />
+      <Testimonial />
+      <Blog />
+    </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const services = await fetchActiveServices();
+    return { props: { services } };
+  } catch (error) {
+    console.error("Failed to load homepage services:", error.message);
+    return { props: { services: [] } };
+  }
 }

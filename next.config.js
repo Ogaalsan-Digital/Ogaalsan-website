@@ -19,9 +19,19 @@ const nextConfig = {
       },
       {
         protocol: 'http',
-        hostname: 'localhost',
+        hostname: '127.0.0.1',
+        port: '8000',
+        pathname: '/storage/**',
+      },
+      {
+        protocol: 'http',
+        hostname: '127.0.0.1',
         port: '9000',
         pathname: '/storage/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
       },
       {
         protocol: 'https',
@@ -31,6 +41,30 @@ const nextConfig = {
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
+  },
+  async redirects() {
+    return [
+      {
+        source: '/services-details',
+        destination: '/services/ict-strategy-consulting',
+        permanent: true,
+      },
+      {
+        source: '/services-details-2',
+        destination: '/services/training-capacity-building',
+        permanent: true,
+      },
+      {
+        source: '/services-details-3',
+        destination: '/services/digital-business-development',
+        permanent: true,
+      },
+      {
+        source: '/services-details-4',
+        destination: '/services/digital-marketing-growth',
+        permanent: true,
+      },
+    ];
   },
 }
 

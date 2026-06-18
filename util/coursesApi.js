@@ -1,36 +1,11 @@
-const DEFAULT_COURSE_IMAGE = "/assets/img/ogalsan/training.jpg";
+import { getApiBaseUrl, resolveMediaUrl } from "./media";
 
-export function getApiBaseUrl() {
-  return (
-    process.env.OGAALSAN_API_URL ||
-    process.env.NEXT_PUBLIC_OGAALSAN_API_URL ||
-    "http://localhost:8000"
-  );
-}
+const DEFAULT_COURSE_IMAGE = "/assets/img/ogalsan/contact.png";
+
+export { getApiBaseUrl, resolveMediaUrl };
 
 export function resolveCourseImage(image, apiBaseUrl = getApiBaseUrl()) {
-  if (!image) {
-    return DEFAULT_COURSE_IMAGE;
-  }
-
-  if (image.startsWith("http://") || image.startsWith("https://")) {
-    return image;
-  }
-
-  // Website static assets — served by Next.js, not the admin API
-  if (image.startsWith("/assets/")) {
-    return image;
-  }
-
-  if (image.startsWith("/storage/")) {
-    return `${apiBaseUrl.replace(/\/$/, "")}${image}`;
-  }
-
-  if (image.startsWith("/")) {
-    return image;
-  }
-
-  return `${apiBaseUrl.replace(/\/$/, "")}/${image}`;
+  return resolveMediaUrl(image, apiBaseUrl) || DEFAULT_COURSE_IMAGE;
 }
 
 export function extractYouTubeId(url) {
