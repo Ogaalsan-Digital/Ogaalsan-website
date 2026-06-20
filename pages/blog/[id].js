@@ -1,37 +1,67 @@
-import VideoPopup from "@/components/elements/PopupVideo";
 import Layout from "@/components/layout/Layout";
+import ContentLoader from "@/components/common/ContentLoader";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import data from "../../util/blog.json";
+import { useMemo } from "react";
+import { fetchPublishedPost, fetchPublishedPosts } from "@/util/postsApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
 export default function BlogDetails() {
-  let Router = useRouter();
-  const [blogPost, setBlogPost] = useState(null);
-  const { id } = Router.query;
+  const router = useRouter();
+  const identifier = router.query.id;
+  const ready = router.isReady && Boolean(identifier);
+  const postHref = (post) => `/blog/${post.slug || post.id}`;
 
-  useEffect(() => {
-    setBlogPost(data.find((data) => data.id == id));
-  }, [id]);
+  const { data: blogPost, loading: postLoading } = useClientFetch(
+    () => fetchPublishedPost(identifier),
+    [identifier],
+    { enabled: ready, initialData: null }
+  );
+  const { data: allPosts = [] } = useClientFetch(fetchPublishedPosts, []);
+
+  const recentPosts = useMemo(() => {
+    if (!blogPost) {
+      return allPosts.slice(0, 4);
+    }
+
+    return allPosts.filter((post) => post.id !== blogPost.id).slice(0, 4);
+  }, [allPosts, blogPost]);
+
+  if (!ready || postLoading) {
+    return (
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Blog Details">
+        <ContentLoader message="Loading blog post..." />
+      </Layout>
+    );
+  }
+
+  if (!blogPost) {
+    return (
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Blog Details">
+        <section className="pt-120 pb-120 text-center">
+          <div className="container">
+            <h2>Post not found.</h2>
+            <Link href="/blog" className="btn mt-30">
+              Back to Blog
+            </Link>
+          </div>
+        </section>
+      </Layout>
+    );
+  }
 
   return (
     <>
       <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Blog Details">
-        {blogPost && (
-          <>
-            <section className="blog-details-area pt-120 pb-120">
+        <section className="blog-details-area pt-120 pb-120">
               <div className="container">
                 <div className="blog-details-wrap">
                   <div className="row justify-content-center">
                     <div className="col-71">
                       <div className="blog-details-thumb">
                         <Image
-                          src={
-                            blogPost.img?.startsWith('/assets') 
-                              ? blogPost.img 
-                              : `/assets/img/blog/${blogPost.img}`
-                          }
+                          src={blogPost.image}
                           className="w-100"
                           alt={blogPost.title}
                           width={800}
@@ -50,17 +80,14 @@ export default function BlogDetails() {
                             <li>
                               <Image
                                 className="blog-meta-author-img"
-                                src={
-                                  blogPost.authorImg ||
-                                  "/assets/img/ogalsan/image (8).png"
-                                }
+                                src={blogPost.authorImg}
                                 alt={blogPost.author}
                                 width={40}
                                 height={40}
                                 loading="lazy"
                               />{" "}
                               by{" "}
-                              <Link href={`/blog/${blogPost.id}`}>
+                              <Link href={postHref(blogPost)}>
                                 {blogPost.author}
                               </Link>
                             </li>
@@ -80,11 +107,14 @@ export default function BlogDetails() {
                               <div className="post-tags">
                                 <h5 className="title">Tags:</h5>
                                 <ul className="list-wrap">
-                                  <li>
-                                    <Link href="/blog">
-                                      {blogPost.category}
-                                    </Link>
-                                  </li>
+                                  {(blogPost.tags?.length
+                                    ? blogPost.tags
+                                    : [blogPost.category]
+                                  ).map((tag) => (
+                                    <li key={tag}>
+                                      <Link href="/blog">{tag}</Link>
+                                    </li>
+                                  ))}
                                 </ul>
                               </div>
                             </div>
@@ -118,22 +148,19 @@ export default function BlogDetails() {
                           </div>
                         </div>
                       </div>
-                       <div className="blog-avatar-wrap mb-65">
-                         <div className="blog-avatar-img">
-                           <Link href="#">
-                             <img
-                               src={
-                                 blogPost.authorImg ||
-                                 "/assets/img/ogalsan/image (8).png"
-                               }
-                               alt={blogPost.author}
-                             />
-                           </Link>
-                         </div>
+                      <div className="blog-avatar-wrap mb-65">
+                        <div className="blog-avatar-img">
+                          <Link href="#">
+                            <img
+                              src={blogPost.authorImg}
+                              alt={blogPost.author}
+                            />
+                          </Link>
+                        </div>
                         <div className="blog-avatar-info">
                           <span className="designation">Author</span>
                           <h4 className="name">
-                            <Link href={`/blog/${blogPost.id}`}>
+                            <Link href={postHref(blogPost)}>
                               {blogPost.author}
                             </Link>
                           </h4>
@@ -160,59 +187,19 @@ export default function BlogDetails() {
                           </form>
                         </div>
                         <div className="blog-widget">
-                          <h4 className="bw-title">Categories</h4>
-                          <div className="bs-cat-list">
-                            <ul className="list-wrap">
-                              <li>
-                                <Link href="/blog">
-                                  ICT Solutions <span>(01)</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/blog">
-                                  Digital Transformation <span>(01)</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/blog">
-                                  Training &amp; Capacity Building <span>(01)</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/blog">
-                                  Business Process Digitisation <span>(01)</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/blog">
-                                  Data &amp; Analytics <span>(01)</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/blog">
-                                  Digital Marketing <span>(01)</span>
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="blog-widget">
                           <h4 className="bw-title">Recent Posts</h4>
                           <div className="rc-post-wrap">
-                            {data.slice(0, 4).map((post) => {
-                              const imageSrc = post.img?.startsWith('/assets') ? post.img : `/assets/img/blog/${post.img}`
-                              return (
+                            {recentPosts.map((post) => (
                               <div key={post.id} className="rc-post-item">
                                 <div className="thumb">
-                                  <Link href={`/blog/${post.id}`}>
-                                    {" "}
+                                  <Link href={postHref(post)}>
                                     <Image
                                       width="0"
                                       height="0"
                                       sizes="100vw"
                                       style={{ width: "auto", height: "auto" }}
-                                      src={imageSrc}
-                                      alt=""
+                                      src={post.image}
+                                      alt={post.title}
                                     />
                                   </Link>
                                 </div>
@@ -222,33 +209,13 @@ export default function BlogDetails() {
                                     {post.date}
                                   </span>
                                   <h2 className="title">
-                                    <Link href={`/blog/${post.id}`}>
+                                    <Link href={postHref(post)}>
                                       {post.title}
                                     </Link>
                                   </h2>
                                 </div>
                               </div>
-                              )
-                            })}
-                          </div>
-                        </div>
-                        <div className="blog-widget">
-                          <h4 className="bw-title">Tags</h4>
-                          <div className="bs-tag-list">
-                            <ul className="list-wrap">
-                              <li>
-                                <Link href="#">ICT Strategy</Link>
-                              </li>
-                              <li>
-                                <Link href="#">Infrastructure</Link>
-                              </li>
-                              <li>
-                                <Link href="#">Digital Skills</Link>
-                              </li>
-                              <li>
-                                <Link href="#">Digital Marketing</Link>
-                              </li>
-                            </ul>
+                            ))}
                           </div>
                         </div>
                       </aside>
@@ -257,8 +224,6 @@ export default function BlogDetails() {
                 </div>
               </div>
             </section>
-          </>
-        )}
       </Layout>
     </>
   );

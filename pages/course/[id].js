@@ -1,9 +1,30 @@
 import Layout from "@/components/layout/Layout";
+import ContentLoader from "@/components/common/ContentLoader";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { fetchPublishedCourse } from "@/util/coursesApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
-export default function CourseDetails({ course }) {
+export default function CourseDetails() {
+  const router = useRouter();
+  const identifier = router.query.id;
+  const ready = router.isReady && Boolean(identifier);
+
+  const { data: course, loading } = useClientFetch(
+    () => fetchPublishedCourse(identifier),
+    [identifier],
+    { enabled: ready, initialData: null }
+  );
+
+  if (!ready || loading) {
+    return (
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Course Details">
+        <ContentLoader message="Loading course..." />
+      </Layout>
+    );
+  }
+
   return (
     <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Course Details">
       {course ? (
@@ -220,20 +241,4 @@ export default function CourseDetails({ course }) {
       )}
     </Layout>
   );
-}
-
-export async function getServerSideProps({ params }) {
-  const identifier = params?.id;
-
-  if (!identifier) {
-    return { props: { course: null } };
-  }
-
-  try {
-    const course = await fetchPublishedCourse(identifier);
-    return { props: { course } };
-  } catch (error) {
-    console.error("Failed to load course from API:", error.message);
-    return { props: { course: null } };
-  }
 }

@@ -1,13 +1,33 @@
 import Layout from "@/components/layout/Layout";
+import ContentLoader from "@/components/common/ContentLoader";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import {
   extractYouTubeId,
   fetchPublishedCourse,
 } from "@/util/coursesApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
-export default function CourseWatch({ course }) {
+export default function CourseWatch() {
+  const router = useRouter();
+  const identifier = router.query.id;
+  const ready = router.isReady && Boolean(identifier);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
+
+  const { data: course, loading } = useClientFetch(
+    () => fetchPublishedCourse(identifier),
+    [identifier],
+    { enabled: ready, initialData: null }
+  );
+
+  if (!ready || loading) {
+    return (
+      <Layout headerStyle={1} footerStyle={2}>
+        <ContentLoader message="Loading course..." />
+      </Layout>
+    );
+  }
 
   if (!course) {
     return (
@@ -254,20 +274,4 @@ export default function CourseWatch({ course }) {
       </section>
     </Layout>
   );
-}
-
-export async function getServerSideProps({ params }) {
-  const identifier = params?.id;
-
-  if (!identifier) {
-    return { props: { course: null } };
-  }
-
-  try {
-    const course = await fetchPublishedCourse(identifier);
-    return { props: { course } };
-  } catch (error) {
-    console.error("Failed to load course from API:", error.message);
-    return { props: { course: null } };
-  }
 }

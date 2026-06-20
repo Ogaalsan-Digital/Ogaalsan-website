@@ -1,8 +1,15 @@
 import Layout from "@/components/layout/Layout";
 import CourseCard from "@/components/courses/CourseCard";
+import ContentLoader from "@/components/common/ContentLoader";
 import { fetchPublishedCourses } from "@/util/coursesApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
-export default function Courses({ courses }) {
+export default function Courses() {
+  const { data: courses = [], loading } = useClientFetch(
+    fetchPublishedCourses,
+    []
+  );
+
   return (
     <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Our Courses">
       <section
@@ -22,7 +29,9 @@ export default function Courses({ courses }) {
             </div>
           </div>
 
-          {courses.length > 0 ? (
+          {loading ? (
+            <ContentLoader message="Loading courses..." />
+          ) : courses.length > 0 ? (
             <div className="row justify-content-center g-4">
               {courses.map((course) => (
                 <CourseCard key={course.id} course={course} />
@@ -45,14 +54,4 @@ export default function Courses({ courses }) {
       </section>
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  try {
-    const courses = await fetchPublishedCourses();
-    return { props: { courses } };
-  } catch (error) {
-    console.error("Failed to load courses from API:", error.message);
-    return { props: { courses: [] } };
-  }
 }

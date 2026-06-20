@@ -1,74 +1,67 @@
+import { useEffect, useState } from "react";
+import BlogCard1 from "./BlogCard1";
+import Pagination from "./Pagination";
 
-import { useEffect, useState } from "react"
-import data from "../../util/blog.json"
-import BlogCard1 from "./BlogCard1"
-import Pagination from "./Pagination"
+export default function BlogPost({ posts = [], style, showItem, showPagination }) {
+  const [currentPage, setCurrentPage] = useState(1);
+  const showLimit = showItem;
+  const paginationItem = 4;
 
-export default function BlogPost({ style, showItem, showPagination }) {
-    let [currentPage, setCurrentPage] = useState(1)
-    let showLimit = showItem,
-        paginationItem = 4
+  const [pagination, setPagination] = useState([]);
+  const [limit, setLimit] = useState(showLimit);
+  const [pages, setPages] = useState(
+    Math.max(1, Math.ceil(posts.length / showLimit))
+  );
 
-    let [pagination, setPagination] = useState([])
-    let [limit, setLimit] = useState(showLimit)
-    let [pages, setPages] = useState(Math.ceil(data.length / limit))
+  useEffect(() => {
+    const arr = new Array(Math.ceil(posts.length / limit))
+      .fill()
+      .map((_, idx) => idx + 1);
 
-    useEffect(() => {
-        cratePagination()
-    }, [limit, pages, data.length])
+    setPagination(arr);
+    setPages(Math.max(1, Math.ceil(posts.length / limit)));
+  }, [limit, posts.length]);
 
-    const cratePagination = () => {
-        // set pagination
-        let arr = new Array(Math.ceil(data.length / limit))
-            .fill()
-            .map((_, idx) => idx + 1)
+  const startIndex = currentPage * limit - limit;
+  const endIndex = startIndex + limit;
+  const getPaginatedProducts = posts.slice(startIndex, endIndex);
 
-        setPagination(arr)
-        setPages(Math.ceil(data.length / limit))
-    }
+  const start = Math.floor((currentPage - 1) / paginationItem) * paginationItem;
+  const end = start + paginationItem;
+  const getPaginationGroup = pagination.slice(start, end);
 
-    const startIndex = currentPage * limit - limit
-    const endIndex = startIndex + limit
-    const getPaginatedProducts = data.slice(startIndex, endIndex)
+  const next = () => {
+    setCurrentPage((page) => page + 1);
+  };
 
+  const prev = () => {
+    setCurrentPage((page) => page - 1);
+  };
 
-    let start = Math.floor((currentPage - 1) / paginationItem) * paginationItem
-    let end = start + paginationItem
-    const getPaginationGroup = pagination.slice(start, end)
+  const handleActive = (item) => {
+    setCurrentPage(item);
+  };
 
-    const next = () => {
-        setCurrentPage((page) => page + 1)
-    }
+  return (
+    <>
+      {getPaginatedProducts.length === 0 && (
+        <h3>No blog posts found</h3>
+      )}
 
-    const prev = () => {
-        setCurrentPage((page) => page - 1)
-    }
+      {getPaginatedProducts.map((item) => (
+        <BlogCard1 item={item} key={item.id} />
+      ))}
 
-    const handleActive = (item) => {
-        setCurrentPage(item)
-    }
-    return (
-        <>
-            {getPaginatedProducts.length === 0 && (
-                <h3>No Products Found </h3>
-            )}
-
-            {getPaginatedProducts.map(item => (
-                <BlogCard1 item={item} key={item.id}/>
-            ))}
-
-            {showPagination &&
-                <Pagination
-                    getPaginationGroup={
-                        getPaginationGroup
-                    }
-                    currentPage={currentPage}
-                    pages={pages}
-                    next={next}
-                    prev={prev}
-                    handleActive={handleActive}
-                />
-            }
-        </>
-    )
+      {showPagination && pages > 1 && (
+        <Pagination
+          getPaginationGroup={getPaginationGroup}
+          currentPage={currentPage}
+          pages={pages}
+          next={next}
+          prev={prev}
+          handleActive={handleActive}
+        />
+      )}
+    </>
+  );
 }

@@ -7,7 +7,10 @@ export function mapApiService(service, apiBaseUrl) {
     slug: service.slug,
     title: service.title,
     icon: service.icon || "flaticon-briefcase",
-    image: resolveMediaUrl(service.featured_image, apiBaseUrl),
+    image: resolveMediaUrl(
+      service.featured_image_url || service.featured_image,
+      apiBaseUrl
+    ),
     shortDescription: service.short_description || "",
     description: service.detailed_description || service.short_description || "",
     highlights: service.highlights || [],

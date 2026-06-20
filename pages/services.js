@@ -1,8 +1,15 @@
 import Layout from "@/components/layout/Layout";
 import ServiceCard from "@/components/services/ServiceCard";
+import ContentLoader from "@/components/common/ContentLoader";
 import { fetchActiveServices } from "@/util/servicesApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
-export default function Services({ services }) {
+export default function Services() {
+  const { data: services = [], loading } = useClientFetch(
+    fetchActiveServices,
+    []
+  );
+
   return (
     <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Our Services">
       <section
@@ -23,7 +30,9 @@ export default function Services({ services }) {
             </div>
           </div>
 
-          {services.length > 0 ? (
+          {loading ? (
+            <ContentLoader message="Loading services..." />
+          ) : services.length > 0 ? (
             <div className="row justify-content-center">
               {services.map((service) => (
                 <ServiceCard key={service.id} service={service} />
@@ -41,14 +50,4 @@ export default function Services({ services }) {
       </section>
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  try {
-    const services = await fetchActiveServices();
-    return { props: { services } };
-  } catch (error) {
-    console.error("Failed to load services from API:", error.message);
-    return { props: { services: [] } };
-  }
 }

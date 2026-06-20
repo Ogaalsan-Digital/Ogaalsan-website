@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Services({ services = [] }) {
+export default function Services({ services = [], loading = false }) {
   const [isActive, setIsActive] = useState({
     status: false,
     key: "",
@@ -15,6 +15,16 @@ export default function Services({ services = [] }) {
       setIsActive({ status: true, key });
     }
   };
+
+  if (loading) {
+    return (
+      <section className="services-area-two services-bg-two py-80">
+        <div className="container text-center">
+          <p>Loading services...</p>
+        </div>
+      </section>
+    );
+  }
 
   if (!services.length) {
     return (

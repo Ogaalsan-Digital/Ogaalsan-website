@@ -5,6 +5,8 @@ import Features from "@/components/sections/home1/Features";
 import About from "@/components/sections/home1/About";
 import Services from "@/components/sections/home1/Services";
 import { fetchActiveServices } from "@/util/servicesApi";
+import { fetchPublishedPosts } from "@/util/postsApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
 const Overview = dynamic(() => import("@/components/sections/home1/Overview"), {
   loading: () => <div style={{ minHeight: "200px" }} />,
@@ -25,29 +27,28 @@ const Blog = dynamic(() => import("@/components/sections/home1/Blog"), {
   loading: () => <div style={{ minHeight: "200px" }} />,
 });
 
-export default function Home1({ services }) {
+export default function Home1() {
+  const { data: services = [], loading: servicesLoading } = useClientFetch(
+    fetchActiveServices,
+    []
+  );
+  const { data: posts = [], loading: postsLoading } = useClientFetch(
+    fetchPublishedPosts,
+    []
+  );
+
   return (
     <Layout headerStyle={1} footerStyle={2}>
       <Banner />
       <Features />
       <About />
-      <Services services={services} />
+      <Services services={services} loading={servicesLoading} />
       <Overview />
       <Choose />
       <Project />
       <Cta />
       <Testimonial />
-      <Blog />
+      <Blog posts={posts} loading={postsLoading} />
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  try {
-    const services = await fetchActiveServices();
-    return { props: { services } };
-  } catch (error) {
-    console.error("Failed to load homepage services:", error.message);
-    return { props: { services: [] } };
-  }
 }

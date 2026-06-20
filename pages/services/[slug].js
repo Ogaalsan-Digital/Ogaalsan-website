@@ -1,13 +1,38 @@
 import Accordion from "@/components/elements/Accordion";
 import Layout from "@/components/layout/Layout";
+import ContentLoader from "@/components/common/ContentLoader";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import {
   fetchActiveService,
   fetchActiveServices,
 } from "@/util/servicesApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
-export default function ServiceDetails({ service, services }) {
+export default function ServiceDetails() {
+  const router = useRouter();
+  const slug = router.query.slug;
+  const ready = router.isReady && Boolean(slug);
+
+  const { data: service, loading: serviceLoading } = useClientFetch(
+    () => fetchActiveService(slug),
+    [slug],
+    { enabled: ready, initialData: null }
+  );
+  const { data: services = [], loading: listLoading } = useClientFetch(
+    fetchActiveServices,
+    []
+  );
+
+  if (!ready || serviceLoading || listLoading) {
+    return (
+      <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Service Details">
+        <ContentLoader message="Loading service..." />
+      </Layout>
+    );
+  }
+
   if (!service) {
     return (
       <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Service Details">
@@ -89,24 +114,4 @@ export default function ServiceDetails({ service, services }) {
       </section>
     </Layout>
   );
-}
-
-export async function getServerSideProps({ params }) {
-  const identifier = params?.slug;
-
-  if (!identifier) {
-    return { props: { service: null, services: [] } };
-  }
-
-  try {
-    const [service, services] = await Promise.all([
-      fetchActiveService(identifier),
-      fetchActiveServices(),
-    ]);
-
-    return { props: { service, services } };
-  } catch (error) {
-    console.error("Failed to load service from API:", error.message);
-    return { props: { service: null, services: [] } };
-  }
 }

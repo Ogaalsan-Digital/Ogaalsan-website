@@ -5,8 +5,9 @@ const DEFAULT_COURSE_IMAGE = "/assets/img/ogalsan/contact.png";
 
 export { getApiBaseUrl, resolveMediaUrl };
 
-export function resolveCourseImage(image, apiBaseUrl = getApiBaseUrl()) {
-  return resolveMediaUrl(image, apiBaseUrl) || DEFAULT_COURSE_IMAGE;
+export function resolveCourseImage(image, apiBaseUrl = getApiBaseUrl(), imageUrl = null) {
+  const source = imageUrl || image;
+  return resolveMediaUrl(source, apiBaseUrl) || DEFAULT_COURSE_IMAGE;
 }
 
 export function extractYouTubeId(url) {
@@ -83,7 +84,11 @@ export function mapApiCourse(course, apiBaseUrl) {
     category: course.category?.name || (typeof course.category === "string" ? course.category : null) || course.level || "Course",
     title: course.title,
     description: course.description || "",
-    image: resolveCourseImage(course.featured_image, apiBaseUrl),
+    image: resolveCourseImage(
+      course.featured_image,
+      apiBaseUrl,
+      course.featured_image_url
+    ),
     duration: course.duration || "Self-paced",
     location: "Online via Zoom / In-person at Ogaalsan Center",
     whereToWatch:

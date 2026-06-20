@@ -1,9 +1,15 @@
 import BlogPost from "@/components/blog/BlogPost";
 import Layout from "@/components/layout/Layout";
+import ContentLoader from "@/components/common/ContentLoader";
 import Image from "next/image";
 import Link from "next/link";
+import { fetchPublishedPosts } from "@/util/postsApi";
+import { useClientFetch } from "@/util/useClientFetch";
 
 export default function Blog() {
+  const { data: posts = [], loading } = useClientFetch(fetchPublishedPosts, []);
+  const recentPosts = posts.slice(0, 4);
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Latest Blog">
@@ -14,7 +20,26 @@ export default function Blog() {
                 <div className="col-71">
                   <div className="blog-post-wrap">
                     <div className="row">
-                      <BlogPost showItem={4} style={1} showPagination />
+                      {loading ? (
+                        <div className="col-12">
+                          <ContentLoader message="Loading blog posts..." />
+                        </div>
+                      ) : posts.length > 0 ? (
+                        <BlogPost
+                          posts={posts}
+                          showItem={4}
+                          style={1}
+                          showPagination
+                        />
+                      ) : (
+                        <div className="col-12 text-center">
+                          <h3>No blog posts published yet</h3>
+                          <p>
+                            Create posts in the Ogaalsan admin panel and set
+                            their status to Published to display them here.
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -29,160 +54,39 @@ export default function Blog() {
                       </form>
                     </div>
                     <div className="blog-widget">
-                      <h4 className="bw-title">Categories</h4>
-                      <div className="bs-cat-list">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">
-                              ICT Solutions <span>(02)</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              Digital Transformation <span>(03)</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              Training &amp; Capacity Building <span>(02)</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              Digital Marketing <span>(02)</span>
-                            </Link>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="blog-widget">
                       <h4 className="bw-title">Recent Posts</h4>
                       <div className="rc-post-wrap">
-                        <div className="rc-post-item">
-                          <div className="thumb">
-                            <Link href="/blog-details">
-                              {" "}
-                              <Image
-                                width="0"
-                                height="0"
-                                sizes="100vw"
-                                style={{ width: "auto", height: "auto" }}
-                                src="/assets/img/blog/rc_post01.jpg"
-                                alt=""
-                              />
-                            </Link>
-                          </div>
-                          <div className="content">
-                            <span className="date">
-                              <i className="far fa-calendar" />
-                              22 Jan, 2023
-                            </span>
-                            <h2 className="title">
-                              <Link href="/blog-details">
-                                Whale be raised must be in a month
-                              </Link>
-                            </h2>
-                          </div>
-                        </div>
-                        <div className="rc-post-item">
-                          <div className="thumb">
-                            <Link href="/blog-details">
-                              {" "}
-                              <Image
-                                width="0"
-                                height="0"
-                                sizes="100vw"
-                                style={{ width: "auto", height: "auto" }}
-                                src="/assets/img/blog/rc_post02.jpg"
-                                alt=""
-                              />
-                            </Link>
-                          </div>
-                          <div className="content">
-                            <span className="date">
-                              <i className="far fa-calendar" />
-                              22 Jan, 2023
-                            </span>
-                            <h2 className="title">
-                              <Link href="/blog-details">
-                                Whale be raised must be in a month
-                              </Link>
-                            </h2>
-                          </div>
-                        </div>
-                        <div className="rc-post-item">
-                          <div className="thumb">
-                            <Link href="/blog-details">
-                              {" "}
-                              <Image
-                                width="0"
-                                height="0"
-                                sizes="100vw"
-                                style={{ width: "auto", height: "auto" }}
-                                src="/assets/img/blog/rc_post03.jpg"
-                                alt=""
-                              />
-                            </Link>
-                          </div>
-                          <div className="content">
-                            <span className="date">
-                              <i className="far fa-calendar" />
-                              22 Jan, 2023
-                            </span>
-                            <h2 className="title">
-                              <Link href="/blog-details">
-                                Whale be raised must be in a month
-                              </Link>
-                            </h2>
-                          </div>
-                        </div>
-                        <div className="rc-post-item">
-                          <div className="thumb">
-                            <Link href="/blog-details">
-                              {" "}
-                              <Image
-                                width="0"
-                                height="0"
-                                sizes="100vw"
-                                style={{ width: "auto", height: "auto" }}
-                                src="/assets/img/blog/rc_post04.jpg"
-                                alt=""
-                              />
-                            </Link>
-                          </div>
-                          <div className="content">
-                            <span className="date">
-                              <i className="far fa-calendar" />
-                              22 Jan, 2023
-                            </span>
-                            <h2 className="title">
-                              <Link href="/blog-details">
-                                Whale be raised must be in a month
-                              </Link>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="blog-widget">
-                      <h4 className="bw-title">Tags</h4>
-                      <div className="bs-tag-list">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">ICT Strategy</Link>
-                          </li>
-                          <li>
-                            <Link href="#">Infrastructure</Link>
-                          </li>
-                          <li>
-                            <Link href="#">Digital Skills</Link>
-                          </li>
-
-                          <li>
-                            <Link href="#">Digital Marketing</Link>
-                          </li>
-                        </ul>
+                        {loading ? (
+                          <p className="text-sm text-gray-500">Loading...</p>
+                        ) : (
+                          recentPosts.map((post) => (
+                            <div key={post.id} className="rc-post-item">
+                              <div className="thumb">
+                                <Link href={`/blog/${post.slug || post.id}`}>
+                                  <Image
+                                    width="0"
+                                    height="0"
+                                    sizes="100vw"
+                                    style={{ width: "auto", height: "auto" }}
+                                    src={post.image}
+                                    alt={post.title}
+                                  />
+                                </Link>
+                              </div>
+                              <div className="content">
+                                <span className="date">
+                                  <i className="far fa-calendar" />
+                                  {post.date}
+                                </span>
+                                <h2 className="title">
+                                  <Link href={`/blog/${post.slug || post.id}`}>
+                                    {post.title}
+                                  </Link>
+                                </h2>
+                              </div>
+                            </div>
+                          ))
+                        )}
                       </div>
                     </div>
                   </aside>
