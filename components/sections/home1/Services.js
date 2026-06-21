@@ -59,14 +59,14 @@ export default function Services({ services = [], loading = false }) {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center align-items-stretch">
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
+              className="col-xl-3 col-lg-4 col-md-6 col-sm-8 d-flex"
             >
               <div
-                className="services-item-two"
+                className="services-item-two w-100"
                 onMouseEnter={() => handleToggle(index + 1)}
                 onMouseLeave={() => handleToggle(index + 1)}
               >
@@ -75,9 +75,13 @@ export default function Services({ services = [], loading = false }) {
                     src={service.image}
                     alt={service.title}
                     width={400}
-                    height={280}
+                    height={350}
                     loading="lazy"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{
+                      width: "100%",
+                      height: "350px",
+                      objectFit: "cover",
+                    }}
                   />
                   <div className="item-shape">
                     <img
