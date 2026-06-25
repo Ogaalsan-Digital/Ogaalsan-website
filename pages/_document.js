@@ -24,6 +24,7 @@ export default function Document() {
                 <link rel="stylesheet" href="/assets/css/aos.css" />
                 <link rel="stylesheet" href="/assets/css/responsive.css" />
                 <link rel="stylesheet" href="/assets/css/courses.css" />
+                <link rel="stylesheet" href="/assets/css/auth.css" />
             </Head>
             <body>
                 <Main />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
 import SearchPopup from "../SearchPopup";
+import { useAuth } from "@/context/AuthContext";
 
 export default function Header1({
   scroll,
@@ -11,6 +12,12 @@ export default function Header1({
   isOffcanvus,
   handleOffcanvus,
 }) {
+  const { user, isAuthenticated, logout } = useAuth();
+
+  const handleLogout = async () => {
+    await logout();
+  };
+
   return (
     <>
       <header
@@ -84,10 +91,30 @@ export default function Header1({
                       </li>
                     </ul>
                   </div>
-                  <div className="header-top-btn d-none d-md-block ms-3">
-                    <Link href="/contact" className="btn btn-sm">
-                      Book a Consultation
-                    </Link>
+                  <div className="header-top-btn d-none d-md-flex align-items-center ms-3 gap-2">
+                    {isAuthenticated ? (
+                      <>
+                        <span className="auth-user-greeting">
+                          Hi, {user?.name?.split(" ")[0] || "there"}
+                        </span>
+                        <button
+                          type="button"
+                          className="btn btn-sm btn-outline-auth"
+                          onClick={handleLogout}
+                        >
+                          Sign Out
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <Link href="/auth/sign-in" className="btn btn-sm btn-outline-auth">
+                          Sign In
+                        </Link>
+                        <Link href="/auth/sign-up" className="btn btn-sm">
+                          Sign Up
+                        </Link>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -132,6 +159,16 @@ export default function Header1({
                         <li>
                           <Link href="/contact">Contact</Link>
                         </li>
+                        {!isAuthenticated && (
+                          <>
+                            <li>
+                              <Link href="/auth/sign-in">Sign In</Link>
+                            </li>
+                            <li>
+                              <Link href="/auth/sign-up">Sign Up</Link>
+                            </li>
+                          </>
+                        )}
                       </ul>
                     </div>
                     <div className="header-action">

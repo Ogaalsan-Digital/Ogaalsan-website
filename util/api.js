@@ -1,5 +1,9 @@
 import { getApiBaseUrl } from "./media";
 
+const CACHE_TTL_MS = 60 * 1000;
+const inflightRequests = new Map();
+const responseCache = new Map();
+
 export function getApiBaseUrlCandidates() {
   const configured =
     process.env.OGAALSAN_API_URL ||
@@ -18,7 +22,7 @@ export function getApiBaseUrlCandidates() {
   return [...new Set(candidates)];
 }
 
-export async function fetchPublicJson(path) {
+async function fetchPublicJsonOnce(path) {
   const candidates = getApiBaseUrlCandidates();
   let lastError = null;
 
@@ -40,6 +44,40 @@ export async function fetchPublicJson(path) {
   }
 
   throw lastError || new Error(`Failed to fetch ${path}`);
+}
+
+export async function fetchPublicJson(path) {
+  const cached = responseCache.get(path);
+  if (cached && Date.now() - cached.time < CACHE_TTL_MS) {
+    return cached.value;
+  }
+
+  if (inflightRequests.has(path)) {
+    return inflightRequests.get(path);
+  }
+
+  const request = fetchPublicJsonOnce(path)
+    .then((result) => {
+      responseCache.set(path, { value: result, time: Date.now() });
+      return result;
+    })
+    .finally(() => {
+      inflightRequests.delete(path);
+    });
+
+  inflightRequests.set(path, request);
+  return request;
+}
+
+export function clearPublicApiCache(path) {
+  if (path) {
+    responseCache.delete(path);
+    inflightRequests.delete(path);
+    return;
+  }
+
+  responseCache.clear();
+  inflightRequests.clear();
 }
 
 export function getResolvedApiBaseUrl() {

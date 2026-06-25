@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function useClientFetch(fetcher, deps = [], options = {}) {
-  const { enabled = true, initialData } = options;
+  const { enabled = true, initialData, cacheKey } = options;
   const [data, setData] = useState(initialData);
   const [loading, setLoading] = useState(Boolean(enabled));
   const [error, setError] = useState(null);
+  const fetcherRef = useRef(fetcher);
+
+  fetcherRef.current = fetcher;
 
   useEffect(() => {
     if (!enabled) {
@@ -17,7 +20,7 @@ export function useClientFetch(fetcher, deps = [], options = {}) {
     setError(null);
 
     Promise.resolve()
-      .then(() => fetcher())
+      .then(() => fetcherRef.current())
       .then((result) => {
         if (active) {
           setData(result);
@@ -37,7 +40,7 @@ export function useClientFetch(fetcher, deps = [], options = {}) {
     return () => {
       active = false;
     };
-  }, [enabled, ...deps]);
+  }, [enabled, cacheKey, ...deps]);
 
   return { data, loading, error };
 }

@@ -1,25 +1,22 @@
 import Preloader from "@/components/elements/Preloader"
+import { AuthProvider } from "@/context/AuthContext"
 import { useEffect, useState } from "react"
-import dynamic from "next/dynamic"
 import AOS from 'aos'
 
 function MyApp({ Component, pageProps }) {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        // Reduce preloader time for better UX - reduced from 500ms to 200ms
         const timer = setTimeout(() => {
             setLoading(false)
         }, 200)
         
-        // Initialize AOS after component mounts - lazy load
         if (typeof window !== 'undefined') {
-            // Use requestIdleCallback for better performance
             const initAOS = () => {
                 AOS.init({
                     duration: 800,
                     once: true,
                     offset: 100,
-                    disable: 'mobile', // Disable on mobile for better performance
+                    disable: 'mobile',
                 })
             }
             
@@ -33,13 +30,13 @@ function MyApp({ Component, pageProps }) {
         return () => clearTimeout(timer)
     }, [])
     return (
-        <>
+        <AuthProvider>
             {!loading ? (
                 <Component {...pageProps} />
             ) : (
                 <Preloader />
             )}
-        </>
+        </AuthProvider>
     )
 }
 
