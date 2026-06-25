@@ -32,19 +32,18 @@
 .auth-user-greeting {
   font-size: 14px;
   font-weight: 600;
-  color: #22428f;
+  color: var(--tg-white);
   white-space: nowrap;
 }
 
-.btn-outline-auth {
-  background: transparent;
-  border: 1px solid #3fa9f5;
-  color: #3fa9f5;
+.header-top-btn .btn-outline-auth {
+  border-color: var(--tg-white);
+  color: var(--tg-white);
 }
 
-.btn-outline-auth:hover {
-  background: #3fa9f5;
-  color: #fff;
+.header-top-btn .btn-outline-auth:hover {
+  background: transparent;
+  color: var(--tg-white);
 }
 
 .mt-15 {
