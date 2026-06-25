@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react"
 import BackToTop from '../elements/BackToTop'
+import WhatsAppWidget from '../common/WhatsAppWidget'
 import DataBg from "../elements/DataBg"
 import Breadcrumb from './Breadcrumb'
 import PageHead from './PageHead'
@@ -98,6 +99,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
             {footerStyle == 3 ? < Footer3 /> : null}
 
             <BackToTop />
+            <WhatsAppWidget />
         </>
     )
 }
